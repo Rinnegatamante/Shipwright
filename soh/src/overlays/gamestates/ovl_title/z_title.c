@@ -272,8 +272,9 @@ void Title_Main(GameState* thisx) {
     if (!CVarGetInteger("gHideBuildInfo", 0)) {
         Gfx* gfx = POLY_OPA_DISP;
         s32 pad;
-
+#ifndef __vita__
         Title_PrintBuildInfo(&gfx);
+#endif
         POLY_OPA_DISP = gfx;
     }
 

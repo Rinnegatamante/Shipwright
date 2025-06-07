@@ -72,10 +72,9 @@ int main(int argc, char **argv)
 	pthread_t t;
 	pthread_attr_t attr;
 	pthread_attr_init(&attr);
-	pthread_attr_setstacksize(&attr, 12 * 1024 * 1024);
+	pthread_attr_setstacksize(&attr, 1 * 1024 * 1024);
 	pthread_create(&t, &attr, soh_main, NULL);
-	pthread_join(t, NULL);
-	return 0;
+	return sceKernelExitDeleteThread(0);
 }
 #endif
 
