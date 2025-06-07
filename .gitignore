@@ -1,3 +1,7 @@
+cmake_build
+soh/assets
+VITA RELEASE
+
 # Cache files
 __pycache__/
 .pyc
