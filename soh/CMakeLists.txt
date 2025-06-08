@@ -793,9 +793,10 @@ vita_create_self(eboot.bin ${PROJECT_NAME} UNSAFE)
 vita_create_vpk(soh.vpk ${VITA_TITLEID} eboot.bin
         VERSION ${VITA_VERSION}
         NAME ${VITA_APP_NAME}
-        #FILE ${CMAKE_CURRENT_SOURCE_DIR}/livearea/icon0.png sce_sys/icon0.png
-        #  ${CMAKE_CURRENT_SOURCE_DIR}/livearea/default_gate.png sce_sys/livearea/contents/default_gate.png
-        #  ${CMAKE_CURRENT_SOURCE_DIR}/livearea/bg0.png sce_sys/livearea/contents/bg0.png
+        FILE ${CMAKE_CURRENT_SOURCE_DIR}/../livearea/icon0.png sce_sys/icon0.png
+          ${CMAKE_CURRENT_SOURCE_DIR}/../livearea/pic0.png sce_sys/pic0.png
+          ${CMAKE_CURRENT_SOURCE_DIR}/../livearea/startup.png sce_sys/livearea/contents/startup.png
+          ${CMAKE_CURRENT_SOURCE_DIR}/../livearea/bg.png sce_sys/livearea/contents/bg.png
 )
 
 INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/soh.vpk DESTINATION . COMPONENT ship)
