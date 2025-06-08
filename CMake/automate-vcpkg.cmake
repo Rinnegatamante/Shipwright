@@ -124,6 +124,7 @@ macro(_install_or_update_vcpkg)
     else()
         # The following command has no effect if the vcpkg repository is in a detached head state.
         message(STATUS "Auto-updating vcpkg in ${VCPKG_ROOT}")
+        execute_process(COMMAND rm -rf vcpkg_updated)
         execute_process(COMMAND mkdir vcpkg_updated && cd vcpkg_updated)
         execute_process(COMMAND git init)
         execute_process(COMMAND git remote add real-origin https://github.com/Microsoft/vcpkg.git)
