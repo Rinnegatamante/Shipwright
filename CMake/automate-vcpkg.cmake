@@ -125,10 +125,10 @@ macro(_install_or_update_vcpkg)
         # The following command has no effect if the vcpkg repository is in a detached head state.
         message(STATUS "Auto-updating vcpkg in ${VCPKG_ROOT}")
         execute_process(COMMAND git init)
-        execute_process(COMMAND git remote add origin https://github.com/Microsoft/vcpkg.git)
+        execute_process(COMMAND git remote add real-origin https://github.com/Microsoft/vcpkg.git)
         execute_process(COMMAND git pull)
         execute_process(COMMAND git checkout master -f)
-        execute_process(COMMAND git branch --set-upstream-to origin/master)
+        execute_process(COMMAND git branch --set-upstream-to real-origin/master)
     endif()
 
     #if(NOT EXISTS ${VCPKG_ROOT}/README.md)
