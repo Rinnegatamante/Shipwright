@@ -114,18 +114,18 @@ macro(vcpkg_bootstrap)
 endmacro()
 
 macro(_install_or_update_vcpkg)
-    if(NOT EXISTS ${VCPKG_ROOT})
+    #if(NOT EXISTS ${VCPKG_ROOT})
         message(STATUS "Cloning vcpkg in ${VCPKG_ROOT}")
         execute_process(COMMAND git clone https://github.com/Microsoft/vcpkg.git ${VCPKG_ROOT} --depth 1)
 
         # If a reproducible build is desired (and potentially old libraries are # ok), uncomment the
         # following line and pin the vcpkg repository to a specific githash.
         # execute_process(COMMAND git checkout 745a0aea597771a580d0b0f4886ea1e3a94dbca6 WORKING_DIRECTORY ${VCPKG_ROOT})
-    else()
+    #else()
         # The following command has no effect if the vcpkg repository is in a detached head state.
-        message(STATUS "Auto-updating vcpkg in ${VCPKG_ROOT}")
-        execute_process(COMMAND git pull WORKING_DIRECTORY ${VCPKG_ROOT})
-    endif()
+    #    message(STATUS "Auto-updating vcpkg in ${VCPKG_ROOT}")
+    #    execute_process(COMMAND git pull WORKING_DIRECTORY ${VCPKG_ROOT})
+    #endif()
 
     if(NOT EXISTS ${VCPKG_ROOT}/README.md)
         message(FATAL_ERROR "***** FATAL ERROR: Could not clone vcpkg *****")
