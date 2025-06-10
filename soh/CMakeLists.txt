@@ -786,7 +786,7 @@ include("${VITASDK}/share/vita.cmake" REQUIRED)
 
 set(VITA_APP_NAME "Ship of Harkinian")
 set(VITA_TITLEID  "SHIPOFHAR")
-set(VITA_VERSION  "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}")
+set(VITA_VERSION  "01.00")
 set(VITA_MKSFOEX_FLAGS "-d ATTRIBUTE2=12")
 
 vita_create_self(eboot.bin ${PROJECT_NAME} UNSAFE)

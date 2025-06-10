@@ -1,6 +1,6 @@
 cmake_build
-soh/assets
 VITA RELEASE
+vita_build
 
 # Cache files
 __pycache__/
