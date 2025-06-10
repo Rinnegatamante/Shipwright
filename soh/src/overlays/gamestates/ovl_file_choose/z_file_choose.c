@@ -1452,6 +1452,24 @@ static void* sOptionsButtonTextures[] = {
     gFileSelOptionsButtonENGTex,
 };
 
+#ifdef __vita__
+#include "gFileSelPleaseChooseAQuestENGTex.h"
+#include "gFileSelPleaseChooseAQuestFRATex.h"
+#include "gFileSelPleaseChooseAQuestGERTex.h"
+#include "gFileSelMQButtonTex.h"
+#include "gFileSelRANDButtonTex.h"
+void *FileChoose_GetQuestChooseTitleTex(Language lang) {
+	switch (lang) {
+        case LANGUAGE_ENG:
+        default:
+            return gFileSelPleaseChooseAQuestENGTex;
+        case LANGUAGE_FRA:
+            return gFileSelPleaseChooseAQuestFRATex;
+        case LANGUAGE_GER:
+            return gFileSelPleaseChooseAQuestGERTex;
+    }
+}
+#else
 const char* FileChoose_GetQuestChooseTitleTexName(Language lang) {
     switch (lang) {
         case LANGUAGE_ENG:
@@ -1463,6 +1481,7 @@ const char* FileChoose_GetQuestChooseTitleTexName(Language lang) {
             return "__OTR__textures/title_static/gFileSelPleaseChooseAQuestGERTex";
     }
 }
+#endif
 
 /**
  * Draw most window contents including buttons, labels, and icons.
@@ -1476,12 +1495,19 @@ void FileChoose_DrawWindowContents(GameState* thisx) {
     s16 quadVtxIndex;
     s16 isActive;
     s16 pad;
+#ifdef __vita__
+    char* tex = (this->configMode == CM_QUEST_MENU || this->configMode == CM_ROTATE_TO_NAME_ENTRY || 
+        this->configMode == CM_START_QUEST_MENU || this->configMode == CM_QUEST_TO_MAIN ||
+        this->configMode == CM_NAME_ENTRY_TO_QUEST_MENU)
+                  ? FileChoose_GetQuestChooseTitleTex(gSaveContext.language)
+                  : sTitleLabels[gSaveContext.language][this->titleLabel];
+#else
     char* tex = (this->configMode == CM_QUEST_MENU || this->configMode == CM_ROTATE_TO_NAME_ENTRY || 
         this->configMode == CM_START_QUEST_MENU || this->configMode == CM_QUEST_TO_MAIN ||
         this->configMode == CM_NAME_ENTRY_TO_QUEST_MENU)
                   ? GetResourceDataByName(FileChoose_GetQuestChooseTitleTexName(gSaveContext.language), false)
                   : sTitleLabels[gSaveContext.language][this->titleLabel];
-
+#endif
     OPEN_DISPS(this->state.gfxCtx);
 
     // draw title label
@@ -1624,10 +1650,17 @@ void FileChoose_DrawWindowContents(GameState* thisx) {
                                     sWindowContentColors[isActive][1], sWindowContentColors[isActive][2],
                                     this->nameAlpha[i]);
                 }
+#ifdef __vita__
+				gDPLoadTextureBlock(POLY_OPA_DISP++,
+                                    gFileSelRANDButtonTex,
+                                    G_IM_FMT_IA, G_IM_SIZ_16b, 44, 16, 0, G_TX_NOMIRROR | G_TX_WRAP,
+                                    G_TX_NOMIRROR | G_TX_WRAP, G_TX_NOMASK, G_TX_NOMASK, G_TX_NOLOD, G_TX_NOLOD);
+#else
                 gDPLoadTextureBlock(POLY_OPA_DISP++,
                                     GetResourceDataByName("__OTR__textures/title_static/gFileSelRANDButtonTex", false),
                                     G_IM_FMT_IA, G_IM_SIZ_16b, 44, 16, 0, G_TX_NOMIRROR | G_TX_WRAP,
                                     G_TX_NOMIRROR | G_TX_WRAP, G_TX_NOMASK, G_TX_NOMASK, G_TX_NOLOD, G_TX_NOLOD);
+#endif
                 gSP1Quadrangle(POLY_OPA_DISP++, 8, 10, 11, 9, 0);
             }
             // Draw MQ label
@@ -1641,10 +1674,17 @@ void FileChoose_DrawWindowContents(GameState* thisx) {
                                     sWindowContentColors[isActive][1], sWindowContentColors[isActive][2],
                                     this->nameAlpha[i]);
                 }
+#ifdef __vita__
+				gDPLoadTextureBlock(POLY_OPA_DISP++,
+                                    gFileSelMQButtonTex,
+                                    G_IM_FMT_IA, G_IM_SIZ_16b, 44, 16, 0, G_TX_NOMIRROR | G_TX_WRAP,
+                                    G_TX_NOMIRROR | G_TX_WRAP, G_TX_NOMASK, G_TX_NOMASK, G_TX_NOLOD, G_TX_NOLOD);
+#else
                 gDPLoadTextureBlock(POLY_OPA_DISP++,
                                     GetResourceDataByName("__OTR__textures/title_static/gFileSelMQButtonTex", false),
                                     G_IM_FMT_IA, G_IM_SIZ_16b, 44, 16, 0, G_TX_NOMIRROR | G_TX_WRAP,
                                     G_TX_NOMIRROR | G_TX_WRAP, G_TX_NOMASK, G_TX_NOMASK, G_TX_NOLOD, G_TX_NOLOD);
+#endif
                 gSP1Quadrangle(POLY_OPA_DISP++, 8, 10, 11, 9, 0);
             }
 
