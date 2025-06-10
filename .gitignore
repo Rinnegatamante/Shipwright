@@ -47,7 +47,6 @@ tools/*dSYM/
 graphs/
 
 # Assets
-*.png
 *.jpg
 *.mdli
 *.anmi
