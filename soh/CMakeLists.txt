@@ -797,6 +797,8 @@ vita_create_vpk(soh.vpk ${VITA_TITLEID} eboot.bin
           ${CMAKE_CURRENT_SOURCE_DIR}/../livearea/pic0.png sce_sys/pic0.png
           ${CMAKE_CURRENT_SOURCE_DIR}/../livearea/startup.png sce_sys/livearea/contents/startup.png
           ${CMAKE_CURRENT_SOURCE_DIR}/../livearea/bg.png sce_sys/livearea/contents/bg.png
+          ${CMAKE_CURRENT_SOURCE_DIR}/../livearea/template.xml sce_sys/livearea/contents/template.xml
+          ${CMAKE_CURRENT_SOURCE_DIR}/../livearea/manual sce_sys/manual
 )
 
 INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/soh.vpk DESTINATION . COMPONENT ship)
