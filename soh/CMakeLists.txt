@@ -696,6 +696,7 @@ elseif(CMAKE_SYSTEM_NAME STREQUAL "PSVita")
         SceIme_stub
         SceGxm_stub
         SceDisplay_stub
+		ScePower_stub
         SceTouch_stub
         SceHid_stub
         SceCtrl_stub
