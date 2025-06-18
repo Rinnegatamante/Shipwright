@@ -68,6 +68,11 @@ int main(int argc, char** argv)
 #ifdef __vita__
 int main(int argc, char **argv)
 {
+	scePowerSetArmClockFrequency(444);
+	scePowerSetBusClockFrequency(222);
+	scePowerSetGpuClockFrequency(222);
+	scePowerSetGpuXbarClockFrequency(166);
+	
 	// We need a bigger stack to run SoH, so we create a new thread with a proper stack size
 	pthread_t t;
 	pthread_attr_t attr;
