@@ -28,6 +28,10 @@
 #include "rando_hash.h"
 #include <boost_custom/container_hash/hash_32.hpp>
 
+#ifdef __vita__
+#include <vitasdk.h>
+#endif
+
 extern "C" uint32_t ResourceMgr_IsGameMasterQuest();
 extern "C" uint32_t ResourceMgr_IsSceneMasterQuest(s16 sceneNum);
 
@@ -2849,9 +2853,17 @@ RandomizerCheck Randomizer::GetCheckFromRandomizerInf(RandomizerInf randomizerIn
     return RC_UNKNOWN_CHECK;
 }
 
+#ifdef __vita__
+SceUID randoThread;
+volatile char randomizerSeed[256] = {};
+
+int GenerateRandomizerImgui(unsigned int argc, void *argv) {
+	std::string seed = std::string((char *)randomizerSeed);
+#else
 std::thread randoThread;
 
 void GenerateRandomizerImgui(std::string seed = "") {
+#endif
     CVarSetInteger("gRandoGenerating", 1);
     CVarSave();
 
@@ -3044,11 +3056,20 @@ void GenerateRandomizerImgui(std::string seed = "") {
     CVarLoad();
 
     generated = 1;
+#ifdef __vita__
+	return sceKernelExitDeleteThread(0);
+#endif
 }
 
 bool GenerateRandomizer(std::string seed /*= ""*/) {
     if (CVarGetInteger("gRandoGenerating", 0) == 0) {
+#ifdef __vita__
+		strcpy(randomizerSeed, seed.c_str());
+		randoThread = sceKernelCreateThread("Randomizer", GenerateRandomizerImgui, 0x40, 0x100000, 0, 0, NULL);
+		sceKernelStartThread(randoThread, 0, NULL);
+#else
         randoThread = std::thread(&GenerateRandomizerImgui, seed);
+#endif
         return true;
     }
     return false;
@@ -3057,7 +3078,11 @@ bool GenerateRandomizer(std::string seed /*= ""*/) {
 void DrawRandoEditor(bool& open) {
     if (generated) {
         generated = 0;
+#ifdef __vita__
+		sceKernelWaitThreadEnd(randoThread, NULL, NULL);
+#else
         randoThread.join();
+#endif
     }
 
     if (!open) {
