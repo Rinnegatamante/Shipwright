@@ -3057,16 +3057,16 @@ void GenerateRandomizerImgui(std::string seed = "") {
 
     generated = 1;
 #ifdef __vita__
-	return sceKernelExitDeleteThread(0);
+    return sceKernelExitDeleteThread(0);
 #endif
 }
 
 bool GenerateRandomizer(std::string seed /*= ""*/) {
     if (CVarGetInteger("gRandoGenerating", 0) == 0) {
 #ifdef __vita__
-		strcpy(randomizerSeed, seed.c_str());
-		randoThread = sceKernelCreateThread("Randomizer", GenerateRandomizerImgui, 0x40, 0x100000, 0, 0, NULL);
-		sceKernelStartThread(randoThread, 0, NULL);
+        strcpy(randomizerSeed, seed.c_str());
+        randoThread = sceKernelCreateThread("Randomizer", GenerateRandomizerImgui, 0x40, 0x100000, 0, 0, NULL);
+        sceKernelStartThread(randoThread, 0, NULL);
 #else
         randoThread = std::thread(&GenerateRandomizerImgui, seed);
 #endif
@@ -3079,7 +3079,7 @@ void DrawRandoEditor(bool& open) {
     if (generated) {
         generated = 0;
 #ifdef __vita__
-		sceKernelWaitThreadEnd(randoThread, NULL, NULL);
+        sceKernelWaitThreadEnd(randoThread, NULL, NULL);
 #else
         randoThread.join();
 #endif
