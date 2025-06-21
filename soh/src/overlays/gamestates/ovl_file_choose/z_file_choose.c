@@ -1520,7 +1520,7 @@ static void* sOptionsButtonTextures[] = {
 #include "gFileSelMQButtonTex.h"
 #include "gFileSelRANDButtonTex.h"
 void *FileChoose_GetQuestChooseTitleTex(Language lang) {
-	switch (lang) {
+    switch (lang) {
         case LANGUAGE_ENG:
         default:
             return gFileSelPleaseChooseAQuestENGTex;
@@ -1637,7 +1637,7 @@ void FileChoose_DrawWindowContents(GameState* thisx) {
                 FileChoose_DrawTextureI8(this->state.gfxCtx, gTitleOcarinaOfTimeTMTextTex, 96, 8, 154, 163, 96, 8, 1024, 1024);
                 FileChoose_DrawImageRGBA32(this->state.gfxCtx, 160, 135, ResourceMgr_GameHasOriginal() ? gTitleZeldaShieldLogoTex : gTitleZeldaShieldLogoMQTex, 160, 160);
 #ifdef __vita__
-				DrawTitleRandomizerSubtitleTex(this->state.gfxCtx, 182, 180, 128, 32);
+                DrawTitleRandomizerSubtitleTex(this->state.gfxCtx, 182, 180, 128, 32);
 #else
                 FileChoose_DrawRawImageRGBA32(this->state.gfxCtx, 182, 180, "__OTR__objects/object_mag/gTitleRandomizerSubtitleTex", 128, 32);
 #endif
@@ -1716,7 +1716,7 @@ void FileChoose_DrawWindowContents(GameState* thisx) {
                                     this->nameAlpha[i]);
                 }
 #ifdef __vita__
-				gDPLoadTextureBlock(POLY_OPA_DISP++,
+                gDPLoadTextureBlock(POLY_OPA_DISP++,
                                     gFileSelRANDButtonTex,
                                     G_IM_FMT_IA, G_IM_SIZ_16b, 44, 16, 0, G_TX_NOMIRROR | G_TX_WRAP,
                                     G_TX_NOMIRROR | G_TX_WRAP, G_TX_NOMASK, G_TX_NOMASK, G_TX_NOLOD, G_TX_NOLOD);
@@ -1740,7 +1740,7 @@ void FileChoose_DrawWindowContents(GameState* thisx) {
                                     this->nameAlpha[i]);
                 }
 #ifdef __vita__
-				gDPLoadTextureBlock(POLY_OPA_DISP++,
+                gDPLoadTextureBlock(POLY_OPA_DISP++,
                                     gFileSelMQButtonTex,
                                     G_IM_FMT_IA, G_IM_SIZ_16b, 44, 16, 0, G_TX_NOMIRROR | G_TX_WRAP,
                                     G_TX_NOMIRROR | G_TX_WRAP, G_TX_NOMASK, G_TX_NOMASK, G_TX_NOLOD, G_TX_NOLOD);
