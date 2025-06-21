@@ -1,6 +1,19 @@
 #include "z_en_box.h"
 #include "objects/object_box/object_box.h"
 
+#ifdef __vita__
+#include "gChristmasGreenTreasureChestFrontTex.h"
+#include "gChristmasGreenTreasureChestSideAndTopTex.h"
+#include "gChristmasRedTreasureChestFrontTex.h"
+#include "gChristmasRedTreasureChestSideAndTopTex.h"
+#include "gGoldTreasureChestFrontTex.h"
+#include "gGoldTreasureChestSideAndTopTex.h"
+#include "gKeyTreasureChestFrontTex.h"
+#include "gKeyTreasureChestSideAndTopTex.h"
+#include "gSkullTreasureChestFrontTex.h"
+#include "gSkullTreasureChestSideAndTopTex.h"
+#endif
+
 #define FLAGS 0
 
 // movement flags
@@ -752,6 +765,18 @@ void EnBox_UpdateSizeAndTexture(EnBox* this, PlayState* play) {
 void EnBox_CreateExtraChestTextures() {
     if (hasCreatedRandoChestTextures) return;
     Gfx gTreasureChestChestTextures[] = {
+#ifdef __vita__
+        gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, gSkullTreasureChestFrontTex),
+        gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, gSkullTreasureChestSideAndTopTex),
+        gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, gGoldTreasureChestFrontTex),
+        gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, gGoldTreasureChestSideAndTopTex),
+        gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, gKeyTreasureChestFrontTex),
+        gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, gKeyTreasureChestSideAndTopTex),
+        gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, gChristmasRedTreasureChestFrontTex),
+        gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, gChristmasRedTreasureChestSideAndTopTex),
+        gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, gChristmasGreenTreasureChestFrontTex),
+        gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, gChristmasGreenTreasureChestSideAndTopTex),
+#else
         gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, GetResourceDataByName("__OTR__objects/object_box/gSkullTreasureChestFrontTex", false)),
         gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, GetResourceDataByName("__OTR__objects/object_box/gSkullTreasureChestSideAndTopTex", false)),
         gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, GetResourceDataByName("__OTR__objects/object_box/gGoldTreasureChestFrontTex", false)),
@@ -762,6 +787,7 @@ void EnBox_CreateExtraChestTextures() {
         gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, GetResourceDataByName("__OTR__objects/object_box/gChristmasRedTreasureChestSideAndTopTex", false)),
         gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, GetResourceDataByName("__OTR__objects/object_box/gChristmasGreenTreasureChestFrontTex", false)),
         gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, GetResourceDataByName("__OTR__objects/object_box/gChristmasGreenTreasureChestSideAndTopTex", false)),
+#endif
     };
 
     Gfx* frontCmd = ResourceMgr_LoadGfxByName(gTreasureChestChestFrontDL);
