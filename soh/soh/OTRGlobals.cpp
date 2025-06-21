@@ -746,20 +746,20 @@ extern "C" void Graph_StartFrame() {
     OTRGlobals::Instance->context->StartFrame();
 }
 
-#ifdef __vita__
-void RunCommands(Gfx* Commands) {
-#else
+//#ifdef __vita__
+//void RunCommands(Gfx* Commands) {
+//#else
 void RunCommands(Gfx* Commands, const std::vector<std::unordered_map<Mtx*, MtxF>>& mtx_replacements) {
-#endif
-#ifndef __vita__    
+//#endif
+//#ifndef __vita__    
 	for (const auto& m : mtx_replacements)
-#endif
+//#endif
 	{
-#ifdef __vita__
-		gfx_run(Commands);
-#else
+//#ifdef __vita__
+//		gfx_run(Commands);
+//#else
         gfx_run(Commands, m);
-#endif
+//#endif
         gfx_end_frame();
     }
 }
@@ -772,9 +772,9 @@ extern "C" void Graph_ProcessGfxCommands(Gfx* commands) {
     }
 
     audio.cv_to_thread.notify_one();
-#ifndef __vita__
+//#ifndef __vita__
     std::vector<std::unordered_map<Mtx*, MtxF>> mtx_replacements;
-#endif
+//#endif
     int target_fps = OTRGlobals::Instance->GetInterpolationFPS();
     static int last_fps = 0;
     static int last_update_rate;
@@ -796,7 +796,7 @@ extern "C" void Graph_ProcessGfxCommands(Gfx* commands) {
 		//frametime = 1.0f / (float)fps;
 #endif
     }
-#ifndef __vita__
+//#ifndef __vita__
     // time_base = fps * original_fps (one second)
     int next_original_frame = fps;
 
@@ -810,34 +810,27 @@ extern "C" void Graph_ProcessGfxCommands(Gfx* commands) {
     }
 
     time -= fps;
-#endif
+//#endif
 
     OTRGlobals::Instance->context->SetTargetFps(fps);
 
     int threshold = CVarGetInteger("gExtraLatencyThreshold", 80);
     OTRGlobals::Instance->context->SetMaximumFrameLatency(threshold > 0 && target_fps >= threshold ? 2 : 1);
 //#ifndef __vita__
-//    RunCommands(commands, mtx_replacements);
+    RunCommands(commands, mtx_replacements);
 //#else
-	//current_frametime -= frametime;
-	//if (current_frametime < 0.0f) {
-	//	static uint32_t tick = sceKernelGetProcessTimeLow();
-		RunCommands(commands);
-	//	uint32_t new_tick = sceKernelGetProcessTimeLow();
-	//	current_frametime += (float)(new_tick - tick) / 1000000.0f;
-	//	tick = new_tick;
-	//}
+//    RunCommands(commands);
 //#endif
     last_fps = fps;
     last_update_rate = R_UPDATE_RATE;
-//#ifndef __vita__
-//    {
-//        std::unique_lock<std::mutex> Lock(audio.mutex);
-//        while (audio.processing) {
-//            audio.cv_from_thread.wait(Lock);
-//        }
-//    }
-//#endif
+#ifndef __vita__
+    {
+        std::unique_lock<std::mutex> Lock(audio.mutex);
+        while (audio.processing) {
+            audio.cv_from_thread.wait(Lock);
+        }
+    }
+#endif
     // OTRTODO: FIGURE OUT END FRAME POINT
    /* if (OTRGlobals::Instance->context->lastScancode != -1)
         OTRGlobals::Instance->context->lastScancode = -1;*/
