@@ -13,6 +13,10 @@
 #include <assert.h>
 #endif
 
+#ifdef __vita__
+#include "gDPad.h"
+#endif
+
 #include "soh/Enhancements/game-interactor/GameInteractor.h"
 
 
@@ -5260,9 +5264,15 @@ void Interface_Draw(PlayState* play) {
 
             gDPSetPrimColor(OVERLAY_DISP++, 0, 0, dPadColor.r, dPadColor.g, dPadColor.b, dpadAlpha);
             if (fullUi) {
+#ifdef __vita__
+				gDPLoadTextureBlock(OVERLAY_DISP++, gDPad,
+                                    G_IM_FMT_IA, G_IM_SIZ_16b, 32, 32, 0, G_TX_NOMIRROR | G_TX_WRAP,
+                                    G_TX_NOMIRROR | G_TX_WRAP, G_TX_NOMASK, G_TX_NOMASK, G_TX_NOLOD, G_TX_NOLOD);
+#else
                 gDPLoadTextureBlock(OVERLAY_DISP++, GetResourceDataByName("__OTR__textures/parameter_static/gDPad", false),
                                     G_IM_FMT_IA, G_IM_SIZ_16b, 32, 32, 0, G_TX_NOMIRROR | G_TX_WRAP,
                                     G_TX_NOMIRROR | G_TX_WRAP, G_TX_NOMASK, G_TX_NOMASK, G_TX_NOLOD, G_TX_NOLOD);
+#endif
                 gSPWideTextureRectangle(OVERLAY_DISP++, DpadPosX << 2, DpadPosY << 2,
                                         (DpadPosX + 32) << 2, (DpadPosY + 32) << 2,
                                         G_TX_RENDERTILE, 0, 0, (1 << 10), (1 << 10));
