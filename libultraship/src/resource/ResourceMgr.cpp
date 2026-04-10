@@ -50,6 +50,33 @@ std::shared_ptr<OtrFile> ResourceMgr::LoadFileProcess(const std::string& fileToL
     return file;
 }
 
+std::shared_ptr<Resource> ResourceMgr::LoadResourceProcessFromCStr(const char *fileToLoad, uint64_t hash) {
+    if (!hash) {
+        if (OtrSignatureCheck(fileToLoad)) {
+            fileToLoad = &fileToLoad[7];
+        }
+        
+        hash = XXH3_64bits(fileToLoad, strlen(fileToLoad));
+        auto cacheCheck = GetCachedResource(hash);
+        if (cacheCheck != nullptr) {
+            return cacheCheck;
+        }
+    }
+
+    auto file = LoadFileProcess(fileToLoad);
+    auto resource = GetResourceLoader()->LoadResource(file);
+    
+    mResourceCache[hash] = resource;
+
+    if (resource != nullptr) {
+        SPDLOG_TRACE("Loaded Resource {} on ResourceMgr", fileToLoad);
+    } else {
+        SPDLOG_WARN("Resource load FAILED {} on ResourceMgr", fileToLoad);
+    }
+
+    return resource;
+}
+
 std::shared_ptr<Resource> ResourceMgr::LoadResourceProcess(const std::string& fileToLoad, uint64_t hash) {
     if (!hash) {
         if (OtrSignatureCheck(fileToLoad.c_str())) {

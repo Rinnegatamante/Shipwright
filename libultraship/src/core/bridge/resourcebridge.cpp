@@ -5,8 +5,10 @@
 #include <algorithm>
 #include <StrHash64.h>
 
+#include <vitasdk.h>
+
 std::shared_ptr<Ship::Resource> LoadResource(const char* name, bool now) {
-    return Ship::Window::GetInstance()->GetResourceManager()->LoadResourceProcess(name);
+	return Ship::Window::GetInstance()->GetResourceManager()->LoadResourceProcessFromCStr(name);
 }
 
 std::shared_ptr<Ship::Resource> LoadResource(uint64_t crc, bool now) {

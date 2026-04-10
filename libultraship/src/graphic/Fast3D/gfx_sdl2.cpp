@@ -462,7 +462,7 @@ static void gfx_sdl_onkeyup(int scancode) {
 
 static void gfx_sdl_handle_events(void) {
 #ifdef __vita__
-	static uint32_t oldpad;
+	static uint32_t oldpad = 0;
 	SceCtrlData pad;
 	sceCtrlPeekBufferPositive(0, &pad, 1);
 	#define IS_PRESSED(x) ((pad.buttons & x) && !(oldpad & x))
@@ -583,8 +583,7 @@ static inline void sync_framerate_with_timer(void) {
 
 static void gfx_sdl_swap_buffers_begin(void) {
     sync_framerate_with_timer();
-	vglSwapBuffers(GL_FALSE);
-    //SDL_GL_SwapWindow(wnd);
+	SDL_GL_SwapWindow(wnd);
 }
 
 static void gfx_sdl_swap_buffers_end(void) {

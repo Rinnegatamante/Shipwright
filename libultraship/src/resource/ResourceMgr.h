@@ -38,6 +38,7 @@ class ResourceMgr {
 	std::shared_ptr<Resource> GetCachedResource(uint64_t hash);
     std::shared_ptr<Resource> LoadResource(const std::string& filePath);
     std::shared_ptr<Resource> LoadResourceProcess(const std::string& fileToLoad, uint64_t hash = 0);
+	std::shared_ptr<Resource> LoadResourceProcessFromCStr(const char *fileToLoad, uint64_t hash = 0);
     size_t UnloadResource(const std::string& filePath);
     void UnloadAllResources();
     std::shared_ptr<Resource> LoadResourceAsync(const std::string& filePath);
