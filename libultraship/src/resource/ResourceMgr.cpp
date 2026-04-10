@@ -110,8 +110,6 @@ std::shared_ptr<Resource> ResourceMgr::LoadResource(const std::string& filePath)
 }
 
 std::shared_ptr<Resource> ResourceMgr::GetCachedResource(uint64_t hash) {
-    //const std::lock_guard<std::mutex> lock(mMutex);
-
     auto resCacheFind = mResourceCache.find(hash);
 
     if (resCacheFind == mResourceCache.end()) {
@@ -130,8 +128,6 @@ std::shared_ptr<Resource> ResourceMgr::GetCachedResource(uint64_t hash) {
 }
 
 std::shared_ptr<Resource> ResourceMgr::GetCachedResource(const std::string& filePath) {
-    //const std::lock_guard<std::mutex> lock(mMutex);
-
     auto resCacheFind = mResourceCache.find(XXH3_64bits(filePath.c_str(), filePath.size()));
 
     if (resCacheFind == mResourceCache.end()) {

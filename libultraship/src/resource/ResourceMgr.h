@@ -58,6 +58,5 @@ class ResourceMgr {
     std::unordered_map<uint64_t, std::shared_ptr<Resource>> mResourceCache;
     std::shared_ptr<ResourceLoader> mResourceLoader;
     std::shared_ptr<Archive> mArchive;
-    std::mutex mMutex;
 };
 } // namespace Ship
