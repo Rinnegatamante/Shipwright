@@ -1,3 +1,9 @@
+## vitaGL flags
+
+HAVE_PTHREAD=1 STORE_DEPTH_STENCIL=1 NO_DEBUG=1 CIRCULAR_VERTEX_POOL=2
+
+# Original Readme
+
 # Welcome to the Ship of Harkinian!
 
 A PC port of OoT allowing you to enjoy the game with modern controls, widescreen, high-resolution, gyroscopy and other great features! Setup is simple, let's get started!
