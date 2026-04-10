@@ -33,7 +33,6 @@ class ResourceMgr {
     std::shared_ptr<ResourceLoader> GetResourceLoader();
     std::vector<uint32_t> GetGameVersions();
     void PushGameVersion(uint32_t newGameVersion);
-    std::shared_future<std::shared_ptr<OtrFile>> LoadFileAsync(const std::string& filePath);
     std::shared_ptr<OtrFile> LoadFile(const std::string& filePath);
     std::shared_ptr<Resource> GetCachedResource(const std::string& filePath);
 	std::shared_ptr<Resource> GetCachedResource(uint64_t hash);
@@ -59,7 +58,6 @@ class ResourceMgr {
     std::unordered_map<uint64_t, std::shared_ptr<Resource>> mResourceCache;
     std::shared_ptr<ResourceLoader> mResourceLoader;
     std::shared_ptr<Archive> mArchive;
-    std::shared_ptr<BS::thread_pool> mThreadPool;
     std::mutex mMutex;
 };
 } // namespace Ship

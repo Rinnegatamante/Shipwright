@@ -23,19 +23,6 @@ ResourceMgr::ResourceMgr(std::shared_ptr<Window> context, const std::string& mai
     : mContext(context) {
     mResourceLoader = std::make_shared<ResourceLoader>(context);
     mArchive = std::make_shared<Archive>(mainPath, patchesPath, validHashes, false);
-#ifndef __vita__
-#if defined(__SWITCH__) || defined(__WIIU__)
-    size_t threadCount = 1;
-#else
-    size_t threadCount = std::min(1U, std::thread::hardware_concurrency() - 1);
-#endif
-    mThreadPool = std::make_shared<BS::thread_pool>(threadCount);
-
-    if (!DidLoadSuccessfully()) {
-        // Nothing ever unpauses the thread pool since nothing will ever try to load the archive again.
-        mThreadPool->pause();
-    }
-#endif
 }
 
 ResourceMgr::ResourceMgr(std::shared_ptr<Window> context, const std::vector<std::string>& otrFiles,
@@ -43,18 +30,6 @@ ResourceMgr::ResourceMgr(std::shared_ptr<Window> context, const std::vector<std:
     : mContext(context) {
     mResourceLoader = std::make_shared<ResourceLoader>(context);
     mArchive = std::make_shared<Archive>(otrFiles, validHashes, false);
-#ifndef __vita__
-#if defined(__SWITCH__) || defined(__WIIU__)
-    size_t threadCount = 1;
-#else
-    size_t threadCount = std::min(1U, std::thread::hardware_concurrency() - 1);
-#endif
-    mThreadPool = std::make_shared<BS::thread_pool>(threadCount);
-    if (!DidLoadSuccessfully()) {
-        // Nothing ever unpauses the thread pool since nothing will ever try to load the archive again.
-        mThreadPool->pause();
-    }
-#endif
 }
 
 ResourceMgr::~ResourceMgr() {
@@ -112,16 +87,8 @@ void ResourceMgr::PushGameVersion(uint32_t newGameVersion) {
     mArchive->PushGameVersion(newGameVersion);
 }
 
-std::shared_future<std::shared_ptr<OtrFile>> ResourceMgr::LoadFileAsync(const std::string& filePath) {
-    return mThreadPool->submit(&ResourceMgr::LoadFileProcess, this, filePath).share();
-}
-
 std::shared_ptr<OtrFile> ResourceMgr::LoadFile(const std::string& filePath) {
-#ifndef __vita__
-    return LoadFileAsync(filePath).get();
-#else
 	return LoadFileProcess(filePath);
-#endif
 }
 
 std::shared_ptr<Resource> ResourceMgr::LoadResourceAsync(const std::string& filePath) {
@@ -185,42 +152,16 @@ std::shared_ptr<Resource> ResourceMgr::GetCachedResource(const std::string& file
 
 std::shared_ptr<std::vector<std::shared_ptr<Resource>>>
 ResourceMgr::LoadDirectoryAsync(const std::string& searchMask) {
-#ifdef __vita__
     auto fileList = ListFiles(searchMask);
     auto loadedList = std::make_shared<std::vector<std::shared_ptr<Resource>>>();
     for (size_t i = 0; i < fileList->size(); i++) {
         loadedList->push_back(LoadResourceAsync(fileList->operator[](i)));
     }
     return loadedList;
-#else
-    auto loadedList = std::make_shared<std::vector<std::shared_future<std::shared_ptr<Resource>>>>();
-    auto fileList = ListFiles(searchMask);
-    loadedList->reserve(fileList->size());
-
-    for (size_t i = 0; i < fileList->size(); i++) {
-        auto fileName = std::string(fileList->operator[](i));
-        auto future = LoadResourceAsync(fileName);
-        loadedList->push_back(future);
-    }
-#endif
-    return loadedList;
 }
 
 std::shared_ptr<std::vector<std::shared_ptr<Resource>>> ResourceMgr::LoadDirectory(const std::string& searchMask) {
-#ifdef __vita__
     return LoadDirectoryAsync(searchMask);
-#else
-    auto futureList = LoadDirectoryAsync(searchMask);
-    auto loadedList = std::make_shared<std::vector<std::shared_ptr<Resource>>>();
-
-    for (size_t i = 0; i < futureList->size(); i++) {
-        const auto future = futureList->at(i);
-        const auto resource = future.get();
-        loadedList->push_back(resource);
-    }
-
-    return loadedList;
-#endif
 }
 
 size_t ResourceMgr::DirtyDirectory(const std::string& searchMask) {
@@ -291,12 +232,7 @@ void ResourceMgr::UnloadAllResources() {
 }
 
 bool ResourceMgr::OtrSignatureCheck(const char* fileName) {
-#ifdef __vita__
 	return fileName[0] == '_';
-#else
-    return fileName[0] == '_' && fileName[1] == '_' && fileName[2] == 'O' && fileName[3] == 'T' && fileName[4] == 'R' &&
-           fileName[5] == '_' && fileName[6] == '_';
-#endif
 }
 
 } // namespace Ship

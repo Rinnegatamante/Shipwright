@@ -6,19 +6,18 @@
 #include <StrHash64.h>
 
 std::shared_ptr<Ship::Resource> LoadResource(const char* name, bool now) {
-    return now ? Ship::Window::GetInstance()->GetResourceManager()->LoadResourceProcess(name)
-               : Ship::Window::GetInstance()->GetResourceManager()->LoadResource(name);
+    return Ship::Window::GetInstance()->GetResourceManager()->LoadResourceProcess(name);
 }
 
 std::shared_ptr<Ship::Resource> LoadResource(uint64_t crc, bool now) {
-    auto name = GetResourceNameByCrc(crc);
+    auto name = Ship::Window::GetInstance()->GetResourceManager()->HashToString(crc);
 
-    if (name == nullptr || strlen(name) == 0) {
+    if (name == nullptr) {
         SPDLOG_TRACE("LoadResource: Unknown crc {}\n", crc);
         return nullptr;
     }
 
-    return LoadResource(name, now);
+    return LoadResource(name->c_str(), now);
 }
 
 extern "C" {
