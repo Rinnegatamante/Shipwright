@@ -51,18 +51,17 @@ std::shared_ptr<OtrFile> ResourceMgr::LoadFileProcess(const std::string& fileToL
 }
 
 std::shared_ptr<Resource> ResourceMgr::LoadResourceProcess(const std::string& fileToLoad, uint64_t hash) {
-    if (OtrSignatureCheck(fileToLoad.c_str())) {
-        auto newFilePath = fileToLoad.substr(7);
-        return LoadResourceProcess(newFilePath, hash);
-    }
-
-    // While waiting in the queue, another thread could have loaded the resource.
-    // In a last attempt to avoid doing work that will be discarded, let's check if the cached version exists.
-	if (!hash)
-		hash = XXH3_64bits(fileToLoad.c_str(), fileToLoad.size());
-    auto cacheCheck = GetCachedResource(hash);
-    if (cacheCheck != nullptr) {
-        return cacheCheck;
+    if (!hash) {
+        if (OtrSignatureCheck(fileToLoad.c_str())) {
+            auto newFilePath = fileToLoad.substr(7);
+            return LoadResourceProcess(newFilePath, hash);
+        }
+        
+        hash = XXH3_64bits(fileToLoad.c_str(), fileToLoad.size());
+        auto cacheCheck = GetCachedResource(hash);
+        if (cacheCheck != nullptr) {
+            return cacheCheck;
+        }
     }
 
     auto file = LoadFileProcess(fileToLoad);
@@ -88,7 +87,7 @@ void ResourceMgr::PushGameVersion(uint32_t newGameVersion) {
 }
 
 std::shared_ptr<OtrFile> ResourceMgr::LoadFile(const std::string& filePath) {
-	return LoadFileProcess(filePath);
+    return LoadFileProcess(filePath);
 }
 
 std::shared_ptr<Resource> ResourceMgr::LoadResourceAsync(const std::string& filePath) {
@@ -97,7 +96,7 @@ std::shared_ptr<Resource> ResourceMgr::LoadResourceAsync(const std::string& file
         return LoadResourceAsync(newFilePath);
     }
 
-	uint64_t hash = XXH3_64bits(filePath.c_str(), filePath.size());
+    uint64_t hash = XXH3_64bits(filePath.c_str(), filePath.size());
     auto cacheCheck = GetCachedResource(hash);
     if (cacheCheck) {
         return cacheCheck;
@@ -232,7 +231,7 @@ void ResourceMgr::UnloadAllResources() {
 }
 
 bool ResourceMgr::OtrSignatureCheck(const char* fileName) {
-	return fileName[0] == '_';
+    return fileName[0] == '_';
 }
 
 } // namespace Ship
