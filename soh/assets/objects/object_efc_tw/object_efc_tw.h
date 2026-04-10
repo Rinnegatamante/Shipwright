@@ -1,18 +1,37 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgTimeWarpSkel "__OTR__objects/object_efc_tw/gTimeWarpSkel"
-static const ALIGN_ASSET(2) char gTimeWarpSkel[] = dgTimeWarpSkel;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTimeWarpSkel[] = dgTimeWarpSkel;
+#else
+static const char gTimeWarpSkel[] __attribute__((aligned (2))) = dgTimeWarpSkel;
+#endif
+            
 #define dgTimeWarpAnim "__OTR__objects/object_efc_tw/gTimeWarpAnim"
-static const ALIGN_ASSET(2) char gTimeWarpAnim[] = dgTimeWarpAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTimeWarpAnim[] = dgTimeWarpAnim;
+#else
+static const char gTimeWarpAnim[] __attribute__((aligned (2))) = dgTimeWarpAnim;
+#endif
+            
 #define dgTimeWarpVtx "__OTR__objects/object_efc_tw/gTimeWarpVtx"
-static const ALIGN_ASSET(2) char gTimeWarpVtx[] = dgTimeWarpVtx;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTimeWarpVtx[] = dgTimeWarpVtx;
+#else
+static const char gTimeWarpVtx[] __attribute__((aligned (2))) = dgTimeWarpVtx;
+#endif
+            
 #define dgTimeWarpDL "__OTR__objects/object_efc_tw/gTimeWarpDL"
-static const ALIGN_ASSET(2) char gTimeWarpDL[] = dgTimeWarpDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTimeWarpDL[] = dgTimeWarpDL;
+#else
+static const char gTimeWarpDL[] __attribute__((aligned (2))) = dgTimeWarpDL;
+#endif
+            
 #define dgTimeWarpTex "__OTR__objects/object_efc_tw/gTimeWarpTex"
-static const ALIGN_ASSET(2) char gTimeWarpTex[] = dgTimeWarpTex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gTimeWarpTex[] = dgTimeWarpTex;
+#else
+static const char gTimeWarpTex[] __attribute__((aligned (2))) = dgTimeWarpTex;
+#endif
+            
+

@@ -1,30 +1,65 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgTailpasaranTailSegmentDL "__OTR__objects/object_tp/gTailpasaranTailSegmentDL"
-static const ALIGN_ASSET(2) char gTailpasaranTailSegmentDL[] = dgTailpasaranTailSegmentDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTailpasaranTailSegmentDL[] = dgTailpasaranTailSegmentDL;
+#else
+static const char gTailpasaranTailSegmentDL[] __attribute__((aligned (2))) = dgTailpasaranTailSegmentDL;
+#endif
+            
 #define dgTailpasaranHeadClawDL "__OTR__objects/object_tp/gTailpasaranHeadClawDL"
-static const ALIGN_ASSET(2) char gTailpasaranHeadClawDL[] = dgTailpasaranHeadClawDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTailpasaranHeadClawDL[] = dgTailpasaranHeadClawDL;
+#else
+static const char gTailpasaranHeadClawDL[] __attribute__((aligned (2))) = dgTailpasaranHeadClawDL;
+#endif
+            
 #define dgTailpasaranHeadMouthpartsDL "__OTR__objects/object_tp/gTailpasaranHeadMouthpartsDL"
-static const ALIGN_ASSET(2) char gTailpasaranHeadMouthpartsDL[] = dgTailpasaranHeadMouthpartsDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTailpasaranHeadMouthpartsDL[] = dgTailpasaranHeadMouthpartsDL;
+#else
+static const char gTailpasaranHeadMouthpartsDL[] __attribute__((aligned (2))) = dgTailpasaranHeadMouthpartsDL;
+#endif
+            
 #define dgTailpasaranHeadDL "__OTR__objects/object_tp/gTailpasaranHeadDL"
-static const ALIGN_ASSET(2) char gTailpasaranHeadDL[] = dgTailpasaranHeadDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTailpasaranHeadDL[] = dgTailpasaranHeadDL;
+#else
+static const char gTailpasaranHeadDL[] __attribute__((aligned (2))) = dgTailpasaranHeadDL;
+#endif
+            
 #define dgTailpasaranHeadRearTex "__OTR__objects/object_tp/gTailpasaranHeadRearTex"
-static const ALIGN_ASSET(2) char gTailpasaranHeadRearTex[] = dgTailpasaranHeadRearTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTailpasaranHeadRearTex[] = dgTailpasaranHeadRearTex;
+#else
+static const char gTailpasaranHeadRearTex[] __attribute__((aligned (2))) = dgTailpasaranHeadRearTex;
+#endif
+            
 #define dgTailpasaranHeadClawBaseTex "__OTR__objects/object_tp/gTailpasaranHeadClawBaseTex"
-static const ALIGN_ASSET(2) char gTailpasaranHeadClawBaseTex[] = dgTailpasaranHeadClawBaseTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTailpasaranHeadClawBaseTex[] = dgTailpasaranHeadClawBaseTex;
+#else
+static const char gTailpasaranHeadClawBaseTex[] __attribute__((aligned (2))) = dgTailpasaranHeadClawBaseTex;
+#endif
+            
 #define dgTailpasaranHeadClawTex "__OTR__objects/object_tp/gTailpasaranHeadClawTex"
-static const ALIGN_ASSET(2) char gTailpasaranHeadClawTex[] = dgTailpasaranHeadClawTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTailpasaranHeadClawTex[] = dgTailpasaranHeadClawTex;
+#else
+static const char gTailpasaranHeadClawTex[] __attribute__((aligned (2))) = dgTailpasaranHeadClawTex;
+#endif
+            
 #define dgTailpasaranTailSegmentTex "__OTR__objects/object_tp/gTailpasaranTailSegmentTex"
-static const ALIGN_ASSET(2) char gTailpasaranTailSegmentTex[] = dgTailpasaranTailSegmentTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTailpasaranTailSegmentTex[] = dgTailpasaranTailSegmentTex;
+#else
+static const char gTailpasaranTailSegmentTex[] __attribute__((aligned (2))) = dgTailpasaranTailSegmentTex;
+#endif
+            
 #define dgTailpasaranHeadMouthpartsTex "__OTR__objects/object_tp/gTailpasaranHeadMouthpartsTex"
-static const ALIGN_ASSET(2) char gTailpasaranHeadMouthpartsTex[] = dgTailpasaranHeadMouthpartsTex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gTailpasaranHeadMouthpartsTex[] = dgTailpasaranHeadMouthpartsTex;
+#else
+static const char gTailpasaranHeadMouthpartsTex[] __attribute__((aligned (2))) = dgTailpasaranHeadMouthpartsTex;
+#endif
+            
+

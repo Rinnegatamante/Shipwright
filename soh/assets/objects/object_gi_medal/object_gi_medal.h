@@ -1,24 +1,51 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgGiForestMedallionFaceDL "__OTR__objects/object_gi_medal/gGiForestMedallionFaceDL"
-static const ALIGN_ASSET(2) char gGiForestMedallionFaceDL[] = dgGiForestMedallionFaceDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gGiForestMedallionFaceDL[] = dgGiForestMedallionFaceDL;
+#else
+static const char gGiForestMedallionFaceDL[] __attribute__((aligned (2))) = dgGiForestMedallionFaceDL;
+#endif
+            
 #define dgGiMedallionDL "__OTR__objects/object_gi_medal/gGiMedallionDL"
-static const ALIGN_ASSET(2) char gGiMedallionDL[] = dgGiMedallionDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gGiMedallionDL[] = dgGiMedallionDL;
+#else
+static const char gGiMedallionDL[] __attribute__((aligned (2))) = dgGiMedallionDL;
+#endif
+            
 #define dgGiFireMedallionFaceDL "__OTR__objects/object_gi_medal/gGiFireMedallionFaceDL"
-static const ALIGN_ASSET(2) char gGiFireMedallionFaceDL[] = dgGiFireMedallionFaceDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gGiFireMedallionFaceDL[] = dgGiFireMedallionFaceDL;
+#else
+static const char gGiFireMedallionFaceDL[] __attribute__((aligned (2))) = dgGiFireMedallionFaceDL;
+#endif
+            
 #define dgGiWaterMedallionFaceDL "__OTR__objects/object_gi_medal/gGiWaterMedallionFaceDL"
-static const ALIGN_ASSET(2) char gGiWaterMedallionFaceDL[] = dgGiWaterMedallionFaceDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gGiWaterMedallionFaceDL[] = dgGiWaterMedallionFaceDL;
+#else
+static const char gGiWaterMedallionFaceDL[] __attribute__((aligned (2))) = dgGiWaterMedallionFaceDL;
+#endif
+            
 #define dgGiSpiritMedallionFaceDL "__OTR__objects/object_gi_medal/gGiSpiritMedallionFaceDL"
-static const ALIGN_ASSET(2) char gGiSpiritMedallionFaceDL[] = dgGiSpiritMedallionFaceDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gGiSpiritMedallionFaceDL[] = dgGiSpiritMedallionFaceDL;
+#else
+static const char gGiSpiritMedallionFaceDL[] __attribute__((aligned (2))) = dgGiSpiritMedallionFaceDL;
+#endif
+            
 #define dgGiShadowMedallionFaceDL "__OTR__objects/object_gi_medal/gGiShadowMedallionFaceDL"
-static const ALIGN_ASSET(2) char gGiShadowMedallionFaceDL[] = dgGiShadowMedallionFaceDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gGiShadowMedallionFaceDL[] = dgGiShadowMedallionFaceDL;
+#else
+static const char gGiShadowMedallionFaceDL[] __attribute__((aligned (2))) = dgGiShadowMedallionFaceDL;
+#endif
+            
 #define dgGiLightMedallionFaceDL "__OTR__objects/object_gi_medal/gGiLightMedallionFaceDL"
-static const ALIGN_ASSET(2) char gGiLightMedallionFaceDL[] = dgGiLightMedallionFaceDL;
+#ifdef _WIN32
+static const __declspec(align(2)) char gGiLightMedallionFaceDL[] = dgGiLightMedallionFaceDL;
+#else
+static const char gGiLightMedallionFaceDL[] __attribute__((aligned (2))) = dgGiLightMedallionFaceDL;
+#endif
+            
+

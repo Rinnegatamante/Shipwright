@@ -1,27 +1,58 @@
 #pragma once
+#define dBmori1_room_6DL_0065C0 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6DL_0065C0"
+#ifdef _WIN32
+static const __declspec(align(2)) char Bmori1_room_6DL_0065C0[] = dBmori1_room_6DL_0065C0;
+#else
+static const char Bmori1_room_6DL_0065C0[] __attribute__((aligned (2))) = dBmori1_room_6DL_0065C0;
+#endif
+            
+#define dBmori1_room_6Tex_006E20 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6Tex_006E20"
+#ifdef _WIN32
+static const __declspec(align(2)) char Bmori1_room_6Tex_006E20[] = dBmori1_room_6Tex_006E20;
+#else
+static const char Bmori1_room_6Tex_006E20[] __attribute__((aligned (2))) = dBmori1_room_6Tex_006E20;
+#endif
+            
+#define dBmori1_room_6Tex_008220 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6Tex_008220"
+#ifdef _WIN32
+static const __declspec(align(2)) char Bmori1_room_6Tex_008220[] = dBmori1_room_6Tex_008220;
+#else
+static const char Bmori1_room_6Tex_008220[] __attribute__((aligned (2))) = dBmori1_room_6Tex_008220;
+#endif
+            
+#define dBmori1_room_6Tex_008A20 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6Tex_008A20"
+#ifdef _WIN32
+static const __declspec(align(2)) char Bmori1_room_6Tex_008A20[] = dBmori1_room_6Tex_008A20;
+#else
+static const char Bmori1_room_6Tex_008A20[] __attribute__((aligned (2))) = dBmori1_room_6Tex_008A20;
+#endif
+            
+#define dBmori1_room_6Tex_007A20 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6Tex_007A20"
+#ifdef _WIN32
+static const __declspec(align(2)) char Bmori1_room_6Tex_007A20[] = dBmori1_room_6Tex_007A20;
+#else
+static const char Bmori1_room_6Tex_007A20[] __attribute__((aligned (2))) = dBmori1_room_6Tex_007A20;
+#endif
+            
+#define dBmori1_room_6Tex_008C20 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6Tex_008C20"
+#ifdef _WIN32
+static const __declspec(align(2)) char Bmori1_room_6Tex_008C20[] = dBmori1_room_6Tex_008C20;
+#else
+static const char Bmori1_room_6Tex_008C20[] __attribute__((aligned (2))) = dBmori1_room_6Tex_008C20;
+#endif
+            
+#define dBmori1_room_6Tex_006620 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6Tex_006620"
+#ifdef _WIN32
+static const __declspec(align(2)) char Bmori1_room_6Tex_006620[] = dBmori1_room_6Tex_006620;
+#else
+static const char Bmori1_room_6Tex_006620[] __attribute__((aligned (2))) = dBmori1_room_6Tex_006620;
+#endif
+            
+#define dBmori1_room_6Tex_007620 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6Tex_007620"
+#ifdef _WIN32
+static const __declspec(align(2)) char Bmori1_room_6Tex_007620[] = dBmori1_room_6Tex_007620;
+#else
+static const char Bmori1_room_6Tex_007620[] __attribute__((aligned (2))) = dBmori1_room_6Tex_007620;
+#endif
+            
 
-#include "align_asset_macro.h"
-
-#define dBmori1_room_6DL_0065D0 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6DL_0065D0"
-static const ALIGN_ASSET(2) char Bmori1_room_6DL_0065D0[] = dBmori1_room_6DL_0065D0;
-
-#define dBmori1_room_6Tex_006E30 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6Tex_006E30"
-static const ALIGN_ASSET(2) char Bmori1_room_6Tex_006E30[] = dBmori1_room_6Tex_006E30;
-
-#define dBmori1_room_6Tex_008230 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6Tex_008230"
-static const ALIGN_ASSET(2) char Bmori1_room_6Tex_008230[] = dBmori1_room_6Tex_008230;
-
-#define dBmori1_room_6Tex_008A30 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6Tex_008A30"
-static const ALIGN_ASSET(2) char Bmori1_room_6Tex_008A30[] = dBmori1_room_6Tex_008A30;
-
-#define dBmori1_room_6Tex_007A30 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6Tex_007A30"
-static const ALIGN_ASSET(2) char Bmori1_room_6Tex_007A30[] = dBmori1_room_6Tex_007A30;
-
-#define dBmori1_room_6Tex_008C30 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6Tex_008C30"
-static const ALIGN_ASSET(2) char Bmori1_room_6Tex_008C30[] = dBmori1_room_6Tex_008C30;
-
-#define dBmori1_room_6Tex_006630 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6Tex_006630"
-static const ALIGN_ASSET(2) char Bmori1_room_6Tex_006630[] = dBmori1_room_6Tex_006630;
-
-#define dBmori1_room_6Tex_007630 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_6Tex_007630"
-static const ALIGN_ASSET(2) char Bmori1_room_6Tex_007630[] = dBmori1_room_6Tex_007630;

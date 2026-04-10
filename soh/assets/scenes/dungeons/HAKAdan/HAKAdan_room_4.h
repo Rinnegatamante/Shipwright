@@ -1,15 +1,16 @@
 #pragma once
+#define dHAKAdan_room_4DL_001418 "__OTR__scenes/nonmq/HAKAdan_scene/HAKAdan_room_4DL_001418"
+#ifdef _WIN32
+static const __declspec(align(2)) char HAKAdan_room_4DL_001418[] = dHAKAdan_room_4DL_001418;
+#else
+static const char HAKAdan_room_4DL_001418[] __attribute__((aligned (2))) = dHAKAdan_room_4DL_001418;
+#endif
+            
+#define dHAKAdan_room_4Tex_001438 "__OTR__scenes/nonmq/HAKAdan_scene/HAKAdan_room_4Tex_001438"
+#ifdef _WIN32
+static const __declspec(align(2)) char HAKAdan_room_4Tex_001438[] = dHAKAdan_room_4Tex_001438;
+#else
+static const char HAKAdan_room_4Tex_001438[] __attribute__((aligned (2))) = dHAKAdan_room_4Tex_001438;
+#endif
+            
 
-#include "align_asset_macro.h"
-
-#define dHAKAdan_room_4DL_001230 "__OTR__scenes/nonmq/HAKAdan_scene/HAKAdan_room_4DL_001230"
-static const ALIGN_ASSET(2) char HAKAdan_room_4DL_001230[] = dHAKAdan_room_4DL_001230;
-
-#define dHAKAdan_room_4Tex_001458 "__OTR__scenes/nonmq/HAKAdan_scene/HAKAdan_room_4Tex_001458"
-static const ALIGN_ASSET(2) char HAKAdan_room_4Tex_001458[] = dHAKAdan_room_4Tex_001458;
-
-#define dHAKAdan_room_4DL_000280 "__OTR__scenes/nonmq/HAKAdan_scene/HAKAdan_room_4DL_000280"
-static const ALIGN_ASSET(2) char HAKAdan_room_4DL_000280[] = dHAKAdan_room_4DL_000280;
-
-#define dHAKAdan_room_4DL_000858 "__OTR__scenes/nonmq/HAKAdan_scene/HAKAdan_room_4DL_000858"
-static const ALIGN_ASSET(2) char HAKAdan_room_4DL_000858[] = dHAKAdan_room_4DL_000858;

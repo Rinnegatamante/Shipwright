@@ -1,69 +1,156 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgChuGirlSkel "__OTR__objects/object_bg/gChuGirlSkel"
-static const ALIGN_ASSET(2) char gChuGirlSkel[] = dgChuGirlSkel;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlSkel[] = dgChuGirlSkel;
+#else
+static const char gChuGirlSkel[] __attribute__((aligned (2))) = dgChuGirlSkel;
+#endif
+            
 #define dgChuGirlWakeUpAnim "__OTR__objects/object_bg/gChuGirlWakeUpAnim"
-static const ALIGN_ASSET(2) char gChuGirlWakeUpAnim[] = dgChuGirlWakeUpAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlWakeUpAnim[] = dgChuGirlWakeUpAnim;
+#else
+static const char gChuGirlWakeUpAnim[] __attribute__((aligned (2))) = dgChuGirlWakeUpAnim;
+#endif
+            
 #define dgChuGirlNoddingOffAnim "__OTR__objects/object_bg/gChuGirlNoddingOffAnim"
-static const ALIGN_ASSET(2) char gChuGirlNoddingOffAnim[] = dgChuGirlNoddingOffAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlNoddingOffAnim[] = dgChuGirlNoddingOffAnim;
+#else
+static const char gChuGirlNoddingOffAnim[] __attribute__((aligned (2))) = dgChuGirlNoddingOffAnim;
+#endif
+            
 #define dgChuGirlLeanOverCounterAnim "__OTR__objects/object_bg/gChuGirlLeanOverCounterAnim"
-static const ALIGN_ASSET(2) char gChuGirlLeanOverCounterAnim[] = dgChuGirlLeanOverCounterAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlLeanOverCounterAnim[] = dgChuGirlLeanOverCounterAnim;
+#else
+static const char gChuGirlLeanOverCounterAnim[] __attribute__((aligned (2))) = dgChuGirlLeanOverCounterAnim;
+#endif
+            
 #define dgChuGirlWaistDL "__OTR__objects/object_bg/gChuGirlWaistDL"
-static const ALIGN_ASSET(2) char gChuGirlWaistDL[] = dgChuGirlWaistDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlWaistDL[] = dgChuGirlWaistDL;
+#else
+static const char gChuGirlWaistDL[] __attribute__((aligned (2))) = dgChuGirlWaistDL;
+#endif
+            
 #define dgChuGirlTorsoDL "__OTR__objects/object_bg/gChuGirlTorsoDL"
-static const ALIGN_ASSET(2) char gChuGirlTorsoDL[] = dgChuGirlTorsoDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlTorsoDL[] = dgChuGirlTorsoDL;
+#else
+static const char gChuGirlTorsoDL[] __attribute__((aligned (2))) = dgChuGirlTorsoDL;
+#endif
+            
 #define dgChuGirlNeckDL "__OTR__objects/object_bg/gChuGirlNeckDL"
-static const ALIGN_ASSET(2) char gChuGirlNeckDL[] = dgChuGirlNeckDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlNeckDL[] = dgChuGirlNeckDL;
+#else
+static const char gChuGirlNeckDL[] __attribute__((aligned (2))) = dgChuGirlNeckDL;
+#endif
+            
 #define dgChuGirlHeadDL "__OTR__objects/object_bg/gChuGirlHeadDL"
-static const ALIGN_ASSET(2) char gChuGirlHeadDL[] = dgChuGirlHeadDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlHeadDL[] = dgChuGirlHeadDL;
+#else
+static const char gChuGirlHeadDL[] __attribute__((aligned (2))) = dgChuGirlHeadDL;
+#endif
+            
 #define dgChuGirlLeftUpperArmDL "__OTR__objects/object_bg/gChuGirlLeftUpperArmDL"
-static const ALIGN_ASSET(2) char gChuGirlLeftUpperArmDL[] = dgChuGirlLeftUpperArmDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlLeftUpperArmDL[] = dgChuGirlLeftUpperArmDL;
+#else
+static const char gChuGirlLeftUpperArmDL[] __attribute__((aligned (2))) = dgChuGirlLeftUpperArmDL;
+#endif
+            
 #define dgChuGirlLeftForearmDL "__OTR__objects/object_bg/gChuGirlLeftForearmDL"
-static const ALIGN_ASSET(2) char gChuGirlLeftForearmDL[] = dgChuGirlLeftForearmDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlLeftForearmDL[] = dgChuGirlLeftForearmDL;
+#else
+static const char gChuGirlLeftForearmDL[] __attribute__((aligned (2))) = dgChuGirlLeftForearmDL;
+#endif
+            
 #define dgChuGirlLeftHandDL "__OTR__objects/object_bg/gChuGirlLeftHandDL"
-static const ALIGN_ASSET(2) char gChuGirlLeftHandDL[] = dgChuGirlLeftHandDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlLeftHandDL[] = dgChuGirlLeftHandDL;
+#else
+static const char gChuGirlLeftHandDL[] __attribute__((aligned (2))) = dgChuGirlLeftHandDL;
+#endif
+            
 #define dgChuGirlRightUpperArmDL "__OTR__objects/object_bg/gChuGirlRightUpperArmDL"
-static const ALIGN_ASSET(2) char gChuGirlRightUpperArmDL[] = dgChuGirlRightUpperArmDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlRightUpperArmDL[] = dgChuGirlRightUpperArmDL;
+#else
+static const char gChuGirlRightUpperArmDL[] __attribute__((aligned (2))) = dgChuGirlRightUpperArmDL;
+#endif
+            
 #define dgChuGirlRightForearmDL "__OTR__objects/object_bg/gChuGirlRightForearmDL"
-static const ALIGN_ASSET(2) char gChuGirlRightForearmDL[] = dgChuGirlRightForearmDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlRightForearmDL[] = dgChuGirlRightForearmDL;
+#else
+static const char gChuGirlRightForearmDL[] __attribute__((aligned (2))) = dgChuGirlRightForearmDL;
+#endif
+            
 #define dgChuGirlRightHandDL "__OTR__objects/object_bg/gChuGirlRightHandDL"
-static const ALIGN_ASSET(2) char gChuGirlRightHandDL[] = dgChuGirlRightHandDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlRightHandDL[] = dgChuGirlRightHandDL;
+#else
+static const char gChuGirlRightHandDL[] __attribute__((aligned (2))) = dgChuGirlRightHandDL;
+#endif
+            
 #define dgChuGirlMouthTex "__OTR__objects/object_bg/gChuGirlMouthTex"
-static const ALIGN_ASSET(2) char gChuGirlMouthTex[] = dgChuGirlMouthTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlMouthTex[] = dgChuGirlMouthTex;
+#else
+static const char gChuGirlMouthTex[] __attribute__((aligned (2))) = dgChuGirlMouthTex;
+#endif
+            
 #define dgChuGirlSkinGradientTex "__OTR__objects/object_bg/gChuGirlSkinGradientTex"
-static const ALIGN_ASSET(2) char gChuGirlSkinGradientTex[] = dgChuGirlSkinGradientTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlSkinGradientTex[] = dgChuGirlSkinGradientTex;
+#else
+static const char gChuGirlSkinGradientTex[] __attribute__((aligned (2))) = dgChuGirlSkinGradientTex;
+#endif
+            
 #define dgChuGirlSweaterTex "__OTR__objects/object_bg/gChuGirlSweaterTex"
-static const ALIGN_ASSET(2) char gChuGirlSweaterTex[] = dgChuGirlSweaterTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlSweaterTex[] = dgChuGirlSweaterTex;
+#else
+static const char gChuGirlSweaterTex[] __attribute__((aligned (2))) = dgChuGirlSweaterTex;
+#endif
+            
 #define dgChuGirlUmbEarLicusTex "__OTR__objects/object_bg/gChuGirlUmbEarLicusTex"
-static const ALIGN_ASSET(2) char gChuGirlUmbEarLicusTex[] = dgChuGirlUmbEarLicusTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlUmbEarLicusTex[] = dgChuGirlUmbEarLicusTex;
+#else
+static const char gChuGirlUmbEarLicusTex[] __attribute__((aligned (2))) = dgChuGirlUmbEarLicusTex;
+#endif
+            
 #define dgChuGirlHairTex "__OTR__objects/object_bg/gChuGirlHairTex"
-static const ALIGN_ASSET(2) char gChuGirlHairTex[] = dgChuGirlHairTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlHairTex[] = dgChuGirlHairTex;
+#else
+static const char gChuGirlHairTex[] __attribute__((aligned (2))) = dgChuGirlHairTex;
+#endif
+            
 #define dgChuGirlEyeOpenTex "__OTR__objects/object_bg/gChuGirlEyeOpenTex"
-static const ALIGN_ASSET(2) char gChuGirlEyeOpenTex[] = dgChuGirlEyeOpenTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlEyeOpenTex[] = dgChuGirlEyeOpenTex;
+#else
+static const char gChuGirlEyeOpenTex[] __attribute__((aligned (2))) = dgChuGirlEyeOpenTex;
+#endif
+            
 #define dgChuGirlEyeHalfTex "__OTR__objects/object_bg/gChuGirlEyeHalfTex"
-static const ALIGN_ASSET(2) char gChuGirlEyeHalfTex[] = dgChuGirlEyeHalfTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlEyeHalfTex[] = dgChuGirlEyeHalfTex;
+#else
+static const char gChuGirlEyeHalfTex[] __attribute__((aligned (2))) = dgChuGirlEyeHalfTex;
+#endif
+            
 #define dgChuGirlEyeClosedTex "__OTR__objects/object_bg/gChuGirlEyeClosedTex"
-static const ALIGN_ASSET(2) char gChuGirlEyeClosedTex[] = dgChuGirlEyeClosedTex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gChuGirlEyeClosedTex[] = dgChuGirlEyeClosedTex;
+#else
+static const char gChuGirlEyeClosedTex[] __attribute__((aligned (2))) = dgChuGirlEyeClosedTex;
+#endif
+            
+

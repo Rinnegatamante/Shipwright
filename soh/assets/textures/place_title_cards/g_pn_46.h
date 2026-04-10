@@ -1,12 +1,23 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgFishingPondTitleCardENGTex "__OTR__textures/g_pn_46/gFishingPondTitleCardENGTex"
-static const ALIGN_ASSET(2) char gFishingPondTitleCardENGTex[] = dgFishingPondTitleCardENGTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFishingPondTitleCardENGTex[] = dgFishingPondTitleCardENGTex;
+#else
+static const char gFishingPondTitleCardENGTex[] __attribute__((aligned (2))) = dgFishingPondTitleCardENGTex;
+#endif
+            
 #define dgFishingPondTitleCardGERTex "__OTR__textures/g_pn_46/gFishingPondTitleCardGERTex"
-static const ALIGN_ASSET(2) char gFishingPondTitleCardGERTex[] = dgFishingPondTitleCardGERTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFishingPondTitleCardGERTex[] = dgFishingPondTitleCardGERTex;
+#else
+static const char gFishingPondTitleCardGERTex[] __attribute__((aligned (2))) = dgFishingPondTitleCardGERTex;
+#endif
+            
 #define dgFishingPondTitleCardFRATex "__OTR__textures/g_pn_46/gFishingPondTitleCardFRATex"
-static const ALIGN_ASSET(2) char gFishingPondTitleCardFRATex[] = dgFishingPondTitleCardFRATex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gFishingPondTitleCardFRATex[] = dgFishingPondTitleCardFRATex;
+#else
+static const char gFishingPondTitleCardFRATex[] __attribute__((aligned (2))) = dgFishingPondTitleCardFRATex;
+#endif
+            
+

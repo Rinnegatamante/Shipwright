@@ -1,12 +1,23 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgFireTempleTitleCardENGTex "__OTR__textures/g_pn_03/gFireTempleTitleCardENGTex"
-static const ALIGN_ASSET(2) char gFireTempleTitleCardENGTex[] = dgFireTempleTitleCardENGTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFireTempleTitleCardENGTex[] = dgFireTempleTitleCardENGTex;
+#else
+static const char gFireTempleTitleCardENGTex[] __attribute__((aligned (2))) = dgFireTempleTitleCardENGTex;
+#endif
+            
 #define dgFireTempleTitleCardGERTex "__OTR__textures/g_pn_03/gFireTempleTitleCardGERTex"
-static const ALIGN_ASSET(2) char gFireTempleTitleCardGERTex[] = dgFireTempleTitleCardGERTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFireTempleTitleCardGERTex[] = dgFireTempleTitleCardGERTex;
+#else
+static const char gFireTempleTitleCardGERTex[] __attribute__((aligned (2))) = dgFireTempleTitleCardGERTex;
+#endif
+            
 #define dgFireTempleTitleCardFRATex "__OTR__textures/g_pn_03/gFireTempleTitleCardFRATex"
-static const ALIGN_ASSET(2) char gFireTempleTitleCardFRATex[] = dgFireTempleTitleCardFRATex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gFireTempleTitleCardFRATex[] = dgFireTempleTitleCardFRATex;
+#else
+static const char gFireTempleTitleCardFRATex[] __attribute__((aligned (2))) = dgFireTempleTitleCardFRATex;
+#endif
+            
+

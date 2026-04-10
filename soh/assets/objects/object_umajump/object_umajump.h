@@ -1,15 +1,30 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgJumpableHorseFenceBrickTex "__OTR__objects/object_umajump/gJumpableHorseFenceBrickTex"
-static const ALIGN_ASSET(2) char gJumpableHorseFenceBrickTex[] = dgJumpableHorseFenceBrickTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gJumpableHorseFenceBrickTex[] = dgJumpableHorseFenceBrickTex;
+#else
+static const char gJumpableHorseFenceBrickTex[] __attribute__((aligned (2))) = dgJumpableHorseFenceBrickTex;
+#endif
+            
 #define dgJumpableHorseFenceMetalBarTex "__OTR__objects/object_umajump/gJumpableHorseFenceMetalBarTex"
-static const ALIGN_ASSET(2) char gJumpableHorseFenceMetalBarTex[] = dgJumpableHorseFenceMetalBarTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gJumpableHorseFenceMetalBarTex[] = dgJumpableHorseFenceMetalBarTex;
+#else
+static const char gJumpableHorseFenceMetalBarTex[] __attribute__((aligned (2))) = dgJumpableHorseFenceMetalBarTex;
+#endif
+            
 #define dgJumpableHorseFenceDL "__OTR__objects/object_umajump/gJumpableHorseFenceDL"
-static const ALIGN_ASSET(2) char gJumpableHorseFenceDL[] = dgJumpableHorseFenceDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gJumpableHorseFenceDL[] = dgJumpableHorseFenceDL;
+#else
+static const char gJumpableHorseFenceDL[] __attribute__((aligned (2))) = dgJumpableHorseFenceDL;
+#endif
+            
 #define dgJumpableHorseFenceCol "__OTR__objects/object_umajump/gJumpableHorseFenceCol"
-static const ALIGN_ASSET(2) char gJumpableHorseFenceCol[] = dgJumpableHorseFenceCol;
+#ifdef _WIN32
+static const __declspec(align(2)) char gJumpableHorseFenceCol[] = dgJumpableHorseFenceCol;
+#else
+static const char gJumpableHorseFenceCol[] __attribute__((aligned (2))) = dgJumpableHorseFenceCol;
+#endif
+            
+

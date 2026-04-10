@@ -1,24 +1,51 @@
 #pragma once
+#define dbdan_room_0DL_002CD8 "__OTR__scenes/nonmq/bdan_scene/bdan_room_0DL_002CD8"
+#ifdef _WIN32
+static const __declspec(align(2)) char bdan_room_0DL_002CD8[] = dbdan_room_0DL_002CD8;
+#else
+static const char bdan_room_0DL_002CD8[] __attribute__((aligned (2))) = dbdan_room_0DL_002CD8;
+#endif
+            
+#define dbdan_room_0Tex_002CE8 "__OTR__scenes/nonmq/bdan_scene/bdan_room_0Tex_002CE8"
+#ifdef _WIN32
+static const __declspec(align(2)) char bdan_room_0Tex_002CE8[] = dbdan_room_0Tex_002CE8;
+#else
+static const char bdan_room_0Tex_002CE8[] __attribute__((aligned (2))) = dbdan_room_0Tex_002CE8;
+#endif
+            
+#define dbdan_room_0Tex_0030E8 "__OTR__scenes/nonmq/bdan_scene/bdan_room_0Tex_0030E8"
+#ifdef _WIN32
+static const __declspec(align(2)) char bdan_room_0Tex_0030E8[] = dbdan_room_0Tex_0030E8;
+#else
+static const char bdan_room_0Tex_0030E8[] __attribute__((aligned (2))) = dbdan_room_0Tex_0030E8;
+#endif
+            
+#define dbdan_room_0Tex_0038E8 "__OTR__scenes/nonmq/bdan_scene/bdan_room_0Tex_0038E8"
+#ifdef _WIN32
+static const __declspec(align(2)) char bdan_room_0Tex_0038E8[] = dbdan_room_0Tex_0038E8;
+#else
+static const char bdan_room_0Tex_0038E8[] __attribute__((aligned (2))) = dbdan_room_0Tex_0038E8;
+#endif
+            
+#define dbdan_room_0DL_004060 "__OTR__scenes/nonmq/bdan_scene/bdan_room_0DL_004060"
+#ifdef _WIN32
+static const __declspec(align(2)) char bdan_room_0DL_004060[] = dbdan_room_0DL_004060;
+#else
+static const char bdan_room_0DL_004060[] __attribute__((aligned (2))) = dbdan_room_0DL_004060;
+#endif
+            
+#define dbdan_room_0Set_0000E0DL_002CD8 "__OTR__scenes/nonmq/bdan_scene/bdan_room_0Set_0000E0DL_002CD8"
+#ifdef _WIN32
+static const __declspec(align(2)) char bdan_room_0Set_0000E0DL_002CD8[] = dbdan_room_0Set_0000E0DL_002CD8;
+#else
+static const char bdan_room_0Set_0000E0DL_002CD8[] __attribute__((aligned (2))) = dbdan_room_0Set_0000E0DL_002CD8;
+#endif
+            
+#define dbdan_room_0Set_0000E0DL_004060 "__OTR__scenes/nonmq/bdan_scene/bdan_room_0Set_0000E0DL_004060"
+#ifdef _WIN32
+static const __declspec(align(2)) char bdan_room_0Set_0000E0DL_004060[] = dbdan_room_0Set_0000E0DL_004060;
+#else
+static const char bdan_room_0Set_0000E0DL_004060[] __attribute__((aligned (2))) = dbdan_room_0Set_0000E0DL_004060;
+#endif
+            
 
-#include "align_asset_macro.h"
-
-#define dbdan_room_0DL_002DA8 "__OTR__scenes/nonmq/bdan_scene/bdan_room_0DL_002DA8"
-static const ALIGN_ASSET(2) char bdan_room_0DL_002DA8[] = dbdan_room_0DL_002DA8;
-
-#define dbdan_room_0Tex_002DB8 "__OTR__scenes/nonmq/bdan_scene/bdan_room_0Tex_002DB8"
-static const ALIGN_ASSET(2) char bdan_room_0Tex_002DB8[] = dbdan_room_0Tex_002DB8;
-
-#define dbdan_room_0Tex_0031B8 "__OTR__scenes/nonmq/bdan_scene/bdan_room_0Tex_0031B8"
-static const ALIGN_ASSET(2) char bdan_room_0Tex_0031B8[] = dbdan_room_0Tex_0031B8;
-
-#define dbdan_room_0Tex_0039B8 "__OTR__scenes/nonmq/bdan_scene/bdan_room_0Tex_0039B8"
-static const ALIGN_ASSET(2) char bdan_room_0Tex_0039B8[] = dbdan_room_0Tex_0039B8;
-
-#define dbdan_room_0DL_004130 "__OTR__scenes/nonmq/bdan_scene/bdan_room_0DL_004130"
-static const ALIGN_ASSET(2) char bdan_room_0DL_004130[] = dbdan_room_0DL_004130;
-
-#define dbdan_room_0Set_0001B0DL_002DA8 "__OTR__scenes/nonmq/bdan_scene/bdan_room_0Set_0001B0DL_002DA8"
-static const ALIGN_ASSET(2) char bdan_room_0Set_0001B0DL_002DA8[] = dbdan_room_0Set_0001B0DL_002DA8;
-
-#define dbdan_room_0Set_0001B0DL_004130 "__OTR__scenes/nonmq/bdan_scene/bdan_room_0Set_0001B0DL_004130"
-static const ALIGN_ASSET(2) char bdan_room_0Set_0001B0DL_004130[] = dbdan_room_0Set_0001B0DL_004130;

@@ -1,0 +1,12 @@
+#ifndef GFX_SCREEN_CONFIG_H
+#define GFX_SCREEN_CONFIG_H
+
+#ifdef __vita__
+#define DESIRED_SCREEN_WIDTH 960
+#define DESIRED_SCREEN_HEIGHT 544
+#else
+#define DESIRED_SCREEN_WIDTH 640
+#define DESIRED_SCREEN_HEIGHT 480
+#endif
+
+#endif

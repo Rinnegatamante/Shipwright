@@ -1,81 +1,184 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgCarpetMerchantSkel "__OTR__objects/object_js/gCarpetMerchantSkel"
-static const ALIGN_ASSET(2) char gCarpetMerchantSkel[] = dgCarpetMerchantSkel;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantSkel[] = dgCarpetMerchantSkel;
+#else
+static const char gCarpetMerchantSkel[] __attribute__((aligned (2))) = dgCarpetMerchantSkel;
+#endif
+            
 #define dgCarpetMerchantBlanketAndLowerBodyDL "__OTR__objects/object_js/gCarpetMerchantBlanketAndLowerBodyDL"
-static const ALIGN_ASSET(2) char gCarpetMerchantBlanketAndLowerBodyDL[] = dgCarpetMerchantBlanketAndLowerBodyDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantBlanketAndLowerBodyDL[] = dgCarpetMerchantBlanketAndLowerBodyDL;
+#else
+static const char gCarpetMerchantBlanketAndLowerBodyDL[] __attribute__((aligned (2))) = dgCarpetMerchantBlanketAndLowerBodyDL;
+#endif
+            
 #define dgCarpetMerchantLowerHairDL "__OTR__objects/object_js/gCarpetMerchantLowerHairDL"
-static const ALIGN_ASSET(2) char gCarpetMerchantLowerHairDL[] = dgCarpetMerchantLowerHairDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantLowerHairDL[] = dgCarpetMerchantLowerHairDL;
+#else
+static const char gCarpetMerchantLowerHairDL[] __attribute__((aligned (2))) = dgCarpetMerchantLowerHairDL;
+#endif
+            
 #define dgCarpetMerchantUpperHairDL "__OTR__objects/object_js/gCarpetMerchantUpperHairDL"
-static const ALIGN_ASSET(2) char gCarpetMerchantUpperHairDL[] = dgCarpetMerchantUpperHairDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantUpperHairDL[] = dgCarpetMerchantUpperHairDL;
+#else
+static const char gCarpetMerchantUpperHairDL[] __attribute__((aligned (2))) = dgCarpetMerchantUpperHairDL;
+#endif
+            
 #define dgCarpetMerchantTorsoDL "__OTR__objects/object_js/gCarpetMerchantTorsoDL"
-static const ALIGN_ASSET(2) char gCarpetMerchantTorsoDL[] = dgCarpetMerchantTorsoDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantTorsoDL[] = dgCarpetMerchantTorsoDL;
+#else
+static const char gCarpetMerchantTorsoDL[] __attribute__((aligned (2))) = dgCarpetMerchantTorsoDL;
+#endif
+            
 #define dgCarpetMerchantUpperArmLeftDL "__OTR__objects/object_js/gCarpetMerchantUpperArmLeftDL"
-static const ALIGN_ASSET(2) char gCarpetMerchantUpperArmLeftDL[] = dgCarpetMerchantUpperArmLeftDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantUpperArmLeftDL[] = dgCarpetMerchantUpperArmLeftDL;
+#else
+static const char gCarpetMerchantUpperArmLeftDL[] __attribute__((aligned (2))) = dgCarpetMerchantUpperArmLeftDL;
+#endif
+            
 #define dgCarpetMerchantForearmLeftDL "__OTR__objects/object_js/gCarpetMerchantForearmLeftDL"
-static const ALIGN_ASSET(2) char gCarpetMerchantForearmLeftDL[] = dgCarpetMerchantForearmLeftDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantForearmLeftDL[] = dgCarpetMerchantForearmLeftDL;
+#else
+static const char gCarpetMerchantForearmLeftDL[] __attribute__((aligned (2))) = dgCarpetMerchantForearmLeftDL;
+#endif
+            
 #define dgCarpetMerchantLeftHandDL "__OTR__objects/object_js/gCarpetMerchantLeftHandDL"
-static const ALIGN_ASSET(2) char gCarpetMerchantLeftHandDL[] = dgCarpetMerchantLeftHandDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantLeftHandDL[] = dgCarpetMerchantLeftHandDL;
+#else
+static const char gCarpetMerchantLeftHandDL[] __attribute__((aligned (2))) = dgCarpetMerchantLeftHandDL;
+#endif
+            
 #define dgCarpetMerchantUpperArmRightDL "__OTR__objects/object_js/gCarpetMerchantUpperArmRightDL"
-static const ALIGN_ASSET(2) char gCarpetMerchantUpperArmRightDL[] = dgCarpetMerchantUpperArmRightDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantUpperArmRightDL[] = dgCarpetMerchantUpperArmRightDL;
+#else
+static const char gCarpetMerchantUpperArmRightDL[] __attribute__((aligned (2))) = dgCarpetMerchantUpperArmRightDL;
+#endif
+            
 #define dgCarpetMerchantForearmRightDL "__OTR__objects/object_js/gCarpetMerchantForearmRightDL"
-static const ALIGN_ASSET(2) char gCarpetMerchantForearmRightDL[] = dgCarpetMerchantForearmRightDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantForearmRightDL[] = dgCarpetMerchantForearmRightDL;
+#else
+static const char gCarpetMerchantForearmRightDL[] __attribute__((aligned (2))) = dgCarpetMerchantForearmRightDL;
+#endif
+            
 #define dgCarpetMerchantRightHandDL "__OTR__objects/object_js/gCarpetMerchantRightHandDL"
-static const ALIGN_ASSET(2) char gCarpetMerchantRightHandDL[] = dgCarpetMerchantRightHandDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantRightHandDL[] = dgCarpetMerchantRightHandDL;
+#else
+static const char gCarpetMerchantRightHandDL[] __attribute__((aligned (2))) = dgCarpetMerchantRightHandDL;
+#endif
+            
 #define dgCarpetMerchantHeadDL "__OTR__objects/object_js/gCarpetMerchantHeadDL"
-static const ALIGN_ASSET(2) char gCarpetMerchantHeadDL[] = dgCarpetMerchantHeadDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantHeadDL[] = dgCarpetMerchantHeadDL;
+#else
+static const char gCarpetMerchantHeadDL[] __attribute__((aligned (2))) = dgCarpetMerchantHeadDL;
+#endif
+            
 #define dgCarpetMerchantTLUT "__OTR__objects/object_js/gCarpetMerchantTLUT"
-static const ALIGN_ASSET(2) char gCarpetMerchantTLUT[] = dgCarpetMerchantTLUT;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantTLUT[] = dgCarpetMerchantTLUT;
+#else
+static const char gCarpetMerchantTLUT[] __attribute__((aligned (2))) = dgCarpetMerchantTLUT;
+#endif
+            
 #define dgCarpetMerchantPantsTex "__OTR__objects/object_js/gCarpetMerchantPantsTex"
-static const ALIGN_ASSET(2) char gCarpetMerchantPantsTex[] = dgCarpetMerchantPantsTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantPantsTex[] = dgCarpetMerchantPantsTex;
+#else
+static const char gCarpetMerchantPantsTex[] __attribute__((aligned (2))) = dgCarpetMerchantPantsTex;
+#endif
+            
 #define dgCarpetMerchantHairTex "__OTR__objects/object_js/gCarpetMerchantHairTex"
-static const ALIGN_ASSET(2) char gCarpetMerchantHairTex[] = dgCarpetMerchantHairTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantHairTex[] = dgCarpetMerchantHairTex;
+#else
+static const char gCarpetMerchantHairTex[] __attribute__((aligned (2))) = dgCarpetMerchantHairTex;
+#endif
+            
 #define dgCarpetMerchantFootTex "__OTR__objects/object_js/gCarpetMerchantFootTex"
-static const ALIGN_ASSET(2) char gCarpetMerchantFootTex[] = dgCarpetMerchantFootTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantFootTex[] = dgCarpetMerchantFootTex;
+#else
+static const char gCarpetMerchantFootTex[] __attribute__((aligned (2))) = dgCarpetMerchantFootTex;
+#endif
+            
 #define dgCarpetMerchantSkinGradientTex "__OTR__objects/object_js/gCarpetMerchantSkinGradientTex"
-static const ALIGN_ASSET(2) char gCarpetMerchantSkinGradientTex[] = dgCarpetMerchantSkinGradientTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantSkinGradientTex[] = dgCarpetMerchantSkinGradientTex;
+#else
+static const char gCarpetMerchantSkinGradientTex[] __attribute__((aligned (2))) = dgCarpetMerchantSkinGradientTex;
+#endif
+            
 #define dgCarpetMerchantFootSoleTex "__OTR__objects/object_js/gCarpetMerchantFootSoleTex"
-static const ALIGN_ASSET(2) char gCarpetMerchantFootSoleTex[] = dgCarpetMerchantFootSoleTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantFootSoleTex[] = dgCarpetMerchantFootSoleTex;
+#else
+static const char gCarpetMerchantFootSoleTex[] __attribute__((aligned (2))) = dgCarpetMerchantFootSoleTex;
+#endif
+            
 #define dgCarpetMerchantHandTex "__OTR__objects/object_js/gCarpetMerchantHandTex"
-static const ALIGN_ASSET(2) char gCarpetMerchantHandTex[] = dgCarpetMerchantHandTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantHandTex[] = dgCarpetMerchantHandTex;
+#else
+static const char gCarpetMerchantHandTex[] __attribute__((aligned (2))) = dgCarpetMerchantHandTex;
+#endif
+            
 #define dgCarpetMerchantBraceletTex "__OTR__objects/object_js/gCarpetMerchantBraceletTex"
-static const ALIGN_ASSET(2) char gCarpetMerchantBraceletTex[] = dgCarpetMerchantBraceletTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantBraceletTex[] = dgCarpetMerchantBraceletTex;
+#else
+static const char gCarpetMerchantBraceletTex[] __attribute__((aligned (2))) = dgCarpetMerchantBraceletTex;
+#endif
+            
 #define dgCarpetMerchantShirtTex "__OTR__objects/object_js/gCarpetMerchantShirtTex"
-static const ALIGN_ASSET(2) char gCarpetMerchantShirtTex[] = dgCarpetMerchantShirtTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantShirtTex[] = dgCarpetMerchantShirtTex;
+#else
+static const char gCarpetMerchantShirtTex[] __attribute__((aligned (2))) = dgCarpetMerchantShirtTex;
+#endif
+            
 #define dgCarpetMerchantChestTex "__OTR__objects/object_js/gCarpetMerchantChestTex"
-static const ALIGN_ASSET(2) char gCarpetMerchantChestTex[] = dgCarpetMerchantChestTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantChestTex[] = dgCarpetMerchantChestTex;
+#else
+static const char gCarpetMerchantChestTex[] __attribute__((aligned (2))) = dgCarpetMerchantChestTex;
+#endif
+            
 #define dgCarpetMerchantHatTex "__OTR__objects/object_js/gCarpetMerchantHatTex"
-static const ALIGN_ASSET(2) char gCarpetMerchantHatTex[] = dgCarpetMerchantHatTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantHatTex[] = dgCarpetMerchantHatTex;
+#else
+static const char gCarpetMerchantHatTex[] __attribute__((aligned (2))) = dgCarpetMerchantHatTex;
+#endif
+            
 #define dgCarpetMerchantSlappingKneeAnim "__OTR__objects/object_js/gCarpetMerchantSlappingKneeAnim"
-static const ALIGN_ASSET(2) char gCarpetMerchantSlappingKneeAnim[] = dgCarpetMerchantSlappingKneeAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantSlappingKneeAnim[] = dgCarpetMerchantSlappingKneeAnim;
+#else
+static const char gCarpetMerchantSlappingKneeAnim[] __attribute__((aligned (2))) = dgCarpetMerchantSlappingKneeAnim;
+#endif
+            
 #define dgCarpetMerchantIdleAnim "__OTR__objects/object_js/gCarpetMerchantIdleAnim"
-static const ALIGN_ASSET(2) char gCarpetMerchantIdleAnim[] = dgCarpetMerchantIdleAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantIdleAnim[] = dgCarpetMerchantIdleAnim;
+#else
+static const char gCarpetMerchantIdleAnim[] __attribute__((aligned (2))) = dgCarpetMerchantIdleAnim;
+#endif
+            
 #define dgCarpetMerchantCol "__OTR__objects/object_js/gCarpetMerchantCol"
-static const ALIGN_ASSET(2) char gCarpetMerchantCol[] = dgCarpetMerchantCol;
+#ifdef _WIN32
+static const __declspec(align(2)) char gCarpetMerchantCol[] = dgCarpetMerchantCol;
+#else
+static const char gCarpetMerchantCol[] __attribute__((aligned (2))) = dgCarpetMerchantCol;
+#endif
+            
+

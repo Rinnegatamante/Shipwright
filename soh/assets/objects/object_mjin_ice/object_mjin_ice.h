@@ -1,6 +1,9 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgWaterMedallionPlatformTex "__OTR__objects/object_mjin_ice/gWaterMedallionPlatformTex"
-static const ALIGN_ASSET(2) char gWaterMedallionPlatformTex[] = dgWaterMedallionPlatformTex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gWaterMedallionPlatformTex[] = dgWaterMedallionPlatformTex;
+#else
+static const char gWaterMedallionPlatformTex[] __attribute__((aligned (2))) = dgWaterMedallionPlatformTex;
+#endif
+            
+

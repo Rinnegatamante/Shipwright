@@ -1,12 +1,23 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgCreationFireBallDL "__OTR__objects/object_efc_fire_ball/gCreationFireBallDL"
-static const ALIGN_ASSET(2) char gCreationFireBallDL[] = dgCreationFireBallDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCreationFireBallDL[] = dgCreationFireBallDL;
+#else
+static const char gCreationFireBallDL[] __attribute__((aligned (2))) = dgCreationFireBallDL;
+#endif
+            
 #define dgCreationFireBallMaskTex "__OTR__objects/object_efc_fire_ball/gCreationFireBallMaskTex"
-static const ALIGN_ASSET(2) char gCreationFireBallMaskTex[] = dgCreationFireBallMaskTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gCreationFireBallMaskTex[] = dgCreationFireBallMaskTex;
+#else
+static const char gCreationFireBallMaskTex[] __attribute__((aligned (2))) = dgCreationFireBallMaskTex;
+#endif
+            
 #define dgCreationFireBallFlameEffectTex "__OTR__objects/object_efc_fire_ball/gCreationFireBallFlameEffectTex"
-static const ALIGN_ASSET(2) char gCreationFireBallFlameEffectTex[] = dgCreationFireBallFlameEffectTex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gCreationFireBallFlameEffectTex[] = dgCreationFireBallFlameEffectTex;
+#else
+static const char gCreationFireBallFlameEffectTex[] __attribute__((aligned (2))) = dgCreationFireBallFlameEffectTex;
+#endif
+            
+

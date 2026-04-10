@@ -1,9 +1,16 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgKokiriShopBgTex "__OTR__textures/vr_KSVR_static/gKokiriShopBgTex"
-static const ALIGN_ASSET(2) char gKokiriShopBgTex[] = dgKokiriShopBgTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gKokiriShopBgTex[] = dgKokiriShopBgTex;
+#else
+static const char gKokiriShopBgTex[] __attribute__((aligned (2))) = dgKokiriShopBgTex;
+#endif
+            
 #define dgKokiriShop2BgTex "__OTR__textures/vr_KSVR_static/gKokiriShop2BgTex"
-static const ALIGN_ASSET(2) char gKokiriShop2BgTex[] = dgKokiriShop2BgTex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gKokiriShop2BgTex[] = dgKokiriShop2BgTex;
+#else
+static const char gKokiriShop2BgTex[] __attribute__((aligned (2))) = dgKokiriShop2BgTex;
+#endif
+            
+

@@ -1,9 +1,16 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgGiBugsContainerDL "__OTR__objects/object_gi_insect/gGiBugsContainerDL"
-static const ALIGN_ASSET(2) char gGiBugsContainerDL[] = dgGiBugsContainerDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gGiBugsContainerDL[] = dgGiBugsContainerDL;
+#else
+static const char gGiBugsContainerDL[] __attribute__((aligned (2))) = dgGiBugsContainerDL;
+#endif
+            
 #define dgGiBugsGlassDL "__OTR__objects/object_gi_insect/gGiBugsGlassDL"
-static const ALIGN_ASSET(2) char gGiBugsGlassDL[] = dgGiBugsGlassDL;
+#ifdef _WIN32
+static const __declspec(align(2)) char gGiBugsGlassDL[] = dgGiBugsGlassDL;
+#else
+static const char gGiBugsGlassDL[] __attribute__((aligned (2))) = dgGiBugsGlassDL;
+#endif
+            
+

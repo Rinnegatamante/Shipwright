@@ -1,228 +1,527 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgSariaSkel "__OTR__objects/object_sa/gSariaSkel"
-static const ALIGN_ASSET(2) char gSariaSkel[] = dgSariaSkel;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaSkel[] = dgSariaSkel;
+#else
+static const char gSariaSkel[] __attribute__((aligned (2))) = dgSariaSkel;
+#endif
+            
 #define dgSariaSealGanonAnim "__OTR__objects/object_sa/gSariaSealGanonAnim"
-static const ALIGN_ASSET(2) char gSariaSealGanonAnim[] = dgSariaSealGanonAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaSealGanonAnim[] = dgSariaSealGanonAnim;
+#else
+static const char gSariaSealGanonAnim[] __attribute__((aligned (2))) = dgSariaSealGanonAnim;
+#endif
+            
 #define dgSariaOcarinaToMouthAnim "__OTR__objects/object_sa/gSariaOcarinaToMouthAnim"
-static const ALIGN_ASSET(2) char gSariaOcarinaToMouthAnim[] = dgSariaOcarinaToMouthAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaOcarinaToMouthAnim[] = dgSariaOcarinaToMouthAnim;
+#else
+static const char gSariaOcarinaToMouthAnim[] __attribute__((aligned (2))) = dgSariaOcarinaToMouthAnim;
+#endif
+            
 #define dgSariaWaitArmsToSideAnim "__OTR__objects/object_sa/gSariaWaitArmsToSideAnim"
-static const ALIGN_ASSET(2) char gSariaWaitArmsToSideAnim[] = dgSariaWaitArmsToSideAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaWaitArmsToSideAnim[] = dgSariaWaitArmsToSideAnim;
+#else
+static const char gSariaWaitArmsToSideAnim[] __attribute__((aligned (2))) = dgSariaWaitArmsToSideAnim;
+#endif
+            
 #define dgSariaPlayingOcarinaAnim "__OTR__objects/object_sa/gSariaPlayingOcarinaAnim"
-static const ALIGN_ASSET(2) char gSariaPlayingOcarinaAnim[] = dgSariaPlayingOcarinaAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaPlayingOcarinaAnim[] = dgSariaPlayingOcarinaAnim;
+#else
+static const char gSariaPlayingOcarinaAnim[] __attribute__((aligned (2))) = dgSariaPlayingOcarinaAnim;
+#endif
+            
 #define dgSariaStopPlayingOcarinaAnim "__OTR__objects/object_sa/gSariaStopPlayingOcarinaAnim"
-static const ALIGN_ASSET(2) char gSariaStopPlayingOcarinaAnim[] = dgSariaStopPlayingOcarinaAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaStopPlayingOcarinaAnim[] = dgSariaStopPlayingOcarinaAnim;
+#else
+static const char gSariaStopPlayingOcarinaAnim[] __attribute__((aligned (2))) = dgSariaStopPlayingOcarinaAnim;
+#endif
+            
 #define dgSariaLinkLearnedSariasSongAnim "__OTR__objects/object_sa/gSariaLinkLearnedSariasSongAnim"
-static const ALIGN_ASSET(2) char gSariaLinkLearnedSariasSongAnim[] = dgSariaLinkLearnedSariasSongAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaLinkLearnedSariasSongAnim[] = dgSariaLinkLearnedSariasSongAnim;
+#else
+static const char gSariaLinkLearnedSariasSongAnim[] __attribute__((aligned (2))) = dgSariaLinkLearnedSariasSongAnim;
+#endif
+            
 #define dgSariaReturnToOcarinaAnim "__OTR__objects/object_sa/gSariaReturnToOcarinaAnim"
-static const ALIGN_ASSET(2) char gSariaReturnToOcarinaAnim[] = dgSariaReturnToOcarinaAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaReturnToOcarinaAnim[] = dgSariaReturnToOcarinaAnim;
+#else
+static const char gSariaReturnToOcarinaAnim[] __attribute__((aligned (2))) = dgSariaReturnToOcarinaAnim;
+#endif
+            
 #define dgSariaGiveForestMedallionAnim "__OTR__objects/object_sa/gSariaGiveForestMedallionAnim"
-static const ALIGN_ASSET(2) char gSariaGiveForestMedallionAnim[] = dgSariaGiveForestMedallionAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaGiveForestMedallionAnim[] = dgSariaGiveForestMedallionAnim;
+#else
+static const char gSariaGiveForestMedallionAnim[] __attribute__((aligned (2))) = dgSariaGiveForestMedallionAnim;
+#endif
+            
 #define dgSariaGiveForestMedallionStandAnim "__OTR__objects/object_sa/gSariaGiveForestMedallionStandAnim"
-static const ALIGN_ASSET(2) char gSariaGiveForestMedallionStandAnim[] = dgSariaGiveForestMedallionStandAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaGiveForestMedallionStandAnim[] = dgSariaGiveForestMedallionStandAnim;
+#else
+static const char gSariaGiveForestMedallionStandAnim[] __attribute__((aligned (2))) = dgSariaGiveForestMedallionStandAnim;
+#endif
+            
 #define dgSariaLookUpArmExtendedAnim "__OTR__objects/object_sa/gSariaLookUpArmExtendedAnim"
-static const ALIGN_ASSET(2) char gSariaLookUpArmExtendedAnim[] = dgSariaLookUpArmExtendedAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaLookUpArmExtendedAnim[] = dgSariaLookUpArmExtendedAnim;
+#else
+static const char gSariaLookUpArmExtendedAnim[] __attribute__((aligned (2))) = dgSariaLookUpArmExtendedAnim;
+#endif
+            
 #define dgSariaRunAnim "__OTR__objects/object_sa/gSariaRunAnim"
-static const ALIGN_ASSET(2) char gSariaRunAnim[] = dgSariaRunAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaRunAnim[] = dgSariaRunAnim;
+#else
+static const char gSariaRunAnim[] __attribute__((aligned (2))) = dgSariaRunAnim;
+#endif
+            
 #define dgSariaWaveAnim "__OTR__objects/object_sa/gSariaWaveAnim"
-static const ALIGN_ASSET(2) char gSariaWaveAnim[] = dgSariaWaveAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaWaveAnim[] = dgSariaWaveAnim;
+#else
+static const char gSariaWaveAnim[] __attribute__((aligned (2))) = dgSariaWaveAnim;
+#endif
+            
 #define dgSariaSitting1Anim "__OTR__objects/object_sa/gSariaSitting1Anim"
-static const ALIGN_ASSET(2) char gSariaSitting1Anim[] = dgSariaSitting1Anim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaSitting1Anim[] = dgSariaSitting1Anim;
+#else
+static const char gSariaSitting1Anim[] __attribute__((aligned (2))) = dgSariaSitting1Anim;
+#endif
+            
 #define dgSariaSitting2Anim "__OTR__objects/object_sa/gSariaSitting2Anim"
-static const ALIGN_ASSET(2) char gSariaSitting2Anim[] = dgSariaSitting2Anim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaSitting2Anim[] = dgSariaSitting2Anim;
+#else
+static const char gSariaSitting2Anim[] __attribute__((aligned (2))) = dgSariaSitting2Anim;
+#endif
+            
 #define dgSariaSitting3Anim "__OTR__objects/object_sa/gSariaSitting3Anim"
-static const ALIGN_ASSET(2) char gSariaSitting3Anim[] = dgSariaSitting3Anim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaSitting3Anim[] = dgSariaSitting3Anim;
+#else
+static const char gSariaSitting3Anim[] __attribute__((aligned (2))) = dgSariaSitting3Anim;
+#endif
+            
 #define dgSariaLookOverShoulderAnim "__OTR__objects/object_sa/gSariaLookOverShoulderAnim"
-static const ALIGN_ASSET(2) char gSariaLookOverShoulderAnim[] = dgSariaLookOverShoulderAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaLookOverShoulderAnim[] = dgSariaLookOverShoulderAnim;
+#else
+static const char gSariaLookOverShoulderAnim[] __attribute__((aligned (2))) = dgSariaLookOverShoulderAnim;
+#endif
+            
 #define dgSariaWaitOnBridgeAnim "__OTR__objects/object_sa/gSariaWaitOnBridgeAnim"
-static const ALIGN_ASSET(2) char gSariaWaitOnBridgeAnim[] = dgSariaWaitOnBridgeAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaWaitOnBridgeAnim[] = dgSariaWaitOnBridgeAnim;
+#else
+static const char gSariaWaitOnBridgeAnim[] __attribute__((aligned (2))) = dgSariaWaitOnBridgeAnim;
+#endif
+            
 #define dgSariaTransitionHandsSideToBackAnim "__OTR__objects/object_sa/gSariaTransitionHandsSideToBackAnim"
-static const ALIGN_ASSET(2) char gSariaTransitionHandsSideToBackAnim[] = dgSariaTransitionHandsSideToBackAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaTransitionHandsSideToBackAnim[] = dgSariaTransitionHandsSideToBackAnim;
+#else
+static const char gSariaTransitionHandsSideToBackAnim[] __attribute__((aligned (2))) = dgSariaTransitionHandsSideToBackAnim;
+#endif
+            
 #define dgSariaHandsOutAnim "__OTR__objects/object_sa/gSariaHandsOutAnim"
-static const ALIGN_ASSET(2) char gSariaHandsOutAnim[] = dgSariaHandsOutAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaHandsOutAnim[] = dgSariaHandsOutAnim;
+#else
+static const char gSariaHandsOutAnim[] __attribute__((aligned (2))) = dgSariaHandsOutAnim;
+#endif
+            
 #define dgSariaTransitionHandsSideToHipsAnim "__OTR__objects/object_sa/gSariaTransitionHandsSideToHipsAnim"
-static const ALIGN_ASSET(2) char gSariaTransitionHandsSideToHipsAnim[] = dgSariaTransitionHandsSideToHipsAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaTransitionHandsSideToHipsAnim[] = dgSariaTransitionHandsSideToHipsAnim;
+#else
+static const char gSariaTransitionHandsSideToHipsAnim[] __attribute__((aligned (2))) = dgSariaTransitionHandsSideToHipsAnim;
+#endif
+            
 #define dgSariaHandsBehindBackWaitAnim "__OTR__objects/object_sa/gSariaHandsBehindBackWaitAnim"
-static const ALIGN_ASSET(2) char gSariaHandsBehindBackWaitAnim[] = dgSariaHandsBehindBackWaitAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaHandsBehindBackWaitAnim[] = dgSariaHandsBehindBackWaitAnim;
+#else
+static const char gSariaHandsBehindBackWaitAnim[] __attribute__((aligned (2))) = dgSariaHandsBehindBackWaitAnim;
+#endif
+            
 #define dgSariaTransitionHandsSideToChestToSideAnim "__OTR__objects/object_sa/gSariaTransitionHandsSideToChestToSideAnim"
-static const ALIGN_ASSET(2) char gSariaTransitionHandsSideToChestToSideAnim[] = dgSariaTransitionHandsSideToChestToSideAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaTransitionHandsSideToChestToSideAnim[] = dgSariaTransitionHandsSideToChestToSideAnim;
+#else
+static const char gSariaTransitionHandsSideToChestToSideAnim[] __attribute__((aligned (2))) = dgSariaTransitionHandsSideToChestToSideAnim;
+#endif
+            
 #define dgSariaRightArmExtendedWaitAnim "__OTR__objects/object_sa/gSariaRightArmExtendedWaitAnim"
-static const ALIGN_ASSET(2) char gSariaRightArmExtendedWaitAnim[] = dgSariaRightArmExtendedWaitAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaRightArmExtendedWaitAnim[] = dgSariaRightArmExtendedWaitAnim;
+#else
+static const char gSariaRightArmExtendedWaitAnim[] __attribute__((aligned (2))) = dgSariaRightArmExtendedWaitAnim;
+#endif
+            
 #define dgSariaGiveLinkOcarinaAnim "__OTR__objects/object_sa/gSariaGiveLinkOcarinaAnim"
-static const ALIGN_ASSET(2) char gSariaGiveLinkOcarinaAnim[] = dgSariaGiveLinkOcarinaAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaGiveLinkOcarinaAnim[] = dgSariaGiveLinkOcarinaAnim;
+#else
+static const char gSariaGiveLinkOcarinaAnim[] __attribute__((aligned (2))) = dgSariaGiveLinkOcarinaAnim;
+#endif
+            
 #define dgSariaHoldOutOcarinaAnim "__OTR__objects/object_sa/gSariaHoldOutOcarinaAnim"
-static const ALIGN_ASSET(2) char gSariaHoldOutOcarinaAnim[] = dgSariaHoldOutOcarinaAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaHoldOutOcarinaAnim[] = dgSariaHoldOutOcarinaAnim;
+#else
+static const char gSariaHoldOutOcarinaAnim[] __attribute__((aligned (2))) = dgSariaHoldOutOcarinaAnim;
+#endif
+            
 #define dgSariaHoldOcarinaAnim "__OTR__objects/object_sa/gSariaHoldOcarinaAnim"
-static const ALIGN_ASSET(2) char gSariaHoldOcarinaAnim[] = dgSariaHoldOcarinaAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaHoldOcarinaAnim[] = dgSariaHoldOcarinaAnim;
+#else
+static const char gSariaHoldOcarinaAnim[] __attribute__((aligned (2))) = dgSariaHoldOcarinaAnim;
+#endif
+            
 #define dgSariaStandHandsOnHipsAnim "__OTR__objects/object_sa/gSariaStandHandsOnHipsAnim"
-static const ALIGN_ASSET(2) char gSariaStandHandsOnHipsAnim[] = dgSariaStandHandsOnHipsAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaStandHandsOnHipsAnim[] = dgSariaStandHandsOnHipsAnim;
+#else
+static const char gSariaStandHandsOnHipsAnim[] __attribute__((aligned (2))) = dgSariaStandHandsOnHipsAnim;
+#endif
+            
 #define dgSariaExtendRightArmAnim "__OTR__objects/object_sa/gSariaExtendRightArmAnim"
-static const ALIGN_ASSET(2) char gSariaExtendRightArmAnim[] = dgSariaExtendRightArmAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaExtendRightArmAnim[] = dgSariaExtendRightArmAnim;
+#else
+static const char gSariaExtendRightArmAnim[] __attribute__((aligned (2))) = dgSariaExtendRightArmAnim;
+#endif
+            
 #define dgSariaHandsOnFaceAnim "__OTR__objects/object_sa/gSariaHandsOnFaceAnim"
-static const ALIGN_ASSET(2) char gSariaHandsOnFaceAnim[] = dgSariaHandsOnFaceAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaHandsOnFaceAnim[] = dgSariaHandsOnFaceAnim;
+#else
+static const char gSariaHandsOnFaceAnim[] __attribute__((aligned (2))) = dgSariaHandsOnFaceAnim;
+#endif
+            
 #define dgSariaHeadDL "__OTR__objects/object_sa/gSariaHeadDL"
-static const ALIGN_ASSET(2) char gSariaHeadDL[] = dgSariaHeadDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaHeadDL[] = dgSariaHeadDL;
+#else
+static const char gSariaHeadDL[] __attribute__((aligned (2))) = dgSariaHeadDL;
+#endif
+            
 #define dgSariaLeftHandDL "__OTR__objects/object_sa/gSariaLeftHandDL"
-static const ALIGN_ASSET(2) char gSariaLeftHandDL[] = dgSariaLeftHandDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaLeftHandDL[] = dgSariaLeftHandDL;
+#else
+static const char gSariaLeftHandDL[] __attribute__((aligned (2))) = dgSariaLeftHandDL;
+#endif
+            
 #define dgSariaRightHandDL "__OTR__objects/object_sa/gSariaRightHandDL"
-static const ALIGN_ASSET(2) char gSariaRightHandDL[] = dgSariaRightHandDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaRightHandDL[] = dgSariaRightHandDL;
+#else
+static const char gSariaRightHandDL[] __attribute__((aligned (2))) = dgSariaRightHandDL;
+#endif
+            
 #define dgSariaRightHandAndOcarinaDL "__OTR__objects/object_sa/gSariaRightHandAndOcarinaDL"
-static const ALIGN_ASSET(2) char gSariaRightHandAndOcarinaDL[] = dgSariaRightHandAndOcarinaDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaRightHandAndOcarinaDL[] = dgSariaRightHandAndOcarinaDL;
+#else
+static const char gSariaRightHandAndOcarinaDL[] __attribute__((aligned (2))) = dgSariaRightHandAndOcarinaDL;
+#endif
+            
 #define dgSariaChestDL "__OTR__objects/object_sa/gSariaChestDL"
-static const ALIGN_ASSET(2) char gSariaChestDL[] = dgSariaChestDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaChestDL[] = dgSariaChestDL;
+#else
+static const char gSariaChestDL[] __attribute__((aligned (2))) = dgSariaChestDL;
+#endif
+            
 #define dgSariaRightShoulderDL "__OTR__objects/object_sa/gSariaRightShoulderDL"
-static const ALIGN_ASSET(2) char gSariaRightShoulderDL[] = dgSariaRightShoulderDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaRightShoulderDL[] = dgSariaRightShoulderDL;
+#else
+static const char gSariaRightShoulderDL[] __attribute__((aligned (2))) = dgSariaRightShoulderDL;
+#endif
+            
 #define dgSariaRightArmDL "__OTR__objects/object_sa/gSariaRightArmDL"
-static const ALIGN_ASSET(2) char gSariaRightArmDL[] = dgSariaRightArmDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaRightArmDL[] = dgSariaRightArmDL;
+#else
+static const char gSariaRightArmDL[] __attribute__((aligned (2))) = dgSariaRightArmDL;
+#endif
+            
 #define dgSariaLeftShoulderDL "__OTR__objects/object_sa/gSariaLeftShoulderDL"
-static const ALIGN_ASSET(2) char gSariaLeftShoulderDL[] = dgSariaLeftShoulderDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaLeftShoulderDL[] = dgSariaLeftShoulderDL;
+#else
+static const char gSariaLeftShoulderDL[] __attribute__((aligned (2))) = dgSariaLeftShoulderDL;
+#endif
+            
 #define dgSariaLeftArmDL "__OTR__objects/object_sa/gSariaLeftArmDL"
-static const ALIGN_ASSET(2) char gSariaLeftArmDL[] = dgSariaLeftArmDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaLeftArmDL[] = dgSariaLeftArmDL;
+#else
+static const char gSariaLeftArmDL[] __attribute__((aligned (2))) = dgSariaLeftArmDL;
+#endif
+            
 #define dgSariaWaistDL "__OTR__objects/object_sa/gSariaWaistDL"
-static const ALIGN_ASSET(2) char gSariaWaistDL[] = dgSariaWaistDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaWaistDL[] = dgSariaWaistDL;
+#else
+static const char gSariaWaistDL[] __attribute__((aligned (2))) = dgSariaWaistDL;
+#endif
+            
 #define dgSariaRightThighDL "__OTR__objects/object_sa/gSariaRightThighDL"
-static const ALIGN_ASSET(2) char gSariaRightThighDL[] = dgSariaRightThighDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaRightThighDL[] = dgSariaRightThighDL;
+#else
+static const char gSariaRightThighDL[] __attribute__((aligned (2))) = dgSariaRightThighDL;
+#endif
+            
 #define dgSariaRightShinDL "__OTR__objects/object_sa/gSariaRightShinDL"
-static const ALIGN_ASSET(2) char gSariaRightShinDL[] = dgSariaRightShinDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaRightShinDL[] = dgSariaRightShinDL;
+#else
+static const char gSariaRightShinDL[] __attribute__((aligned (2))) = dgSariaRightShinDL;
+#endif
+            
 #define dgSariaRightFootDL "__OTR__objects/object_sa/gSariaRightFootDL"
-static const ALIGN_ASSET(2) char gSariaRightFootDL[] = dgSariaRightFootDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaRightFootDL[] = dgSariaRightFootDL;
+#else
+static const char gSariaRightFootDL[] __attribute__((aligned (2))) = dgSariaRightFootDL;
+#endif
+            
 #define dgSariaLeftThighDL "__OTR__objects/object_sa/gSariaLeftThighDL"
-static const ALIGN_ASSET(2) char gSariaLeftThighDL[] = dgSariaLeftThighDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaLeftThighDL[] = dgSariaLeftThighDL;
+#else
+static const char gSariaLeftThighDL[] __attribute__((aligned (2))) = dgSariaLeftThighDL;
+#endif
+            
 #define dgSariaLeftShinDL "__OTR__objects/object_sa/gSariaLeftShinDL"
-static const ALIGN_ASSET(2) char gSariaLeftShinDL[] = dgSariaLeftShinDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaLeftShinDL[] = dgSariaLeftShinDL;
+#else
+static const char gSariaLeftShinDL[] __attribute__((aligned (2))) = dgSariaLeftShinDL;
+#endif
+            
 #define dgSariaLeftFootDL "__OTR__objects/object_sa/gSariaLeftFootDL"
-static const ALIGN_ASSET(2) char gSariaLeftFootDL[] = dgSariaLeftFootDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaLeftFootDL[] = dgSariaLeftFootDL;
+#else
+static const char gSariaLeftFootDL[] __attribute__((aligned (2))) = dgSariaLeftFootDL;
+#endif
+            
 #define dgSariaClothesTLUT "__OTR__objects/object_sa/gSariaClothesTLUT"
-static const ALIGN_ASSET(2) char gSariaClothesTLUT[] = dgSariaClothesTLUT;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaClothesTLUT[] = dgSariaClothesTLUT;
+#else
+static const char gSariaClothesTLUT[] __attribute__((aligned (2))) = dgSariaClothesTLUT;
+#endif
+            
 #define dgSariaMouthTLUT "__OTR__objects/object_sa/gSariaMouthTLUT"
-static const ALIGN_ASSET(2) char gSariaMouthTLUT[] = dgSariaMouthTLUT;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaMouthTLUT[] = dgSariaMouthTLUT;
+#else
+static const char gSariaMouthTLUT[] __attribute__((aligned (2))) = dgSariaMouthTLUT;
+#endif
+            
 #define dgSariaEyeTLUT "__OTR__objects/object_sa/gSariaEyeTLUT"
-static const ALIGN_ASSET(2) char gSariaEyeTLUT[] = dgSariaEyeTLUT;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaEyeTLUT[] = dgSariaEyeTLUT;
+#else
+static const char gSariaEyeTLUT[] __attribute__((aligned (2))) = dgSariaEyeTLUT;
+#endif
+            
 #define dgSariaSkinTLUT "__OTR__objects/object_sa/gSariaSkinTLUT"
-static const ALIGN_ASSET(2) char gSariaSkinTLUT[] = dgSariaSkinTLUT;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaSkinTLUT[] = dgSariaSkinTLUT;
+#else
+static const char gSariaSkinTLUT[] __attribute__((aligned (2))) = dgSariaSkinTLUT;
+#endif
+            
 #define dgSariaBootsTex "__OTR__objects/object_sa/gSariaBootsTex"
-static const ALIGN_ASSET(2) char gSariaBootsTex[] = dgSariaBootsTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaBootsTex[] = dgSariaBootsTex;
+#else
+static const char gSariaBootsTex[] __attribute__((aligned (2))) = dgSariaBootsTex;
+#endif
+            
 #define dgSariaGreenTex "__OTR__objects/object_sa/gSariaGreenTex"
-static const ALIGN_ASSET(2) char gSariaGreenTex[] = dgSariaGreenTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaGreenTex[] = dgSariaGreenTex;
+#else
+static const char gSariaGreenTex[] __attribute__((aligned (2))) = dgSariaGreenTex;
+#endif
+            
 #define dgSariaKneeTex "__OTR__objects/object_sa/gSariaKneeTex"
-static const ALIGN_ASSET(2) char gSariaKneeTex[] = dgSariaKneeTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaKneeTex[] = dgSariaKneeTex;
+#else
+static const char gSariaKneeTex[] __attribute__((aligned (2))) = dgSariaKneeTex;
+#endif
+            
 #define dgSariaTorsoTex "__OTR__objects/object_sa/gSariaTorsoTex"
-static const ALIGN_ASSET(2) char gSariaTorsoTex[] = dgSariaTorsoTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaTorsoTex[] = dgSariaTorsoTex;
+#else
+static const char gSariaTorsoTex[] __attribute__((aligned (2))) = dgSariaTorsoTex;
+#endif
+            
 #define dgSariaBeltTex "__OTR__objects/object_sa/gSariaBeltTex"
-static const ALIGN_ASSET(2) char gSariaBeltTex[] = dgSariaBeltTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaBeltTex[] = dgSariaBeltTex;
+#else
+static const char gSariaBeltTex[] __attribute__((aligned (2))) = dgSariaBeltTex;
+#endif
+            
 #define dgSariaUnkGreenTex "__OTR__objects/object_sa/gSariaUnkGreenTex"
-static const ALIGN_ASSET(2) char gSariaUnkGreenTex[] = dgSariaUnkGreenTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaUnkGreenTex[] = dgSariaUnkGreenTex;
+#else
+static const char gSariaUnkGreenTex[] __attribute__((aligned (2))) = dgSariaUnkGreenTex;
+#endif
+            
 #define dgSariaUnusedHandTex "__OTR__objects/object_sa/gSariaUnusedHandTex"
-static const ALIGN_ASSET(2) char gSariaUnusedHandTex[] = dgSariaUnusedHandTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaUnusedHandTex[] = dgSariaUnusedHandTex;
+#else
+static const char gSariaUnusedHandTex[] __attribute__((aligned (2))) = dgSariaUnusedHandTex;
+#endif
+            
 #define dgSariaSleeveTex "__OTR__objects/object_sa/gSariaSleeveTex"
-static const ALIGN_ASSET(2) char gSariaSleeveTex[] = dgSariaSleeveTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaSleeveTex[] = dgSariaSleeveTex;
+#else
+static const char gSariaSleeveTex[] __attribute__((aligned (2))) = dgSariaSleeveTex;
+#endif
+            
 #define dgSariaHairTex "__OTR__objects/object_sa/gSariaHairTex"
-static const ALIGN_ASSET(2) char gSariaHairTex[] = dgSariaHairTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaHairTex[] = dgSariaHairTex;
+#else
+static const char gSariaHairTex[] __attribute__((aligned (2))) = dgSariaHairTex;
+#endif
+            
 #define dgSariaEyeOpenTex "__OTR__objects/object_sa/gSariaEyeOpenTex"
-static const ALIGN_ASSET(2) char gSariaEyeOpenTex[] = dgSariaEyeOpenTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaEyeOpenTex[] = dgSariaEyeOpenTex;
+#else
+static const char gSariaEyeOpenTex[] __attribute__((aligned (2))) = dgSariaEyeOpenTex;
+#endif
+            
 #define dgSariaMouthClosedTex "__OTR__objects/object_sa/gSariaMouthClosedTex"
-static const ALIGN_ASSET(2) char gSariaMouthClosedTex[] = dgSariaMouthClosedTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaMouthClosedTex[] = dgSariaMouthClosedTex;
+#else
+static const char gSariaMouthClosedTex[] __attribute__((aligned (2))) = dgSariaMouthClosedTex;
+#endif
+            
 #define dgSariaSkinTex "__OTR__objects/object_sa/gSariaSkinTex"
-static const ALIGN_ASSET(2) char gSariaSkinTex[] = dgSariaSkinTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaSkinTex[] = dgSariaSkinTex;
+#else
+static const char gSariaSkinTex[] __attribute__((aligned (2))) = dgSariaSkinTex;
+#endif
+            
 #define dgSariaMouthClosed2Tex "__OTR__objects/object_sa/gSariaMouthClosed2Tex"
-static const ALIGN_ASSET(2) char gSariaMouthClosed2Tex[] = dgSariaMouthClosed2Tex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaMouthClosed2Tex[] = dgSariaMouthClosed2Tex;
+#else
+static const char gSariaMouthClosed2Tex[] __attribute__((aligned (2))) = dgSariaMouthClosed2Tex;
+#endif
+            
 #define dgSariaEarTex "__OTR__objects/object_sa/gSariaEarTex"
-static const ALIGN_ASSET(2) char gSariaEarTex[] = dgSariaEarTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaEarTex[] = dgSariaEarTex;
+#else
+static const char gSariaEarTex[] __attribute__((aligned (2))) = dgSariaEarTex;
+#endif
+            
 #define dgSariaCollarTex "__OTR__objects/object_sa/gSariaCollarTex"
-static const ALIGN_ASSET(2) char gSariaCollarTex[] = dgSariaCollarTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaCollarTex[] = dgSariaCollarTex;
+#else
+static const char gSariaCollarTex[] __attribute__((aligned (2))) = dgSariaCollarTex;
+#endif
+            
 #define dgSariaHandTex "__OTR__objects/object_sa/gSariaHandTex"
-static const ALIGN_ASSET(2) char gSariaHandTex[] = dgSariaHandTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaHandTex[] = dgSariaHandTex;
+#else
+static const char gSariaHandTex[] __attribute__((aligned (2))) = dgSariaHandTex;
+#endif
+            
 #define dgSariaEyeClosedTex "__OTR__objects/object_sa/gSariaEyeClosedTex"
-static const ALIGN_ASSET(2) char gSariaEyeClosedTex[] = dgSariaEyeClosedTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaEyeClosedTex[] = dgSariaEyeClosedTex;
+#else
+static const char gSariaEyeClosedTex[] __attribute__((aligned (2))) = dgSariaEyeClosedTex;
+#endif
+            
 #define dgSariaEyeHalfTex "__OTR__objects/object_sa/gSariaEyeHalfTex"
-static const ALIGN_ASSET(2) char gSariaEyeHalfTex[] = dgSariaEyeHalfTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaEyeHalfTex[] = dgSariaEyeHalfTex;
+#else
+static const char gSariaEyeHalfTex[] __attribute__((aligned (2))) = dgSariaEyeHalfTex;
+#endif
+            
 #define dgSariaFairyOcarinaTex "__OTR__objects/object_sa/gSariaFairyOcarinaTex"
-static const ALIGN_ASSET(2) char gSariaFairyOcarinaTex[] = dgSariaFairyOcarinaTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaFairyOcarinaTex[] = dgSariaFairyOcarinaTex;
+#else
+static const char gSariaFairyOcarinaTex[] __attribute__((aligned (2))) = dgSariaFairyOcarinaTex;
+#endif
+            
 #define dgSariaMouthSmilingOpenTex "__OTR__objects/object_sa/gSariaMouthSmilingOpenTex"
-static const ALIGN_ASSET(2) char gSariaMouthSmilingOpenTex[] = dgSariaMouthSmilingOpenTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaMouthSmilingOpenTex[] = dgSariaMouthSmilingOpenTex;
+#else
+static const char gSariaMouthSmilingOpenTex[] __attribute__((aligned (2))) = dgSariaMouthSmilingOpenTex;
+#endif
+            
 #define dgSariaMouthFrowningTex "__OTR__objects/object_sa/gSariaMouthFrowningTex"
-static const ALIGN_ASSET(2) char gSariaMouthFrowningTex[] = dgSariaMouthFrowningTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaMouthFrowningTex[] = dgSariaMouthFrowningTex;
+#else
+static const char gSariaMouthFrowningTex[] __attribute__((aligned (2))) = dgSariaMouthFrowningTex;
+#endif
+            
 #define dgSariaEyeSuprisedTex "__OTR__objects/object_sa/gSariaEyeSuprisedTex"
-static const ALIGN_ASSET(2) char gSariaEyeSuprisedTex[] = dgSariaEyeSuprisedTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaEyeSuprisedTex[] = dgSariaEyeSuprisedTex;
+#else
+static const char gSariaEyeSuprisedTex[] __attribute__((aligned (2))) = dgSariaEyeSuprisedTex;
+#endif
+            
 #define dgSariaMouthSuprisedTex "__OTR__objects/object_sa/gSariaMouthSuprisedTex"
-static const ALIGN_ASSET(2) char gSariaMouthSuprisedTex[] = dgSariaMouthSuprisedTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaMouthSuprisedTex[] = dgSariaMouthSuprisedTex;
+#else
+static const char gSariaMouthSuprisedTex[] __attribute__((aligned (2))) = dgSariaMouthSuprisedTex;
+#endif
+            
 #define dgSariaEyeSadTex "__OTR__objects/object_sa/gSariaEyeSadTex"
-static const ALIGN_ASSET(2) char gSariaEyeSadTex[] = dgSariaEyeSadTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSariaEyeSadTex[] = dgSariaEyeSadTex;
+#else
+static const char gSariaEyeSadTex[] __attribute__((aligned (2))) = dgSariaEyeSadTex;
+#endif
+            
 #define dobject_saTex_002530 "__OTR__objects/object_sa/object_saTex_002530"
-static const ALIGN_ASSET(2) char object_saTex_002530[] = dobject_saTex_002530;
+#ifdef _WIN32
+static const __declspec(align(2)) char object_saTex_002530[] = dobject_saTex_002530;
+#else
+static const char object_saTex_002530[] __attribute__((aligned (2))) = dobject_saTex_002530;
+#endif
+            
+

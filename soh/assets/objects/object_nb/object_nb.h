@@ -1,237 +1,548 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgNabooruSkel "__OTR__objects/object_nb/gNabooruSkel"
-static const ALIGN_ASSET(2) char gNabooruSkel[] = dgNabooruSkel;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruSkel[] = dgNabooruSkel;
+#else
+static const char gNabooruSkel[] __attribute__((aligned (2))) = dgNabooruSkel;
+#endif
+            
 #define dgNabooruHeadMouthOpenDL "__OTR__objects/object_nb/gNabooruHeadMouthOpenDL"
-static const ALIGN_ASSET(2) char gNabooruHeadMouthOpenDL[] = dgNabooruHeadMouthOpenDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruHeadMouthOpenDL[] = dgNabooruHeadMouthOpenDL;
+#else
+static const char gNabooruHeadMouthOpenDL[] __attribute__((aligned (2))) = dgNabooruHeadMouthOpenDL;
+#endif
+            
 #define dgNabooruLeftThighDL "__OTR__objects/object_nb/gNabooruLeftThighDL"
-static const ALIGN_ASSET(2) char gNabooruLeftThighDL[] = dgNabooruLeftThighDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruLeftThighDL[] = dgNabooruLeftThighDL;
+#else
+static const char gNabooruLeftThighDL[] __attribute__((aligned (2))) = dgNabooruLeftThighDL;
+#endif
+            
 #define dgNabooruLeftShinDL "__OTR__objects/object_nb/gNabooruLeftShinDL"
-static const ALIGN_ASSET(2) char gNabooruLeftShinDL[] = dgNabooruLeftShinDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruLeftShinDL[] = dgNabooruLeftShinDL;
+#else
+static const char gNabooruLeftShinDL[] __attribute__((aligned (2))) = dgNabooruLeftShinDL;
+#endif
+            
 #define dgNabooruLeftFootDL "__OTR__objects/object_nb/gNabooruLeftFootDL"
-static const ALIGN_ASSET(2) char gNabooruLeftFootDL[] = dgNabooruLeftFootDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruLeftFootDL[] = dgNabooruLeftFootDL;
+#else
+static const char gNabooruLeftFootDL[] __attribute__((aligned (2))) = dgNabooruLeftFootDL;
+#endif
+            
 #define dgNabooruRightThighDL "__OTR__objects/object_nb/gNabooruRightThighDL"
-static const ALIGN_ASSET(2) char gNabooruRightThighDL[] = dgNabooruRightThighDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruRightThighDL[] = dgNabooruRightThighDL;
+#else
+static const char gNabooruRightThighDL[] __attribute__((aligned (2))) = dgNabooruRightThighDL;
+#endif
+            
 #define dgNabooruRightShinDL "__OTR__objects/object_nb/gNabooruRightShinDL"
-static const ALIGN_ASSET(2) char gNabooruRightShinDL[] = dgNabooruRightShinDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruRightShinDL[] = dgNabooruRightShinDL;
+#else
+static const char gNabooruRightShinDL[] __attribute__((aligned (2))) = dgNabooruRightShinDL;
+#endif
+            
 #define dgNabooruRightFootDL "__OTR__objects/object_nb/gNabooruRightFootDL"
-static const ALIGN_ASSET(2) char gNabooruRightFootDL[] = dgNabooruRightFootDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruRightFootDL[] = dgNabooruRightFootDL;
+#else
+static const char gNabooruRightFootDL[] __attribute__((aligned (2))) = dgNabooruRightFootDL;
+#endif
+            
 #define dgNabooruTorsoDL "__OTR__objects/object_nb/gNabooruTorsoDL"
-static const ALIGN_ASSET(2) char gNabooruTorsoDL[] = dgNabooruTorsoDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruTorsoDL[] = dgNabooruTorsoDL;
+#else
+static const char gNabooruTorsoDL[] __attribute__((aligned (2))) = dgNabooruTorsoDL;
+#endif
+            
 #define dgNabooruLeftUpperArmDL "__OTR__objects/object_nb/gNabooruLeftUpperArmDL"
-static const ALIGN_ASSET(2) char gNabooruLeftUpperArmDL[] = dgNabooruLeftUpperArmDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruLeftUpperArmDL[] = dgNabooruLeftUpperArmDL;
+#else
+static const char gNabooruLeftUpperArmDL[] __attribute__((aligned (2))) = dgNabooruLeftUpperArmDL;
+#endif
+            
 #define dgNabooruLeftForearmDL "__OTR__objects/object_nb/gNabooruLeftForearmDL"
-static const ALIGN_ASSET(2) char gNabooruLeftForearmDL[] = dgNabooruLeftForearmDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruLeftForearmDL[] = dgNabooruLeftForearmDL;
+#else
+static const char gNabooruLeftForearmDL[] __attribute__((aligned (2))) = dgNabooruLeftForearmDL;
+#endif
+            
 #define dgNabooruLeftHandDL "__OTR__objects/object_nb/gNabooruLeftHandDL"
-static const ALIGN_ASSET(2) char gNabooruLeftHandDL[] = dgNabooruLeftHandDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruLeftHandDL[] = dgNabooruLeftHandDL;
+#else
+static const char gNabooruLeftHandDL[] __attribute__((aligned (2))) = dgNabooruLeftHandDL;
+#endif
+            
 #define dgNabooruRightUpperArmDL "__OTR__objects/object_nb/gNabooruRightUpperArmDL"
-static const ALIGN_ASSET(2) char gNabooruRightUpperArmDL[] = dgNabooruRightUpperArmDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruRightUpperArmDL[] = dgNabooruRightUpperArmDL;
+#else
+static const char gNabooruRightUpperArmDL[] __attribute__((aligned (2))) = dgNabooruRightUpperArmDL;
+#endif
+            
 #define dgNabooruRightForearmDL "__OTR__objects/object_nb/gNabooruRightForearmDL"
-static const ALIGN_ASSET(2) char gNabooruRightForearmDL[] = dgNabooruRightForearmDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruRightForearmDL[] = dgNabooruRightForearmDL;
+#else
+static const char gNabooruRightForearmDL[] __attribute__((aligned (2))) = dgNabooruRightForearmDL;
+#endif
+            
 #define dgNabooruRightHandDL "__OTR__objects/object_nb/gNabooruRightHandDL"
-static const ALIGN_ASSET(2) char gNabooruRightHandDL[] = dgNabooruRightHandDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruRightHandDL[] = dgNabooruRightHandDL;
+#else
+static const char gNabooruRightHandDL[] __attribute__((aligned (2))) = dgNabooruRightHandDL;
+#endif
+            
 #define dgNabooruHeadMouthClosedDL "__OTR__objects/object_nb/gNabooruHeadMouthClosedDL"
-static const ALIGN_ASSET(2) char gNabooruHeadMouthClosedDL[] = dgNabooruHeadMouthClosedDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruHeadMouthClosedDL[] = dgNabooruHeadMouthClosedDL;
+#else
+static const char gNabooruHeadMouthClosedDL[] __attribute__((aligned (2))) = dgNabooruHeadMouthClosedDL;
+#endif
+            
 #define dgNabooruBlankDL "__OTR__objects/object_nb/gNabooruBlankDL"
-static const ALIGN_ASSET(2) char gNabooruBlankDL[] = dgNabooruBlankDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruBlankDL[] = dgNabooruBlankDL;
+#else
+static const char gNabooruBlankDL[] __attribute__((aligned (2))) = dgNabooruBlankDL;
+#endif
+            
 #define dgNabooruPonytailDL "__OTR__objects/object_nb/gNabooruPonytailDL"
-static const ALIGN_ASSET(2) char gNabooruPonytailDL[] = dgNabooruPonytailDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruPonytailDL[] = dgNabooruPonytailDL;
+#else
+static const char gNabooruPonytailDL[] __attribute__((aligned (2))) = dgNabooruPonytailDL;
+#endif
+            
 #define dgNabooruWaistDL "__OTR__objects/object_nb/gNabooruWaistDL"
-static const ALIGN_ASSET(2) char gNabooruWaistDL[] = dgNabooruWaistDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruWaistDL[] = dgNabooruWaistDL;
+#else
+static const char gNabooruWaistDL[] __attribute__((aligned (2))) = dgNabooruWaistDL;
+#endif
+            
 #define dgNabooru1TLUT "__OTR__objects/object_nb/gNabooru1TLUT"
-static const ALIGN_ASSET(2) char gNabooru1TLUT[] = dgNabooru1TLUT;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooru1TLUT[] = dgNabooru1TLUT;
+#else
+static const char gNabooru1TLUT[] __attribute__((aligned (2))) = dgNabooru1TLUT;
+#endif
+            
 #define dgNabooru2TLUT "__OTR__objects/object_nb/gNabooru2TLUT"
-static const ALIGN_ASSET(2) char gNabooru2TLUT[] = dgNabooru2TLUT;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooru2TLUT[] = dgNabooru2TLUT;
+#else
+static const char gNabooru2TLUT[] __attribute__((aligned (2))) = dgNabooru2TLUT;
+#endif
+            
 #define dgNabooru3TLUT "__OTR__objects/object_nb/gNabooru3TLUT"
-static const ALIGN_ASSET(2) char gNabooru3TLUT[] = dgNabooru3TLUT;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooru3TLUT[] = dgNabooru3TLUT;
+#else
+static const char gNabooru3TLUT[] __attribute__((aligned (2))) = dgNabooru3TLUT;
+#endif
+            
 #define dgNabooruClothesButtonsTex "__OTR__objects/object_nb/gNabooruClothesButtonsTex"
-static const ALIGN_ASSET(2) char gNabooruClothesButtonsTex[] = dgNabooruClothesButtonsTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruClothesButtonsTex[] = dgNabooruClothesButtonsTex;
+#else
+static const char gNabooruClothesButtonsTex[] __attribute__((aligned (2))) = dgNabooruClothesButtonsTex;
+#endif
+            
 #define dgNabooruSkinGradient1Tex "__OTR__objects/object_nb/gNabooruSkinGradient1Tex"
-static const ALIGN_ASSET(2) char gNabooruSkinGradient1Tex[] = dgNabooruSkinGradient1Tex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruSkinGradient1Tex[] = dgNabooruSkinGradient1Tex;
+#else
+static const char gNabooruSkinGradient1Tex[] __attribute__((aligned (2))) = dgNabooruSkinGradient1Tex;
+#endif
+            
 #define dgNabooruNavelTex "__OTR__objects/object_nb/gNabooruNavelTex"
-static const ALIGN_ASSET(2) char gNabooruNavelTex[] = dgNabooruNavelTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruNavelTex[] = dgNabooruNavelTex;
+#else
+static const char gNabooruNavelTex[] __attribute__((aligned (2))) = dgNabooruNavelTex;
+#endif
+            
 #define dgNabooruPendantJewelTex "__OTR__objects/object_nb/gNabooruPendantJewelTex"
-static const ALIGN_ASSET(2) char gNabooruPendantJewelTex[] = dgNabooruPendantJewelTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruPendantJewelTex[] = dgNabooruPendantJewelTex;
+#else
+static const char gNabooruPendantJewelTex[] __attribute__((aligned (2))) = dgNabooruPendantJewelTex;
+#endif
+            
 #define dgNabooruCleavageTex "__OTR__objects/object_nb/gNabooruCleavageTex"
-static const ALIGN_ASSET(2) char gNabooruCleavageTex[] = dgNabooruCleavageTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruCleavageTex[] = dgNabooruCleavageTex;
+#else
+static const char gNabooruCleavageTex[] __attribute__((aligned (2))) = dgNabooruCleavageTex;
+#endif
+            
 #define dgNabooruTopFabricPatternTex "__OTR__objects/object_nb/gNabooruTopFabricPatternTex"
-static const ALIGN_ASSET(2) char gNabooruTopFabricPatternTex[] = dgNabooruTopFabricPatternTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruTopFabricPatternTex[] = dgNabooruTopFabricPatternTex;
+#else
+static const char gNabooruTopFabricPatternTex[] __attribute__((aligned (2))) = dgNabooruTopFabricPatternTex;
+#endif
+            
 #define dgNabooruAnkleBraceletTex "__OTR__objects/object_nb/gNabooruAnkleBraceletTex"
-static const ALIGN_ASSET(2) char gNabooruAnkleBraceletTex[] = dgNabooruAnkleBraceletTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruAnkleBraceletTex[] = dgNabooruAnkleBraceletTex;
+#else
+static const char gNabooruAnkleBraceletTex[] __attribute__((aligned (2))) = dgNabooruAnkleBraceletTex;
+#endif
+            
 #define dgNabooruTrousersShadowTex "__OTR__objects/object_nb/gNabooruTrousersShadowTex"
-static const ALIGN_ASSET(2) char gNabooruTrousersShadowTex[] = dgNabooruTrousersShadowTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruTrousersShadowTex[] = dgNabooruTrousersShadowTex;
+#else
+static const char gNabooruTrousersShadowTex[] __attribute__((aligned (2))) = dgNabooruTrousersShadowTex;
+#endif
+            
 #define dgNabooruTrousersFabricTex "__OTR__objects/object_nb/gNabooruTrousersFabricTex"
-static const ALIGN_ASSET(2) char gNabooruTrousersFabricTex[] = dgNabooruTrousersFabricTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruTrousersFabricTex[] = dgNabooruTrousersFabricTex;
+#else
+static const char gNabooruTrousersFabricTex[] __attribute__((aligned (2))) = dgNabooruTrousersFabricTex;
+#endif
+            
 #define dgNabooruTrouserCuffPatternTex "__OTR__objects/object_nb/gNabooruTrouserCuffPatternTex"
-static const ALIGN_ASSET(2) char gNabooruTrouserCuffPatternTex[] = dgNabooruTrouserCuffPatternTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruTrouserCuffPatternTex[] = dgNabooruTrouserCuffPatternTex;
+#else
+static const char gNabooruTrouserCuffPatternTex[] __attribute__((aligned (2))) = dgNabooruTrouserCuffPatternTex;
+#endif
+            
 #define dgNabooruBeltJewelTex "__OTR__objects/object_nb/gNabooruBeltJewelTex"
-static const ALIGN_ASSET(2) char gNabooruBeltJewelTex[] = dgNabooruBeltJewelTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruBeltJewelTex[] = dgNabooruBeltJewelTex;
+#else
+static const char gNabooruBeltJewelTex[] __attribute__((aligned (2))) = dgNabooruBeltJewelTex;
+#endif
+            
 #define dgNabooruBeltTex "__OTR__objects/object_nb/gNabooruBeltTex"
-static const ALIGN_ASSET(2) char gNabooruBeltTex[] = dgNabooruBeltTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruBeltTex[] = dgNabooruBeltTex;
+#else
+static const char gNabooruBeltTex[] __attribute__((aligned (2))) = dgNabooruBeltTex;
+#endif
+            
 #define dgNabooruSkinGradient2Tex "__OTR__objects/object_nb/gNabooruSkinGradient2Tex"
-static const ALIGN_ASSET(2) char gNabooruSkinGradient2Tex[] = dgNabooruSkinGradient2Tex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruSkinGradient2Tex[] = dgNabooruSkinGradient2Tex;
+#else
+static const char gNabooruSkinGradient2Tex[] __attribute__((aligned (2))) = dgNabooruSkinGradient2Tex;
+#endif
+            
 #define dgNabooruForeheadJewelSettingTopTex "__OTR__objects/object_nb/gNabooruForeheadJewelSettingTopTex"
-static const ALIGN_ASSET(2) char gNabooruForeheadJewelSettingTopTex[] = dgNabooruForeheadJewelSettingTopTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruForeheadJewelSettingTopTex[] = dgNabooruForeheadJewelSettingTopTex;
+#else
+static const char gNabooruForeheadJewelSettingTopTex[] __attribute__((aligned (2))) = dgNabooruForeheadJewelSettingTopTex;
+#endif
+            
 #define dgNabooruForeheadJewelSettingBottomTex "__OTR__objects/object_nb/gNabooruForeheadJewelSettingBottomTex"
-static const ALIGN_ASSET(2) char gNabooruForeheadJewelSettingBottomTex[] = dgNabooruForeheadJewelSettingBottomTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruForeheadJewelSettingBottomTex[] = dgNabooruForeheadJewelSettingBottomTex;
+#else
+static const char gNabooruForeheadJewelSettingBottomTex[] __attribute__((aligned (2))) = dgNabooruForeheadJewelSettingBottomTex;
+#endif
+            
 #define dgNabooruForeheadJewelSettingSideTex "__OTR__objects/object_nb/gNabooruForeheadJewelSettingSideTex"
-static const ALIGN_ASSET(2) char gNabooruForeheadJewelSettingSideTex[] = dgNabooruForeheadJewelSettingSideTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruForeheadJewelSettingSideTex[] = dgNabooruForeheadJewelSettingSideTex;
+#else
+static const char gNabooruForeheadJewelSettingSideTex[] __attribute__((aligned (2))) = dgNabooruForeheadJewelSettingSideTex;
+#endif
+            
 #define dgNabooruHairTex "__OTR__objects/object_nb/gNabooruHairTex"
-static const ALIGN_ASSET(2) char gNabooruHairTex[] = dgNabooruHairTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruHairTex[] = dgNabooruHairTex;
+#else
+static const char gNabooruHairTex[] __attribute__((aligned (2))) = dgNabooruHairTex;
+#endif
+            
 #define dgNabooruForeheadJewelTex "__OTR__objects/object_nb/gNabooruForeheadJewelTex"
-static const ALIGN_ASSET(2) char gNabooruForeheadJewelTex[] = dgNabooruForeheadJewelTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruForeheadJewelTex[] = dgNabooruForeheadJewelTex;
+#else
+static const char gNabooruForeheadJewelTex[] __attribute__((aligned (2))) = dgNabooruForeheadJewelTex;
+#endif
+            
 #define dgNabooruEarTex "__OTR__objects/object_nb/gNabooruEarTex"
-static const ALIGN_ASSET(2) char gNabooruEarTex[] = dgNabooruEarTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruEarTex[] = dgNabooruEarTex;
+#else
+static const char gNabooruEarTex[] __attribute__((aligned (2))) = dgNabooruEarTex;
+#endif
+            
 #define dgNabooruFingersBackSideTex "__OTR__objects/object_nb/gNabooruFingersBackSideTex"
-static const ALIGN_ASSET(2) char gNabooruFingersBackSideTex[] = dgNabooruFingersBackSideTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruFingersBackSideTex[] = dgNabooruFingersBackSideTex;
+#else
+static const char gNabooruFingersBackSideTex[] __attribute__((aligned (2))) = dgNabooruFingersBackSideTex;
+#endif
+            
 #define dgNabooruEarringsNecklaceArmletTex "__OTR__objects/object_nb/gNabooruEarringsNecklaceArmletTex"
-static const ALIGN_ASSET(2) char gNabooruEarringsNecklaceArmletTex[] = dgNabooruEarringsNecklaceArmletTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruEarringsNecklaceArmletTex[] = dgNabooruEarringsNecklaceArmletTex;
+#else
+static const char gNabooruEarringsNecklaceArmletTex[] __attribute__((aligned (2))) = dgNabooruEarringsNecklaceArmletTex;
+#endif
+            
 #define dgNabooruPonytailCuffJewelTex "__OTR__objects/object_nb/gNabooruPonytailCuffJewelTex"
-static const ALIGN_ASSET(2) char gNabooruPonytailCuffJewelTex[] = dgNabooruPonytailCuffJewelTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruPonytailCuffJewelTex[] = dgNabooruPonytailCuffJewelTex;
+#else
+static const char gNabooruPonytailCuffJewelTex[] __attribute__((aligned (2))) = dgNabooruPonytailCuffJewelTex;
+#endif
+            
 #define dgNabooruGloveHandBackTex "__OTR__objects/object_nb/gNabooruGloveHandBackTex"
-static const ALIGN_ASSET(2) char gNabooruGloveHandBackTex[] = dgNabooruGloveHandBackTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruGloveHandBackTex[] = dgNabooruGloveHandBackTex;
+#else
+static const char gNabooruGloveHandBackTex[] __attribute__((aligned (2))) = dgNabooruGloveHandBackTex;
+#endif
+            
 #define dgNabooruGloveHandPalmTex "__OTR__objects/object_nb/gNabooruGloveHandPalmTex"
-static const ALIGN_ASSET(2) char gNabooruGloveHandPalmTex[] = dgNabooruGloveHandPalmTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruGloveHandPalmTex[] = dgNabooruGloveHandPalmTex;
+#else
+static const char gNabooruGloveHandPalmTex[] __attribute__((aligned (2))) = dgNabooruGloveHandPalmTex;
+#endif
+            
 #define dgNabooruShoeUpperMouthTex "__OTR__objects/object_nb/gNabooruShoeUpperMouthTex"
-static const ALIGN_ASSET(2) char gNabooruShoeUpperMouthTex[] = dgNabooruShoeUpperMouthTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruShoeUpperMouthTex[] = dgNabooruShoeUpperMouthTex;
+#else
+static const char gNabooruShoeUpperMouthTex[] __attribute__((aligned (2))) = dgNabooruShoeUpperMouthTex;
+#endif
+            
 #define dgNabooruShoeSoleTex "__OTR__objects/object_nb/gNabooruShoeSoleTex"
-static const ALIGN_ASSET(2) char gNabooruShoeSoleTex[] = dgNabooruShoeSoleTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruShoeSoleTex[] = dgNabooruShoeSoleTex;
+#else
+static const char gNabooruShoeSoleTex[] __attribute__((aligned (2))) = dgNabooruShoeSoleTex;
+#endif
+            
 #define dgNabooruTopOfFootTex "__OTR__objects/object_nb/gNabooruTopOfFootTex"
-static const ALIGN_ASSET(2) char gNabooruTopOfFootTex[] = dgNabooruTopOfFootTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruTopOfFootTex[] = dgNabooruTopOfFootTex;
+#else
+static const char gNabooruTopOfFootTex[] __attribute__((aligned (2))) = dgNabooruTopOfFootTex;
+#endif
+            
 #define dgNabooruFingersPalmSideTex "__OTR__objects/object_nb/gNabooruFingersPalmSideTex"
-static const ALIGN_ASSET(2) char gNabooruFingersPalmSideTex[] = dgNabooruFingersPalmSideTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruFingersPalmSideTex[] = dgNabooruFingersPalmSideTex;
+#else
+static const char gNabooruFingersPalmSideTex[] __attribute__((aligned (2))) = dgNabooruFingersPalmSideTex;
+#endif
+            
 #define dgNabooruLipsTex "__OTR__objects/object_nb/gNabooruLipsTex"
-static const ALIGN_ASSET(2) char gNabooruLipsTex[] = dgNabooruLipsTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruLipsTex[] = dgNabooruLipsTex;
+#else
+static const char gNabooruLipsTex[] __attribute__((aligned (2))) = dgNabooruLipsTex;
+#endif
+            
 #define dgNabooruEyeOpenTex "__OTR__objects/object_nb/gNabooruEyeOpenTex"
-static const ALIGN_ASSET(2) char gNabooruEyeOpenTex[] = dgNabooruEyeOpenTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruEyeOpenTex[] = dgNabooruEyeOpenTex;
+#else
+static const char gNabooruEyeOpenTex[] __attribute__((aligned (2))) = dgNabooruEyeOpenTex;
+#endif
+            
 #define dgNabooruEyeHalfTex "__OTR__objects/object_nb/gNabooruEyeHalfTex"
-static const ALIGN_ASSET(2) char gNabooruEyeHalfTex[] = dgNabooruEyeHalfTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruEyeHalfTex[] = dgNabooruEyeHalfTex;
+#else
+static const char gNabooruEyeHalfTex[] __attribute__((aligned (2))) = dgNabooruEyeHalfTex;
+#endif
+            
 #define dgNabooruEyeClosedTex "__OTR__objects/object_nb/gNabooruEyeClosedTex"
-static const ALIGN_ASSET(2) char gNabooruEyeClosedTex[] = dgNabooruEyeClosedTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruEyeClosedTex[] = dgNabooruEyeClosedTex;
+#else
+static const char gNabooruEyeClosedTex[] __attribute__((aligned (2))) = dgNabooruEyeClosedTex;
+#endif
+            
 #define dgNabooruEyeWideTex "__OTR__objects/object_nb/gNabooruEyeWideTex"
-static const ALIGN_ASSET(2) char gNabooruEyeWideTex[] = dgNabooruEyeWideTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruEyeWideTex[] = dgNabooruEyeWideTex;
+#else
+static const char gNabooruEyeWideTex[] __attribute__((aligned (2))) = dgNabooruEyeWideTex;
+#endif
+            
 #define dgNabooruPuttingHandsTogetherCastingMagicAnim "__OTR__objects/object_nb/gNabooruPuttingHandsTogetherCastingMagicAnim"
-static const ALIGN_ASSET(2) char gNabooruPuttingHandsTogetherCastingMagicAnim[] = dgNabooruPuttingHandsTogetherCastingMagicAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruPuttingHandsTogetherCastingMagicAnim[] = dgNabooruPuttingHandsTogetherCastingMagicAnim;
+#else
+static const char gNabooruPuttingHandsTogetherCastingMagicAnim[] __attribute__((aligned (2))) = dgNabooruPuttingHandsTogetherCastingMagicAnim;
+#endif
+            
 #define dgNabooruSittingCrossLeggedAnim "__OTR__objects/object_nb/gNabooruSittingCrossLeggedAnim"
-static const ALIGN_ASSET(2) char gNabooruSittingCrossLeggedAnim[] = dgNabooruSittingCrossLeggedAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruSittingCrossLeggedAnim[] = dgNabooruSittingCrossLeggedAnim;
+#else
+static const char gNabooruSittingCrossLeggedAnim[] __attribute__((aligned (2))) = dgNabooruSittingCrossLeggedAnim;
+#endif
+            
 #define dgNabooruTrappedInVortexRaisingArmAnim "__OTR__objects/object_nb/gNabooruTrappedInVortexRaisingArmAnim"
-static const ALIGN_ASSET(2) char gNabooruTrappedInVortexRaisingArmAnim[] = dgNabooruTrappedInVortexRaisingArmAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruTrappedInVortexRaisingArmAnim[] = dgNabooruTrappedInVortexRaisingArmAnim;
+#else
+static const char gNabooruTrappedInVortexRaisingArmAnim[] __attribute__((aligned (2))) = dgNabooruTrappedInVortexRaisingArmAnim;
+#endif
+            
 #define dgNabooruSuckedByVortexAnim "__OTR__objects/object_nb/gNabooruSuckedByVortexAnim"
-static const ALIGN_ASSET(2) char gNabooruSuckedByVortexAnim[] = dgNabooruSuckedByVortexAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruSuckedByVortexAnim[] = dgNabooruSuckedByVortexAnim;
+#else
+static const char gNabooruSuckedByVortexAnim[] __attribute__((aligned (2))) = dgNabooruSuckedByVortexAnim;
+#endif
+            
 #define dgNabooruTrappedInVortexPushingGroundAnim "__OTR__objects/object_nb/gNabooruTrappedInVortexPushingGroundAnim"
-static const ALIGN_ASSET(2) char gNabooruTrappedInVortexPushingGroundAnim[] = dgNabooruTrappedInVortexPushingGroundAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruTrappedInVortexPushingGroundAnim[] = dgNabooruTrappedInVortexPushingGroundAnim;
+#else
+static const char gNabooruTrappedInVortexPushingGroundAnim[] __attribute__((aligned (2))) = dgNabooruTrappedInVortexPushingGroundAnim;
+#endif
+            
 #define dgNabooruRaisingArmsGivingMedallionAnim "__OTR__objects/object_nb/gNabooruRaisingArmsGivingMedallionAnim"
-static const ALIGN_ASSET(2) char gNabooruRaisingArmsGivingMedallionAnim[] = dgNabooruRaisingArmsGivingMedallionAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruRaisingArmsGivingMedallionAnim[] = dgNabooruRaisingArmsGivingMedallionAnim;
+#else
+static const char gNabooruRaisingArmsGivingMedallionAnim[] __attribute__((aligned (2))) = dgNabooruRaisingArmsGivingMedallionAnim;
+#endif
+            
 #define dgNabooruArmsRaisedGivingMedallionAnim "__OTR__objects/object_nb/gNabooruArmsRaisedGivingMedallionAnim"
-static const ALIGN_ASSET(2) char gNabooruArmsRaisedGivingMedallionAnim[] = dgNabooruArmsRaisedGivingMedallionAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruArmsRaisedGivingMedallionAnim[] = dgNabooruArmsRaisedGivingMedallionAnim;
+#else
+static const char gNabooruArmsRaisedGivingMedallionAnim[] __attribute__((aligned (2))) = dgNabooruArmsRaisedGivingMedallionAnim;
+#endif
+            
 #define dgNabooruOnOneKneeTurningHeadRightToLeftTransitionAnim "__OTR__objects/object_nb/gNabooruOnOneKneeTurningHeadRightToLeftTransitionAnim"
-static const ALIGN_ASSET(2) char gNabooruOnOneKneeTurningHeadRightToLeftTransitionAnim[] = dgNabooruOnOneKneeTurningHeadRightToLeftTransitionAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruOnOneKneeTurningHeadRightToLeftTransitionAnim[] = dgNabooruOnOneKneeTurningHeadRightToLeftTransitionAnim;
+#else
+static const char gNabooruOnOneKneeTurningHeadRightToLeftTransitionAnim[] __attribute__((aligned (2))) = dgNabooruOnOneKneeTurningHeadRightToLeftTransitionAnim;
+#endif
+            
 #define dgNabooruOnOneKneeLookingLeftAnim "__OTR__objects/object_nb/gNabooruOnOneKneeLookingLeftAnim"
-static const ALIGN_ASSET(2) char gNabooruOnOneKneeLookingLeftAnim[] = dgNabooruOnOneKneeLookingLeftAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruOnOneKneeLookingLeftAnim[] = dgNabooruOnOneKneeLookingLeftAnim;
+#else
+static const char gNabooruOnOneKneeLookingLeftAnim[] __attribute__((aligned (2))) = dgNabooruOnOneKneeLookingLeftAnim;
+#endif
+            
 #define dgNabooruOnAllFoursToOnOneKneeLookingRightTransitionAnim "__OTR__objects/object_nb/gNabooruOnAllFoursToOnOneKneeLookingRightTransitionAnim"
-static const ALIGN_ASSET(2) char gNabooruOnAllFoursToOnOneKneeLookingRightTransitionAnim[] = dgNabooruOnAllFoursToOnOneKneeLookingRightTransitionAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruOnAllFoursToOnOneKneeLookingRightTransitionAnim[] = dgNabooruOnAllFoursToOnOneKneeLookingRightTransitionAnim;
+#else
+static const char gNabooruOnAllFoursToOnOneKneeLookingRightTransitionAnim[] __attribute__((aligned (2))) = dgNabooruOnAllFoursToOnOneKneeLookingRightTransitionAnim;
+#endif
+            
 #define dgNabooruOnOneKneeLookingRightAnim "__OTR__objects/object_nb/gNabooruOnOneKneeLookingRightAnim"
-static const ALIGN_ASSET(2) char gNabooruOnOneKneeLookingRightAnim[] = dgNabooruOnOneKneeLookingRightAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruOnOneKneeLookingRightAnim[] = dgNabooruOnOneKneeLookingRightAnim;
+#else
+static const char gNabooruOnOneKneeLookingRightAnim[] __attribute__((aligned (2))) = dgNabooruOnOneKneeLookingRightAnim;
+#endif
+            
 #define dgNabooruOnAllFoursAnim "__OTR__objects/object_nb/gNabooruOnAllFoursAnim"
-static const ALIGN_ASSET(2) char gNabooruOnAllFoursAnim[] = dgNabooruOnAllFoursAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruOnAllFoursAnim[] = dgNabooruOnAllFoursAnim;
+#else
+static const char gNabooruOnAllFoursAnim[] __attribute__((aligned (2))) = dgNabooruOnAllFoursAnim;
+#endif
+            
 #define dgNabooruStandingHandsOnHipsAnim "__OTR__objects/object_nb/gNabooruStandingHandsOnHipsAnim"
-static const ALIGN_ASSET(2) char gNabooruStandingHandsOnHipsAnim[] = dgNabooruStandingHandsOnHipsAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruStandingHandsOnHipsAnim[] = dgNabooruStandingHandsOnHipsAnim;
+#else
+static const char gNabooruStandingHandsOnHipsAnim[] __attribute__((aligned (2))) = dgNabooruStandingHandsOnHipsAnim;
+#endif
+            
 #define dgNabooruStandingToWalkingTransitionAnim "__OTR__objects/object_nb/gNabooruStandingToWalkingTransitionAnim"
-static const ALIGN_ASSET(2) char gNabooruStandingToWalkingTransitionAnim[] = dgNabooruStandingToWalkingTransitionAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruStandingToWalkingTransitionAnim[] = dgNabooruStandingToWalkingTransitionAnim;
+#else
+static const char gNabooruStandingToWalkingTransitionAnim[] __attribute__((aligned (2))) = dgNabooruStandingToWalkingTransitionAnim;
+#endif
+            
 #define dgNabooruSittingCrossLeggedLookingUpRightAnim "__OTR__objects/object_nb/gNabooruSittingCrossLeggedLookingUpRightAnim"
-static const ALIGN_ASSET(2) char gNabooruSittingCrossLeggedLookingUpRightAnim[] = dgNabooruSittingCrossLeggedLookingUpRightAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruSittingCrossLeggedLookingUpRightAnim[] = dgNabooruSittingCrossLeggedLookingUpRightAnim;
+#else
+static const char gNabooruSittingCrossLeggedLookingUpRightAnim[] __attribute__((aligned (2))) = dgNabooruSittingCrossLeggedLookingUpRightAnim;
+#endif
+            
 #define dgNabooruSittingCrossLeggedTurningToLookUpRightTransitionAnim "__OTR__objects/object_nb/gNabooruSittingCrossLeggedTurningToLookUpRightTransitionAnim"
-static const ALIGN_ASSET(2) char gNabooruSittingCrossLeggedTurningToLookUpRightTransitionAnim[] = dgNabooruSittingCrossLeggedTurningToLookUpRightTransitionAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruSittingCrossLeggedTurningToLookUpRightTransitionAnim[] = dgNabooruSittingCrossLeggedTurningToLookUpRightTransitionAnim;
+#else
+static const char gNabooruSittingCrossLeggedTurningToLookUpRightTransitionAnim[] __attribute__((aligned (2))) = dgNabooruSittingCrossLeggedTurningToLookUpRightTransitionAnim;
+#endif
+            
 #define dgNabooruKneeingToRunningToHitAnim "__OTR__objects/object_nb/gNabooruKneeingToRunningToHitAnim"
-static const ALIGN_ASSET(2) char gNabooruKneeingToRunningToHitAnim[] = dgNabooruKneeingToRunningToHitAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruKneeingToRunningToHitAnim[] = dgNabooruKneeingToRunningToHitAnim;
+#else
+static const char gNabooruKneeingToRunningToHitAnim[] __attribute__((aligned (2))) = dgNabooruKneeingToRunningToHitAnim;
+#endif
+            
 #define dgNabooruUnusedKneelingAtCrawlspaceToStandingTransitionAnim "__OTR__objects/object_nb/gNabooruUnusedKneelingAtCrawlspaceToStandingTransitionAnim"
-static const ALIGN_ASSET(2) char gNabooruUnusedKneelingAtCrawlspaceToStandingTransitionAnim[] = dgNabooruUnusedKneelingAtCrawlspaceToStandingTransitionAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruUnusedKneelingAtCrawlspaceToStandingTransitionAnim[] = dgNabooruUnusedKneelingAtCrawlspaceToStandingTransitionAnim;
+#else
+static const char gNabooruUnusedKneelingAtCrawlspaceToStandingTransitionAnim[] __attribute__((aligned (2))) = dgNabooruUnusedKneelingAtCrawlspaceToStandingTransitionAnim;
+#endif
+            
 #define dgNabooruKneeingAtCrawlspaceAnim "__OTR__objects/object_nb/gNabooruKneeingAtCrawlspaceAnim"
-static const ALIGN_ASSET(2) char gNabooruKneeingAtCrawlspaceAnim[] = dgNabooruKneeingAtCrawlspaceAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruKneeingAtCrawlspaceAnim[] = dgNabooruKneeingAtCrawlspaceAnim;
+#else
+static const char gNabooruKneeingAtCrawlspaceAnim[] __attribute__((aligned (2))) = dgNabooruKneeingAtCrawlspaceAnim;
+#endif
+            
 #define dgNabooruCollapseFromStandingToKneelingTransitionAnim "__OTR__objects/object_nb/gNabooruCollapseFromStandingToKneelingTransitionAnim"
-static const ALIGN_ASSET(2) char gNabooruCollapseFromStandingToKneelingTransitionAnim[] = dgNabooruCollapseFromStandingToKneelingTransitionAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruCollapseFromStandingToKneelingTransitionAnim[] = dgNabooruCollapseFromStandingToKneelingTransitionAnim;
+#else
+static const char gNabooruCollapseFromStandingToKneelingTransitionAnim[] __attribute__((aligned (2))) = dgNabooruCollapseFromStandingToKneelingTransitionAnim;
+#endif
+            
 #define dgNabooruWalkingAnim "__OTR__objects/object_nb/gNabooruWalkingAnim"
-static const ALIGN_ASSET(2) char gNabooruWalkingAnim[] = dgNabooruWalkingAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruWalkingAnim[] = dgNabooruWalkingAnim;
+#else
+static const char gNabooruWalkingAnim[] __attribute__((aligned (2))) = dgNabooruWalkingAnim;
+#endif
+            
 #define dgNabooruStandingHandsOnHipsChamberOfSagesAnim "__OTR__objects/object_nb/gNabooruStandingHandsOnHipsChamberOfSagesAnim"
-static const ALIGN_ASSET(2) char gNabooruStandingHandsOnHipsChamberOfSagesAnim[] = dgNabooruStandingHandsOnHipsChamberOfSagesAnim;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruStandingHandsOnHipsChamberOfSagesAnim[] = dgNabooruStandingHandsOnHipsChamberOfSagesAnim;
+#else
+static const char gNabooruStandingHandsOnHipsChamberOfSagesAnim[] __attribute__((aligned (2))) = dgNabooruStandingHandsOnHipsChamberOfSagesAnim;
+#endif
+            
 #define dgNabooruUnusedVtx_00EFF8 "__OTR__objects/object_nb/gNabooruUnusedVtx_00EFF8"
-static const ALIGN_ASSET(2) char gNabooruUnusedVtx_00EFF8[] = dgNabooruUnusedVtx_00EFF8;
+#ifdef _WIN32
+static const __declspec(align(2)) char gNabooruUnusedVtx_00EFF8[] = dgNabooruUnusedVtx_00EFF8;
+#else
+static const char gNabooruUnusedVtx_00EFF8[] __attribute__((aligned (2))) = dgNabooruUnusedVtx_00EFF8;
+#endif
+            
+

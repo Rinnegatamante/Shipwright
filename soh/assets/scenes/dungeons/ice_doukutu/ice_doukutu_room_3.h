@@ -1,30 +1,65 @@
 #pragma once
+#define dice_doukutu_room_3DL_0031C8 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3DL_0031C8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ice_doukutu_room_3DL_0031C8[] = dice_doukutu_room_3DL_0031C8;
+#else
+static const char ice_doukutu_room_3DL_0031C8[] __attribute__((aligned (2))) = dice_doukutu_room_3DL_0031C8;
+#endif
+            
+#define dice_doukutu_room_3Tex_0039F8 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3Tex_0039F8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ice_doukutu_room_3Tex_0039F8[] = dice_doukutu_room_3Tex_0039F8;
+#else
+static const char ice_doukutu_room_3Tex_0039F8[] __attribute__((aligned (2))) = dice_doukutu_room_3Tex_0039F8;
+#endif
+            
+#define dice_doukutu_room_3Tex_0031F8 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3Tex_0031F8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ice_doukutu_room_3Tex_0031F8[] = dice_doukutu_room_3Tex_0031F8;
+#else
+static const char ice_doukutu_room_3Tex_0031F8[] __attribute__((aligned (2))) = dice_doukutu_room_3Tex_0031F8;
+#endif
+            
+#define dice_doukutu_room_3DL_005060 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3DL_005060"
+#ifdef _WIN32
+static const __declspec(align(2)) char ice_doukutu_room_3DL_005060[] = dice_doukutu_room_3DL_005060;
+#else
+static const char ice_doukutu_room_3DL_005060[] __attribute__((aligned (2))) = dice_doukutu_room_3DL_005060;
+#endif
+            
+#define dice_doukutu_room_3Tex_007080 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3Tex_007080"
+#ifdef _WIN32
+static const __declspec(align(2)) char ice_doukutu_room_3Tex_007080[] = dice_doukutu_room_3Tex_007080;
+#else
+static const char ice_doukutu_room_3Tex_007080[] __attribute__((aligned (2))) = dice_doukutu_room_3Tex_007080;
+#endif
+            
+#define dice_doukutu_room_3Tex_005080 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3Tex_005080"
+#ifdef _WIN32
+static const __declspec(align(2)) char ice_doukutu_room_3Tex_005080[] = dice_doukutu_room_3Tex_005080;
+#else
+static const char ice_doukutu_room_3Tex_005080[] __attribute__((aligned (2))) = dice_doukutu_room_3Tex_005080;
+#endif
+            
+#define dice_doukutu_room_3Tex_006080 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3Tex_006080"
+#ifdef _WIN32
+static const __declspec(align(2)) char ice_doukutu_room_3Tex_006080[] = dice_doukutu_room_3Tex_006080;
+#else
+static const char ice_doukutu_room_3Tex_006080[] __attribute__((aligned (2))) = dice_doukutu_room_3Tex_006080;
+#endif
+            
+#define dice_doukutu_room_3Set_0001C0DL_0031C8 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3Set_0001C0DL_0031C8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ice_doukutu_room_3Set_0001C0DL_0031C8[] = dice_doukutu_room_3Set_0001C0DL_0031C8;
+#else
+static const char ice_doukutu_room_3Set_0001C0DL_0031C8[] __attribute__((aligned (2))) = dice_doukutu_room_3Set_0001C0DL_0031C8;
+#endif
+            
+#define dice_doukutu_room_3Set_0001C0DL_005060 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3Set_0001C0DL_005060"
+#ifdef _WIN32
+static const __declspec(align(2)) char ice_doukutu_room_3Set_0001C0DL_005060[] = dice_doukutu_room_3Set_0001C0DL_005060;
+#else
+static const char ice_doukutu_room_3Set_0001C0DL_005060[] __attribute__((aligned (2))) = dice_doukutu_room_3Set_0001C0DL_005060;
+#endif
+            
 
-#include "align_asset_macro.h"
-
-#define dice_doukutu_room_3DL_0031D8 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3DL_0031D8"
-static const ALIGN_ASSET(2) char ice_doukutu_room_3DL_0031D8[] = dice_doukutu_room_3DL_0031D8;
-
-#define dice_doukutu_room_3Tex_003A08 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3Tex_003A08"
-static const ALIGN_ASSET(2) char ice_doukutu_room_3Tex_003A08[] = dice_doukutu_room_3Tex_003A08;
-
-#define dice_doukutu_room_3Tex_003208 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3Tex_003208"
-static const ALIGN_ASSET(2) char ice_doukutu_room_3Tex_003208[] = dice_doukutu_room_3Tex_003208;
-
-#define dice_doukutu_room_3DL_005070 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3DL_005070"
-static const ALIGN_ASSET(2) char ice_doukutu_room_3DL_005070[] = dice_doukutu_room_3DL_005070;
-
-#define dice_doukutu_room_3Tex_007090 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3Tex_007090"
-static const ALIGN_ASSET(2) char ice_doukutu_room_3Tex_007090[] = dice_doukutu_room_3Tex_007090;
-
-#define dice_doukutu_room_3Tex_005090 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3Tex_005090"
-static const ALIGN_ASSET(2) char ice_doukutu_room_3Tex_005090[] = dice_doukutu_room_3Tex_005090;
-
-#define dice_doukutu_room_3Tex_006090 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3Tex_006090"
-static const ALIGN_ASSET(2) char ice_doukutu_room_3Tex_006090[] = dice_doukutu_room_3Tex_006090;
-
-#define dice_doukutu_room_3Set_0001D0DL_0031D8 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3Set_0001D0DL_0031D8"
-static const ALIGN_ASSET(2) char ice_doukutu_room_3Set_0001D0DL_0031D8[] = dice_doukutu_room_3Set_0001D0DL_0031D8;
-
-#define dice_doukutu_room_3Set_0001D0DL_005070 "__OTR__scenes/nonmq/ice_doukutu_scene/ice_doukutu_room_3Set_0001D0DL_005070"
-static const ALIGN_ASSET(2) char ice_doukutu_room_3Set_0001D0DL_005070[] = dice_doukutu_room_3Set_0001D0DL_005070;

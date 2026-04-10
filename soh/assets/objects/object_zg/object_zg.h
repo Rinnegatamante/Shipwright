@@ -1,15 +1,30 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgTowerCollapseBarMetalTex "__OTR__objects/object_zg/gTowerCollapseBarMetalTex"
-static const ALIGN_ASSET(2) char gTowerCollapseBarMetalTex[] = dgTowerCollapseBarMetalTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTowerCollapseBarMetalTex[] = dgTowerCollapseBarMetalTex;
+#else
+static const char gTowerCollapseBarMetalTex[] __attribute__((aligned (2))) = dgTowerCollapseBarMetalTex;
+#endif
+            
 #define dgTowerCollapseBarFlameTex "__OTR__objects/object_zg/gTowerCollapseBarFlameTex"
-static const ALIGN_ASSET(2) char gTowerCollapseBarFlameTex[] = dgTowerCollapseBarFlameTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTowerCollapseBarFlameTex[] = dgTowerCollapseBarFlameTex;
+#else
+static const char gTowerCollapseBarFlameTex[] __attribute__((aligned (2))) = dgTowerCollapseBarFlameTex;
+#endif
+            
 #define dgTowerCollapseBarsDL "__OTR__objects/object_zg/gTowerCollapseBarsDL"
-static const ALIGN_ASSET(2) char gTowerCollapseBarsDL[] = dgTowerCollapseBarsDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTowerCollapseBarsDL[] = dgTowerCollapseBarsDL;
+#else
+static const char gTowerCollapseBarsDL[] __attribute__((aligned (2))) = dgTowerCollapseBarsDL;
+#endif
+            
 #define dgTowerCollapseBarsCol "__OTR__objects/object_zg/gTowerCollapseBarsCol"
-static const ALIGN_ASSET(2) char gTowerCollapseBarsCol[] = dgTowerCollapseBarsCol;
+#ifdef _WIN32
+static const __declspec(align(2)) char gTowerCollapseBarsCol[] = dgTowerCollapseBarsCol;
+#else
+static const char gTowerCollapseBarsCol[] __attribute__((aligned (2))) = dgTowerCollapseBarsCol;
+#endif
+            
+

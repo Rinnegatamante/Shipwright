@@ -1,15 +1,30 @@
 #pragma once
+#define dbdan_room_7DL_002D08 "__OTR__scenes/nonmq/bdan_scene/bdan_room_7DL_002D08"
+#ifdef _WIN32
+static const __declspec(align(2)) char bdan_room_7DL_002D08[] = dbdan_room_7DL_002D08;
+#else
+static const char bdan_room_7DL_002D08[] __attribute__((aligned (2))) = dbdan_room_7DL_002D08;
+#endif
+            
+#define dbdan_room_7Tex_002D20 "__OTR__scenes/nonmq/bdan_scene/bdan_room_7Tex_002D20"
+#ifdef _WIN32
+static const __declspec(align(2)) char bdan_room_7Tex_002D20[] = dbdan_room_7Tex_002D20;
+#else
+static const char bdan_room_7Tex_002D20[] __attribute__((aligned (2))) = dbdan_room_7Tex_002D20;
+#endif
+            
+#define dbdan_room_7Tex_003120 "__OTR__scenes/nonmq/bdan_scene/bdan_room_7Tex_003120"
+#ifdef _WIN32
+static const __declspec(align(2)) char bdan_room_7Tex_003120[] = dbdan_room_7Tex_003120;
+#else
+static const char bdan_room_7Tex_003120[] __attribute__((aligned (2))) = dbdan_room_7Tex_003120;
+#endif
+            
+#define dbdan_room_7Set_0001A0DL_002D08 "__OTR__scenes/nonmq/bdan_scene/bdan_room_7Set_0001A0DL_002D08"
+#ifdef _WIN32
+static const __declspec(align(2)) char bdan_room_7Set_0001A0DL_002D08[] = dbdan_room_7Set_0001A0DL_002D08;
+#else
+static const char bdan_room_7Set_0001A0DL_002D08[] __attribute__((aligned (2))) = dbdan_room_7Set_0001A0DL_002D08;
+#endif
+            
 
-#include "align_asset_macro.h"
-
-#define dbdan_room_7DL_002CB8 "__OTR__scenes/nonmq/bdan_scene/bdan_room_7DL_002CB8"
-static const ALIGN_ASSET(2) char bdan_room_7DL_002CB8[] = dbdan_room_7DL_002CB8;
-
-#define dbdan_room_7Tex_002CD0 "__OTR__scenes/nonmq/bdan_scene/bdan_room_7Tex_002CD0"
-static const ALIGN_ASSET(2) char bdan_room_7Tex_002CD0[] = dbdan_room_7Tex_002CD0;
-
-#define dbdan_room_7Tex_0030D0 "__OTR__scenes/nonmq/bdan_scene/bdan_room_7Tex_0030D0"
-static const ALIGN_ASSET(2) char bdan_room_7Tex_0030D0[] = dbdan_room_7Tex_0030D0;
-
-#define dbdan_room_7Set_000150DL_002CB8 "__OTR__scenes/nonmq/bdan_scene/bdan_room_7Set_000150DL_002CB8"
-static const ALIGN_ASSET(2) char bdan_room_7Set_000150DL_002CB8[] = dbdan_room_7Set_000150DL_002CB8;

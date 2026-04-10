@@ -1,15 +1,30 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgGossipStoneTex "__OTR__objects/object_gs/gGossipStoneTex"
-static const ALIGN_ASSET(2) char gGossipStoneTex[] = dgGossipStoneTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gGossipStoneTex[] = dgGossipStoneTex;
+#else
+static const char gGossipStoneTex[] __attribute__((aligned (2))) = dgGossipStoneTex;
+#endif
+            
 #define dgGossipStoneMaterialDL "__OTR__objects/object_gs/gGossipStoneMaterialDL"
-static const ALIGN_ASSET(2) char gGossipStoneMaterialDL[] = dgGossipStoneMaterialDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gGossipStoneMaterialDL[] = dgGossipStoneMaterialDL;
+#else
+static const char gGossipStoneMaterialDL[] __attribute__((aligned (2))) = dgGossipStoneMaterialDL;
+#endif
+            
 #define dgGossipStoneDL "__OTR__objects/object_gs/gGossipStoneDL"
-static const ALIGN_ASSET(2) char gGossipStoneDL[] = dgGossipStoneDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gGossipStoneDL[] = dgGossipStoneDL;
+#else
+static const char gGossipStoneDL[] __attribute__((aligned (2))) = dgGossipStoneDL;
+#endif
+            
 #define dgGossipStoneSquishedDL "__OTR__objects/object_gs/gGossipStoneSquishedDL"
-static const ALIGN_ASSET(2) char gGossipStoneSquishedDL[] = dgGossipStoneSquishedDL;
+#ifdef _WIN32
+static const __declspec(align(2)) char gGossipStoneSquishedDL[] = dgGossipStoneSquishedDL;
+#else
+static const char gGossipStoneSquishedDL[] __attribute__((aligned (2))) = dgGossipStoneSquishedDL;
+#endif
+            
+

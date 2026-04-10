@@ -1,24 +1,51 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgBombFlowerLeafOutwardsTex "__OTR__objects/object_bombf/gBombFlowerLeafOutwardsTex"
-static const ALIGN_ASSET(2) char gBombFlowerLeafOutwardsTex[] = dgBombFlowerLeafOutwardsTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBombFlowerLeafOutwardsTex[] = dgBombFlowerLeafOutwardsTex;
+#else
+static const char gBombFlowerLeafOutwardsTex[] __attribute__((aligned (2))) = dgBombFlowerLeafOutwardsTex;
+#endif
+            
 #define dgBombFlowerLeafUpwardsTex "__OTR__objects/object_bombf/gBombFlowerLeafUpwardsTex"
-static const ALIGN_ASSET(2) char gBombFlowerLeafUpwardsTex[] = dgBombFlowerLeafUpwardsTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBombFlowerLeafUpwardsTex[] = dgBombFlowerLeafUpwardsTex;
+#else
+static const char gBombFlowerLeafUpwardsTex[] __attribute__((aligned (2))) = dgBombFlowerLeafUpwardsTex;
+#endif
+            
 #define dgBombFlowerBombTex "__OTR__objects/object_bombf/gBombFlowerBombTex"
-static const ALIGN_ASSET(2) char gBombFlowerBombTex[] = dgBombFlowerBombTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBombFlowerBombTex[] = dgBombFlowerBombTex;
+#else
+static const char gBombFlowerBombTex[] __attribute__((aligned (2))) = dgBombFlowerBombTex;
+#endif
+            
 #define dgBombFlowerFuseTex "__OTR__objects/object_bombf/gBombFlowerFuseTex"
-static const ALIGN_ASSET(2) char gBombFlowerFuseTex[] = dgBombFlowerFuseTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBombFlowerFuseTex[] = dgBombFlowerFuseTex;
+#else
+static const char gBombFlowerFuseTex[] __attribute__((aligned (2))) = dgBombFlowerFuseTex;
+#endif
+            
 #define dgBombFlowerLeavesDL "__OTR__objects/object_bombf/gBombFlowerLeavesDL"
-static const ALIGN_ASSET(2) char gBombFlowerLeavesDL[] = dgBombFlowerLeavesDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBombFlowerLeavesDL[] = dgBombFlowerLeavesDL;
+#else
+static const char gBombFlowerLeavesDL[] __attribute__((aligned (2))) = dgBombFlowerLeavesDL;
+#endif
+            
 #define dgBombFlowerBombAndSparkDL "__OTR__objects/object_bombf/gBombFlowerBombAndSparkDL"
-static const ALIGN_ASSET(2) char gBombFlowerBombAndSparkDL[] = dgBombFlowerBombAndSparkDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBombFlowerBombAndSparkDL[] = dgBombFlowerBombAndSparkDL;
+#else
+static const char gBombFlowerBombAndSparkDL[] __attribute__((aligned (2))) = dgBombFlowerBombAndSparkDL;
+#endif
+            
 #define dgBombFlowerBaseLeavesDL "__OTR__objects/object_bombf/gBombFlowerBaseLeavesDL"
-static const ALIGN_ASSET(2) char gBombFlowerBaseLeavesDL[] = dgBombFlowerBaseLeavesDL;
+#ifdef _WIN32
+static const __declspec(align(2)) char gBombFlowerBaseLeavesDL[] = dgBombFlowerBaseLeavesDL;
+#else
+static const char gBombFlowerBaseLeavesDL[] __attribute__((aligned (2))) = dgBombFlowerBaseLeavesDL;
+#endif
+            
+

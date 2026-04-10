@@ -1,12 +1,23 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgBottomOfTheWellTitleCardENGTex "__OTR__textures/g_pn_54/gBottomOfTheWellTitleCardENGTex"
-static const ALIGN_ASSET(2) char gBottomOfTheWellTitleCardENGTex[] = dgBottomOfTheWellTitleCardENGTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBottomOfTheWellTitleCardENGTex[] = dgBottomOfTheWellTitleCardENGTex;
+#else
+static const char gBottomOfTheWellTitleCardENGTex[] __attribute__((aligned (2))) = dgBottomOfTheWellTitleCardENGTex;
+#endif
+            
 #define dgBottomOfTheWellTitleCardGERTex "__OTR__textures/g_pn_54/gBottomOfTheWellTitleCardGERTex"
-static const ALIGN_ASSET(2) char gBottomOfTheWellTitleCardGERTex[] = dgBottomOfTheWellTitleCardGERTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBottomOfTheWellTitleCardGERTex[] = dgBottomOfTheWellTitleCardGERTex;
+#else
+static const char gBottomOfTheWellTitleCardGERTex[] __attribute__((aligned (2))) = dgBottomOfTheWellTitleCardGERTex;
+#endif
+            
 #define dgBottomOfTheWellTitleCardFRATex "__OTR__textures/g_pn_54/gBottomOfTheWellTitleCardFRATex"
-static const ALIGN_ASSET(2) char gBottomOfTheWellTitleCardFRATex[] = dgBottomOfTheWellTitleCardFRATex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gBottomOfTheWellTitleCardFRATex[] = dgBottomOfTheWellTitleCardFRATex;
+#else
+static const char gBottomOfTheWellTitleCardFRATex[] __attribute__((aligned (2))) = dgBottomOfTheWellTitleCardFRATex;
+#endif
+            
+

@@ -1,12 +1,23 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgJabuJabuTitleCardENGTex "__OTR__textures/g_pn_07/gJabuJabuTitleCardENGTex"
-static const ALIGN_ASSET(2) char gJabuJabuTitleCardENGTex[] = dgJabuJabuTitleCardENGTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gJabuJabuTitleCardENGTex[] = dgJabuJabuTitleCardENGTex;
+#else
+static const char gJabuJabuTitleCardENGTex[] __attribute__((aligned (2))) = dgJabuJabuTitleCardENGTex;
+#endif
+            
 #define dgJabuJabuTitleCardGERTex "__OTR__textures/g_pn_07/gJabuJabuTitleCardGERTex"
-static const ALIGN_ASSET(2) char gJabuJabuTitleCardGERTex[] = dgJabuJabuTitleCardGERTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gJabuJabuTitleCardGERTex[] = dgJabuJabuTitleCardGERTex;
+#else
+static const char gJabuJabuTitleCardGERTex[] __attribute__((aligned (2))) = dgJabuJabuTitleCardGERTex;
+#endif
+            
 #define dgJabuJabuTitleCardFRATex "__OTR__textures/g_pn_07/gJabuJabuTitleCardFRATex"
-static const ALIGN_ASSET(2) char gJabuJabuTitleCardFRATex[] = dgJabuJabuTitleCardFRATex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gJabuJabuTitleCardFRATex[] = dgJabuJabuTitleCardFRATex;
+#else
+static const char gJabuJabuTitleCardFRATex[] __attribute__((aligned (2))) = dgJabuJabuTitleCardFRATex;
+#endif
+            
+

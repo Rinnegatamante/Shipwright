@@ -1,12 +1,23 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgTreasureBoxShopTitleCardENGTex "__OTR__textures/g_pn_51/gTreasureBoxShopTitleCardENGTex"
-static const ALIGN_ASSET(2) char gTreasureBoxShopTitleCardENGTex[] = dgTreasureBoxShopTitleCardENGTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTreasureBoxShopTitleCardENGTex[] = dgTreasureBoxShopTitleCardENGTex;
+#else
+static const char gTreasureBoxShopTitleCardENGTex[] __attribute__((aligned (2))) = dgTreasureBoxShopTitleCardENGTex;
+#endif
+            
 #define dgTreasureBoxShopTitleCardGERTex "__OTR__textures/g_pn_51/gTreasureBoxShopTitleCardGERTex"
-static const ALIGN_ASSET(2) char gTreasureBoxShopTitleCardGERTex[] = dgTreasureBoxShopTitleCardGERTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTreasureBoxShopTitleCardGERTex[] = dgTreasureBoxShopTitleCardGERTex;
+#else
+static const char gTreasureBoxShopTitleCardGERTex[] __attribute__((aligned (2))) = dgTreasureBoxShopTitleCardGERTex;
+#endif
+            
 #define dgTreasureBoxShopTitleCardFRATex "__OTR__textures/g_pn_51/gTreasureBoxShopTitleCardFRATex"
-static const ALIGN_ASSET(2) char gTreasureBoxShopTitleCardFRATex[] = dgTreasureBoxShopTitleCardFRATex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gTreasureBoxShopTitleCardFRATex[] = dgTreasureBoxShopTitleCardFRATex;
+#else
+static const char gTreasureBoxShopTitleCardFRATex[] __attribute__((aligned (2))) = dgTreasureBoxShopTitleCardFRATex;
+#endif
+            
+

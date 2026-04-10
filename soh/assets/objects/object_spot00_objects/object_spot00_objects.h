@@ -1,24 +1,51 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgHyruleFieldCastleDrawbridgeDL "__OTR__objects/object_spot00_objects/gHyruleFieldCastleDrawbridgeDL"
-static const ALIGN_ASSET(2) char gHyruleFieldCastleDrawbridgeDL[] = dgHyruleFieldCastleDrawbridgeDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gHyruleFieldCastleDrawbridgeDL[] = dgHyruleFieldCastleDrawbridgeDL;
+#else
+static const char gHyruleFieldCastleDrawbridgeDL[] __attribute__((aligned (2))) = dgHyruleFieldCastleDrawbridgeDL;
+#endif
+            
 #define dgHyruleFieldCastleDrawbridgeWoodTex "__OTR__objects/object_spot00_objects/gHyruleFieldCastleDrawbridgeWoodTex"
-static const ALIGN_ASSET(2) char gHyruleFieldCastleDrawbridgeWoodTex[] = dgHyruleFieldCastleDrawbridgeWoodTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gHyruleFieldCastleDrawbridgeWoodTex[] = dgHyruleFieldCastleDrawbridgeWoodTex;
+#else
+static const char gHyruleFieldCastleDrawbridgeWoodTex[] __attribute__((aligned (2))) = dgHyruleFieldCastleDrawbridgeWoodTex;
+#endif
+            
 #define dgHyruleFieldCastleDrawbridgeBoltDL "__OTR__objects/object_spot00_objects/gHyruleFieldCastleDrawbridgeBoltDL"
-static const ALIGN_ASSET(2) char gHyruleFieldCastleDrawbridgeBoltDL[] = dgHyruleFieldCastleDrawbridgeBoltDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gHyruleFieldCastleDrawbridgeBoltDL[] = dgHyruleFieldCastleDrawbridgeBoltDL;
+#else
+static const char gHyruleFieldCastleDrawbridgeBoltDL[] __attribute__((aligned (2))) = dgHyruleFieldCastleDrawbridgeBoltDL;
+#endif
+            
 #define dgHyruleFieldCastleDrawbridgeCol "__OTR__objects/object_spot00_objects/gHyruleFieldCastleDrawbridgeCol"
-static const ALIGN_ASSET(2) char gHyruleFieldCastleDrawbridgeCol[] = dgHyruleFieldCastleDrawbridgeCol;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gHyruleFieldCastleDrawbridgeCol[] = dgHyruleFieldCastleDrawbridgeCol;
+#else
+static const char gHyruleFieldCastleDrawbridgeCol[] __attribute__((aligned (2))) = dgHyruleFieldCastleDrawbridgeCol;
+#endif
+            
 #define dgHyruleFieldCastleDrawbridgeChainsDL "__OTR__objects/object_spot00_objects/gHyruleFieldCastleDrawbridgeChainsDL"
-static const ALIGN_ASSET(2) char gHyruleFieldCastleDrawbridgeChainsDL[] = dgHyruleFieldCastleDrawbridgeChainsDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gHyruleFieldCastleDrawbridgeChainsDL[] = dgHyruleFieldCastleDrawbridgeChainsDL;
+#else
+static const char gHyruleFieldCastleDrawbridgeChainsDL[] __attribute__((aligned (2))) = dgHyruleFieldCastleDrawbridgeChainsDL;
+#endif
+            
 #define dgHyruleFieldCastleDrawbridgeChainsTex "__OTR__objects/object_spot00_objects/gHyruleFieldCastleDrawbridgeChainsTex"
-static const ALIGN_ASSET(2) char gHyruleFieldCastleDrawbridgeChainsTex[] = dgHyruleFieldCastleDrawbridgeChainsTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gHyruleFieldCastleDrawbridgeChainsTex[] = dgHyruleFieldCastleDrawbridgeChainsTex;
+#else
+static const char gHyruleFieldCastleDrawbridgeChainsTex[] __attribute__((aligned (2))) = dgHyruleFieldCastleDrawbridgeChainsTex;
+#endif
+            
 #define dgHyruleFieldCastleDrawbridgeChainsCol "__OTR__objects/object_spot00_objects/gHyruleFieldCastleDrawbridgeChainsCol"
-static const ALIGN_ASSET(2) char gHyruleFieldCastleDrawbridgeChainsCol[] = dgHyruleFieldCastleDrawbridgeChainsCol;
+#ifdef _WIN32
+static const __declspec(align(2)) char gHyruleFieldCastleDrawbridgeChainsCol[] = dgHyruleFieldCastleDrawbridgeChainsCol;
+#else
+static const char gHyruleFieldCastleDrawbridgeChainsCol[] __attribute__((aligned (2))) = dgHyruleFieldCastleDrawbridgeChainsCol;
+#endif
+            
+

@@ -1,18 +1,37 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgFloorTileEnemyBottomTex "__OTR__objects/object_yukabyun/gFloorTileEnemyBottomTex"
-static const ALIGN_ASSET(2) char gFloorTileEnemyBottomTex[] = dgFloorTileEnemyBottomTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFloorTileEnemyBottomTex[] = dgFloorTileEnemyBottomTex;
+#else
+static const char gFloorTileEnemyBottomTex[] __attribute__((aligned (2))) = dgFloorTileEnemyBottomTex;
+#endif
+            
 #define dgFloorTileEnemyTopTex "__OTR__objects/object_yukabyun/gFloorTileEnemyTopTex"
-static const ALIGN_ASSET(2) char gFloorTileEnemyTopTex[] = dgFloorTileEnemyTopTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFloorTileEnemyTopTex[] = dgFloorTileEnemyTopTex;
+#else
+static const char gFloorTileEnemyTopTex[] __attribute__((aligned (2))) = dgFloorTileEnemyTopTex;
+#endif
+            
 #define dgFloorTileEnemyFragmentTex "__OTR__objects/object_yukabyun/gFloorTileEnemyFragmentTex"
-static const ALIGN_ASSET(2) char gFloorTileEnemyFragmentTex[] = dgFloorTileEnemyFragmentTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFloorTileEnemyFragmentTex[] = dgFloorTileEnemyFragmentTex;
+#else
+static const char gFloorTileEnemyFragmentTex[] __attribute__((aligned (2))) = dgFloorTileEnemyFragmentTex;
+#endif
+            
 #define dgFloorTileEnemyDL "__OTR__objects/object_yukabyun/gFloorTileEnemyDL"
-static const ALIGN_ASSET(2) char gFloorTileEnemyDL[] = dgFloorTileEnemyDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFloorTileEnemyDL[] = dgFloorTileEnemyDL;
+#else
+static const char gFloorTileEnemyDL[] __attribute__((aligned (2))) = dgFloorTileEnemyDL;
+#endif
+            
 #define dgFloorTileEnemyFragmentDL "__OTR__objects/object_yukabyun/gFloorTileEnemyFragmentDL"
-static const ALIGN_ASSET(2) char gFloorTileEnemyFragmentDL[] = dgFloorTileEnemyFragmentDL;
+#ifdef _WIN32
+static const __declspec(align(2)) char gFloorTileEnemyFragmentDL[] = dgFloorTileEnemyFragmentDL;
+#else
+static const char gFloorTileEnemyFragmentDL[] __attribute__((aligned (2))) = dgFloorTileEnemyFragmentDL;
+#endif
+            
+

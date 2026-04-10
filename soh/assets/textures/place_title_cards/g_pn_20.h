@@ -1,12 +1,23 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgGoronShopTitleCardENGTex "__OTR__textures/g_pn_20/gGoronShopTitleCardENGTex"
-static const ALIGN_ASSET(2) char gGoronShopTitleCardENGTex[] = dgGoronShopTitleCardENGTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gGoronShopTitleCardENGTex[] = dgGoronShopTitleCardENGTex;
+#else
+static const char gGoronShopTitleCardENGTex[] __attribute__((aligned (2))) = dgGoronShopTitleCardENGTex;
+#endif
+            
 #define dgGoronShopTitleCardGERTex "__OTR__textures/g_pn_20/gGoronShopTitleCardGERTex"
-static const ALIGN_ASSET(2) char gGoronShopTitleCardGERTex[] = dgGoronShopTitleCardGERTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gGoronShopTitleCardGERTex[] = dgGoronShopTitleCardGERTex;
+#else
+static const char gGoronShopTitleCardGERTex[] __attribute__((aligned (2))) = dgGoronShopTitleCardGERTex;
+#endif
+            
 #define dgGoronShopTitleCardFRATex "__OTR__textures/g_pn_20/gGoronShopTitleCardFRATex"
-static const ALIGN_ASSET(2) char gGoronShopTitleCardFRATex[] = dgGoronShopTitleCardFRATex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gGoronShopTitleCardFRATex[] = dgGoronShopTitleCardFRATex;
+#else
+static const char gGoronShopTitleCardFRATex[] __attribute__((aligned (2))) = dgGoronShopTitleCardFRATex;
+#endif
+            
+

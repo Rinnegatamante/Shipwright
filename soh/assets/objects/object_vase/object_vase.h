@@ -1,12 +1,23 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgUnusedVaseDL "__OTR__objects/object_vase/gUnusedVaseDL"
-static const ALIGN_ASSET(2) char gUnusedVaseDL[] = dgUnusedVaseDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gUnusedVaseDL[] = dgUnusedVaseDL;
+#else
+static const char gUnusedVaseDL[] __attribute__((aligned (2))) = dgUnusedVaseDL;
+#endif
+            
 #define dgUnusedVaseTopTex "__OTR__objects/object_vase/gUnusedVaseTopTex"
-static const ALIGN_ASSET(2) char gUnusedVaseTopTex[] = dgUnusedVaseTopTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gUnusedVaseTopTex[] = dgUnusedVaseTopTex;
+#else
+static const char gUnusedVaseTopTex[] __attribute__((aligned (2))) = dgUnusedVaseTopTex;
+#endif
+            
 #define dgUnusedVaseBodyTex "__OTR__objects/object_vase/gUnusedVaseBodyTex"
-static const ALIGN_ASSET(2) char gUnusedVaseBodyTex[] = dgUnusedVaseBodyTex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gUnusedVaseBodyTex[] = dgUnusedVaseBodyTex;
+#else
+static const char gUnusedVaseBodyTex[] __attribute__((aligned (2))) = dgUnusedVaseBodyTex;
+#endif
+            
+

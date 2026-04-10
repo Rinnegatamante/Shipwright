@@ -1,66 +1,149 @@
 #pragma once
+#define dganontika_room_9DL_001D60 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_001D60"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9DL_001D60[] = dganontika_room_9DL_001D60;
+#else
+static const char ganontika_room_9DL_001D60[] __attribute__((aligned (2))) = dganontika_room_9DL_001D60;
+#endif
+            
+#define dganontika_room_9Tex_007CF8 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_007CF8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9Tex_007CF8[] = dganontika_room_9Tex_007CF8;
+#else
+static const char ganontika_room_9Tex_007CF8[] __attribute__((aligned (2))) = dganontika_room_9Tex_007CF8;
+#endif
+            
+#define dganontika_room_9Tex_007EF8 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_007EF8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9Tex_007EF8[] = dganontika_room_9Tex_007EF8;
+#else
+static const char ganontika_room_9Tex_007EF8[] __attribute__((aligned (2))) = dganontika_room_9Tex_007EF8;
+#endif
+            
+#define dganontika_room_9DL_002988 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_002988"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9DL_002988[] = dganontika_room_9DL_002988;
+#else
+static const char ganontika_room_9DL_002988[] __attribute__((aligned (2))) = dganontika_room_9DL_002988;
+#endif
+            
+#define dganontika_room_9DL_003270 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_003270"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9DL_003270[] = dganontika_room_9DL_003270;
+#else
+static const char ganontika_room_9DL_003270[] __attribute__((aligned (2))) = dganontika_room_9DL_003270;
+#endif
+            
+#define dganontika_room_9DL_003C00 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_003C00"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9DL_003C00[] = dganontika_room_9DL_003C00;
+#else
+static const char ganontika_room_9DL_003C00[] __attribute__((aligned (2))) = dganontika_room_9DL_003C00;
+#endif
+            
+#define dganontika_room_9DL_004A20 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_004A20"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9DL_004A20[] = dganontika_room_9DL_004A20;
+#else
+static const char ganontika_room_9DL_004A20[] __attribute__((aligned (2))) = dganontika_room_9DL_004A20;
+#endif
+            
+#define dganontika_room_9Tex_0086F8 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_0086F8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9Tex_0086F8[] = dganontika_room_9Tex_0086F8;
+#else
+static const char ganontika_room_9Tex_0086F8[] __attribute__((aligned (2))) = dganontika_room_9Tex_0086F8;
+#endif
+            
+#define dganontika_room_9Tex_0096F8 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_0096F8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9Tex_0096F8[] = dganontika_room_9Tex_0096F8;
+#else
+static const char ganontika_room_9Tex_0096F8[] __attribute__((aligned (2))) = dganontika_room_9Tex_0096F8;
+#endif
+            
+#define dganontika_room_9DL_004DF0 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_004DF0"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9DL_004DF0[] = dganontika_room_9DL_004DF0;
+#else
+static const char ganontika_room_9DL_004DF0[] __attribute__((aligned (2))) = dganontika_room_9DL_004DF0;
+#endif
+            
+#define dganontika_room_9Tex_008EF8 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_008EF8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9Tex_008EF8[] = dganontika_room_9Tex_008EF8;
+#else
+static const char ganontika_room_9Tex_008EF8[] __attribute__((aligned (2))) = dganontika_room_9Tex_008EF8;
+#endif
+            
+#define dganontika_room_9DL_0050A8 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_0050A8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9DL_0050A8[] = dganontika_room_9DL_0050A8;
+#else
+static const char ganontika_room_9DL_0050A8[] __attribute__((aligned (2))) = dganontika_room_9DL_0050A8;
+#endif
+            
+#define dganontika_room_9DL_005388 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_005388"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9DL_005388[] = dganontika_room_9DL_005388;
+#else
+static const char ganontika_room_9DL_005388[] __attribute__((aligned (2))) = dganontika_room_9DL_005388;
+#endif
+            
+#define dganontika_room_9DL_001360 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_001360"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9DL_001360[] = dganontika_room_9DL_001360;
+#else
+static const char ganontika_room_9DL_001360[] __attribute__((aligned (2))) = dganontika_room_9DL_001360;
+#endif
+            
+#define dganontika_room_9DL_000750 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_000750"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9DL_000750[] = dganontika_room_9DL_000750;
+#else
+static const char ganontika_room_9DL_000750[] __attribute__((aligned (2))) = dganontika_room_9DL_000750;
+#endif
+            
+#define dganontika_room_9Tex_0054F8 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_0054F8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9Tex_0054F8[] = dganontika_room_9Tex_0054F8;
+#else
+static const char ganontika_room_9Tex_0054F8[] __attribute__((aligned (2))) = dganontika_room_9Tex_0054F8;
+#endif
+            
+#define dganontika_room_9Tex_0064F8 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_0064F8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9Tex_0064F8[] = dganontika_room_9Tex_0064F8;
+#else
+static const char ganontika_room_9Tex_0064F8[] __attribute__((aligned (2))) = dganontika_room_9Tex_0064F8;
+#endif
+            
+#define dganontika_room_9Tex_0074F8 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_0074F8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9Tex_0074F8[] = dganontika_room_9Tex_0074F8;
+#else
+static const char ganontika_room_9Tex_0074F8[] __attribute__((aligned (2))) = dganontika_room_9Tex_0074F8;
+#endif
+            
+#define dganontika_room_9DL_000410 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_000410"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9DL_000410[] = dganontika_room_9DL_000410;
+#else
+static const char ganontika_room_9DL_000410[] __attribute__((aligned (2))) = dganontika_room_9DL_000410;
+#endif
+            
+#define dganontika_room_9DL_00A7C0 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_00A7C0"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9DL_00A7C0[] = dganontika_room_9DL_00A7C0;
+#else
+static const char ganontika_room_9DL_00A7C0[] __attribute__((aligned (2))) = dganontika_room_9DL_00A7C0;
+#endif
+            
+#define dganontika_room_9Tex_00A888 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_00A888"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_room_9Tex_00A888[] = dganontika_room_9Tex_00A888;
+#else
+static const char ganontika_room_9Tex_00A888[] __attribute__((aligned (2))) = dganontika_room_9Tex_00A888;
+#endif
+            
 
-#include "align_asset_macro.h"
-
-#define dganontika_room_9DL_001CF0 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_001CF0"
-static const ALIGN_ASSET(2) char ganontika_room_9DL_001CF0[] = dganontika_room_9DL_001CF0;
-
-#define dganontika_room_9Tex_007C88 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_007C88"
-static const ALIGN_ASSET(2) char ganontika_room_9Tex_007C88[] = dganontika_room_9Tex_007C88;
-
-#define dganontika_room_9Tex_007E88 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_007E88"
-static const ALIGN_ASSET(2) char ganontika_room_9Tex_007E88[] = dganontika_room_9Tex_007E88;
-
-#define dganontika_room_9DL_002918 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_002918"
-static const ALIGN_ASSET(2) char ganontika_room_9DL_002918[] = dganontika_room_9DL_002918;
-
-#define dganontika_room_9DL_003200 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_003200"
-static const ALIGN_ASSET(2) char ganontika_room_9DL_003200[] = dganontika_room_9DL_003200;
-
-#define dganontika_room_9DL_003B90 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_003B90"
-static const ALIGN_ASSET(2) char ganontika_room_9DL_003B90[] = dganontika_room_9DL_003B90;
-
-#define dganontika_room_9DL_0049B0 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_0049B0"
-static const ALIGN_ASSET(2) char ganontika_room_9DL_0049B0[] = dganontika_room_9DL_0049B0;
-
-#define dganontika_room_9Tex_008688 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_008688"
-static const ALIGN_ASSET(2) char ganontika_room_9Tex_008688[] = dganontika_room_9Tex_008688;
-
-#define dganontika_room_9Tex_009688 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_009688"
-static const ALIGN_ASSET(2) char ganontika_room_9Tex_009688[] = dganontika_room_9Tex_009688;
-
-#define dganontika_room_9DL_004D80 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_004D80"
-static const ALIGN_ASSET(2) char ganontika_room_9DL_004D80[] = dganontika_room_9DL_004D80;
-
-#define dganontika_room_9Tex_008E88 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_008E88"
-static const ALIGN_ASSET(2) char ganontika_room_9Tex_008E88[] = dganontika_room_9Tex_008E88;
-
-#define dganontika_room_9DL_005038 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_005038"
-static const ALIGN_ASSET(2) char ganontika_room_9DL_005038[] = dganontika_room_9DL_005038;
-
-#define dganontika_room_9DL_005318 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_005318"
-static const ALIGN_ASSET(2) char ganontika_room_9DL_005318[] = dganontika_room_9DL_005318;
-
-#define dganontika_room_9DL_0012F0 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_0012F0"
-static const ALIGN_ASSET(2) char ganontika_room_9DL_0012F0[] = dganontika_room_9DL_0012F0;
-
-#define dganontika_room_9DL_0006E0 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_0006E0"
-static const ALIGN_ASSET(2) char ganontika_room_9DL_0006E0[] = dganontika_room_9DL_0006E0;
-
-#define dganontika_room_9Tex_005488 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_005488"
-static const ALIGN_ASSET(2) char ganontika_room_9Tex_005488[] = dganontika_room_9Tex_005488;
-
-#define dganontika_room_9Tex_006488 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_006488"
-static const ALIGN_ASSET(2) char ganontika_room_9Tex_006488[] = dganontika_room_9Tex_006488;
-
-#define dganontika_room_9Tex_007488 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_007488"
-static const ALIGN_ASSET(2) char ganontika_room_9Tex_007488[] = dganontika_room_9Tex_007488;
-
-#define dganontika_room_9DL_0003A0 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_0003A0"
-static const ALIGN_ASSET(2) char ganontika_room_9DL_0003A0[] = dganontika_room_9DL_0003A0;
-
-#define dganontika_room_9DL_00A750 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9DL_00A750"
-static const ALIGN_ASSET(2) char ganontika_room_9DL_00A750[] = dganontika_room_9DL_00A750;
-
-#define dganontika_room_9Tex_00A818 "__OTR__scenes/nonmq/ganontika_scene/ganontika_room_9Tex_00A818"
-static const ALIGN_ASSET(2) char ganontika_room_9Tex_00A818[] = dganontika_room_9Tex_00A818;

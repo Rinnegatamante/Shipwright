@@ -1,9 +1,16 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgEnliveningLightTex "__OTR__objects/object_efc_lgt_shower/gEnliveningLightTex"
-static const ALIGN_ASSET(2) char gEnliveningLightTex[] = dgEnliveningLightTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gEnliveningLightTex[] = dgEnliveningLightTex;
+#else
+static const char gEnliveningLightTex[] __attribute__((aligned (2))) = dgEnliveningLightTex;
+#endif
+            
 #define dgEnliveningLightDL "__OTR__objects/object_efc_lgt_shower/gEnliveningLightDL"
-static const ALIGN_ASSET(2) char gEnliveningLightDL[] = dgEnliveningLightDL;
+#ifdef _WIN32
+static const __declspec(align(2)) char gEnliveningLightDL[] = dgEnliveningLightDL;
+#else
+static const char gEnliveningLightDL[] __attribute__((aligned (2))) = dgEnliveningLightDL;
+#endif
+            
+

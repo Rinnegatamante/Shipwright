@@ -1,9 +1,16 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgRedMessageXLeftTex "__OTR__textures/message_texture_static/gRedMessageXLeftTex"
-static const ALIGN_ASSET(2) char gRedMessageXLeftTex[] = dgRedMessageXLeftTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gRedMessageXLeftTex[] = dgRedMessageXLeftTex;
+#else
+static const char gRedMessageXLeftTex[] __attribute__((aligned (2))) = dgRedMessageXLeftTex;
+#endif
+            
 #define dgRedMessageXRightTex "__OTR__textures/message_texture_static/gRedMessageXRightTex"
-static const ALIGN_ASSET(2) char gRedMessageXRightTex[] = dgRedMessageXRightTex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gRedMessageXRightTex[] = dgRedMessageXRightTex;
+#else
+static const char gRedMessageXRightTex[] __attribute__((aligned (2))) = dgRedMessageXRightTex;
+#endif
+            
+

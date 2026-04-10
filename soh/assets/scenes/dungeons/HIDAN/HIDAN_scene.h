@@ -1,30 +1,65 @@
 #pragma once
+#define dHIDAN_sceneCollisionHeader_018AFC "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneCollisionHeader_018AFC"
+#ifdef _WIN32
+static const __declspec(align(2)) char HIDAN_sceneCollisionHeader_018AFC[] = dHIDAN_sceneCollisionHeader_018AFC;
+#else
+static const char HIDAN_sceneCollisionHeader_018AFC[] __attribute__((aligned (2))) = dHIDAN_sceneCollisionHeader_018AFC;
+#endif
+            
+#define dHIDAN_sceneTLUT_018B30 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTLUT_018B30"
+#ifdef _WIN32
+static const __declspec(align(2)) char HIDAN_sceneTLUT_018B30[] = dHIDAN_sceneTLUT_018B30;
+#else
+static const char HIDAN_sceneTLUT_018B30[] __attribute__((aligned (2))) = dHIDAN_sceneTLUT_018B30;
+#endif
+            
+#define dHIDAN_sceneTex_019770 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTex_019770"
+#ifdef _WIN32
+static const __declspec(align(2)) char HIDAN_sceneTex_019770[] = dHIDAN_sceneTex_019770;
+#else
+static const char HIDAN_sceneTex_019770[] __attribute__((aligned (2))) = dHIDAN_sceneTex_019770;
+#endif
+            
+#define dHIDAN_sceneTex_018F70 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTex_018F70"
+#ifdef _WIN32
+static const __declspec(align(2)) char HIDAN_sceneTex_018F70[] = dHIDAN_sceneTex_018F70;
+#else
+static const char HIDAN_sceneTex_018F70[] __attribute__((aligned (2))) = dHIDAN_sceneTex_018F70;
+#endif
+            
+#define dHIDAN_sceneTex_018D70 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTex_018D70"
+#ifdef _WIN32
+static const __declspec(align(2)) char HIDAN_sceneTex_018D70[] = dHIDAN_sceneTex_018D70;
+#else
+static const char HIDAN_sceneTex_018D70[] __attribute__((aligned (2))) = dHIDAN_sceneTex_018D70;
+#endif
+            
+#define dHIDAN_sceneTLUT_018B50 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTLUT_018B50"
+#ifdef _WIN32
+static const __declspec(align(2)) char HIDAN_sceneTLUT_018B50[] = dHIDAN_sceneTLUT_018B50;
+#else
+static const char HIDAN_sceneTLUT_018B50[] __attribute__((aligned (2))) = dHIDAN_sceneTLUT_018B50;
+#endif
+            
+#define dHIDAN_sceneTex_019F70 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTex_019F70"
+#ifdef _WIN32
+static const __declspec(align(2)) char HIDAN_sceneTex_019F70[] = dHIDAN_sceneTex_019F70;
+#else
+static const char HIDAN_sceneTex_019F70[] __attribute__((aligned (2))) = dHIDAN_sceneTex_019F70;
+#endif
+            
+#define dHIDAN_sceneTex_018B70 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTex_018B70"
+#ifdef _WIN32
+static const __declspec(align(2)) char HIDAN_sceneTex_018B70[] = dHIDAN_sceneTex_018B70;
+#else
+static const char HIDAN_sceneTex_018B70[] __attribute__((aligned (2))) = dHIDAN_sceneTex_018B70;
+#endif
+            
+#define dHIDAN_sceneTex_01A170 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTex_01A170"
+#ifdef _WIN32
+static const __declspec(align(2)) char HIDAN_sceneTex_01A170[] = dHIDAN_sceneTex_01A170;
+#else
+static const char HIDAN_sceneTex_01A170[] __attribute__((aligned (2))) = dHIDAN_sceneTex_01A170;
+#endif
+            
 
-#include "align_asset_macro.h"
-
-#define dHIDAN_sceneCollisionHeader_01895C "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneCollisionHeader_01895C"
-static const ALIGN_ASSET(2) char HIDAN_sceneCollisionHeader_01895C[] = dHIDAN_sceneCollisionHeader_01895C;
-
-#define dHIDAN_sceneTLUT_018990 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTLUT_018990"
-static const ALIGN_ASSET(2) char HIDAN_sceneTLUT_018990[] = dHIDAN_sceneTLUT_018990;
-
-#define dHIDAN_sceneTex_0195D0 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTex_0195D0"
-static const ALIGN_ASSET(2) char HIDAN_sceneTex_0195D0[] = dHIDAN_sceneTex_0195D0;
-
-#define dHIDAN_sceneTex_018DD0 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTex_018DD0"
-static const ALIGN_ASSET(2) char HIDAN_sceneTex_018DD0[] = dHIDAN_sceneTex_018DD0;
-
-#define dHIDAN_sceneTex_018BD0 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTex_018BD0"
-static const ALIGN_ASSET(2) char HIDAN_sceneTex_018BD0[] = dHIDAN_sceneTex_018BD0;
-
-#define dHIDAN_sceneTLUT_0189B0 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTLUT_0189B0"
-static const ALIGN_ASSET(2) char HIDAN_sceneTLUT_0189B0[] = dHIDAN_sceneTLUT_0189B0;
-
-#define dHIDAN_sceneTex_019DD0 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTex_019DD0"
-static const ALIGN_ASSET(2) char HIDAN_sceneTex_019DD0[] = dHIDAN_sceneTex_019DD0;
-
-#define dHIDAN_sceneTex_0189D0 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTex_0189D0"
-static const ALIGN_ASSET(2) char HIDAN_sceneTex_0189D0[] = dHIDAN_sceneTex_0189D0;
-
-#define dHIDAN_sceneTex_019FD0 "__OTR__scenes/nonmq/HIDAN_scene/HIDAN_sceneTex_019FD0"
-static const ALIGN_ASSET(2) char HIDAN_sceneTex_019FD0[] = dHIDAN_sceneTex_019FD0;

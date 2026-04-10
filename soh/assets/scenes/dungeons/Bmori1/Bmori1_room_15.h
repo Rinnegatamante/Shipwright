@@ -1,15 +1,30 @@
 #pragma once
+#define dBmori1_room_15DL_001280 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_15DL_001280"
+#ifdef _WIN32
+static const __declspec(align(2)) char Bmori1_room_15DL_001280[] = dBmori1_room_15DL_001280;
+#else
+static const char Bmori1_room_15DL_001280[] __attribute__((aligned (2))) = dBmori1_room_15DL_001280;
+#endif
+            
+#define dBmori1_room_15Tex_001290 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_15Tex_001290"
+#ifdef _WIN32
+static const __declspec(align(2)) char Bmori1_room_15Tex_001290[] = dBmori1_room_15Tex_001290;
+#else
+static const char Bmori1_room_15Tex_001290[] __attribute__((aligned (2))) = dBmori1_room_15Tex_001290;
+#endif
+            
+#define dBmori1_room_15Tex_001A90 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_15Tex_001A90"
+#ifdef _WIN32
+static const __declspec(align(2)) char Bmori1_room_15Tex_001A90[] = dBmori1_room_15Tex_001A90;
+#else
+static const char Bmori1_room_15Tex_001A90[] __attribute__((aligned (2))) = dBmori1_room_15Tex_001A90;
+#endif
+            
+#define dBmori1_room_15Tex_001E90 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_15Tex_001E90"
+#ifdef _WIN32
+static const __declspec(align(2)) char Bmori1_room_15Tex_001E90[] = dBmori1_room_15Tex_001E90;
+#else
+static const char Bmori1_room_15Tex_001E90[] __attribute__((aligned (2))) = dBmori1_room_15Tex_001E90;
+#endif
+            
 
-#include "align_asset_macro.h"
-
-#define dBmori1_room_15DL_0012D0 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_15DL_0012D0"
-static const ALIGN_ASSET(2) char Bmori1_room_15DL_0012D0[] = dBmori1_room_15DL_0012D0;
-
-#define dBmori1_room_15Tex_0012E0 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_15Tex_0012E0"
-static const ALIGN_ASSET(2) char Bmori1_room_15Tex_0012E0[] = dBmori1_room_15Tex_0012E0;
-
-#define dBmori1_room_15Tex_001AE0 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_15Tex_001AE0"
-static const ALIGN_ASSET(2) char Bmori1_room_15Tex_001AE0[] = dBmori1_room_15Tex_001AE0;
-
-#define dBmori1_room_15Tex_001EE0 "__OTR__scenes/nonmq/Bmori1_scene/Bmori1_room_15Tex_001EE0"
-static const ALIGN_ASSET(2) char Bmori1_room_15Tex_001EE0[] = dBmori1_room_15Tex_001EE0;

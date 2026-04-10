@@ -1,27 +1,58 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgFreezardIntactDL "__OTR__objects/object_fz/gFreezardIntactDL"
-static const ALIGN_ASSET(2) char gFreezardIntactDL[] = dgFreezardIntactDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFreezardIntactDL[] = dgFreezardIntactDL;
+#else
+static const char gFreezardIntactDL[] __attribute__((aligned (2))) = dgFreezardIntactDL;
+#endif
+            
 #define dgFreezardTopRightHornChippedDL "__OTR__objects/object_fz/gFreezardTopRightHornChippedDL"
-static const ALIGN_ASSET(2) char gFreezardTopRightHornChippedDL[] = dgFreezardTopRightHornChippedDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFreezardTopRightHornChippedDL[] = dgFreezardTopRightHornChippedDL;
+#else
+static const char gFreezardTopRightHornChippedDL[] __attribute__((aligned (2))) = dgFreezardTopRightHornChippedDL;
+#endif
+            
 #define dgFreezardHeadChippedDL "__OTR__objects/object_fz/gFreezardHeadChippedDL"
-static const ALIGN_ASSET(2) char gFreezardHeadChippedDL[] = dgFreezardHeadChippedDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFreezardHeadChippedDL[] = dgFreezardHeadChippedDL;
+#else
+static const char gFreezardHeadChippedDL[] __attribute__((aligned (2))) = dgFreezardHeadChippedDL;
+#endif
+            
 #define dgFreezardSteamStartDL "__OTR__objects/object_fz/gFreezardSteamStartDL"
-static const ALIGN_ASSET(2) char gFreezardSteamStartDL[] = dgFreezardSteamStartDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFreezardSteamStartDL[] = dgFreezardSteamStartDL;
+#else
+static const char gFreezardSteamStartDL[] __attribute__((aligned (2))) = dgFreezardSteamStartDL;
+#endif
+            
 #define dgFreezardSteamDL "__OTR__objects/object_fz/gFreezardSteamDL"
-static const ALIGN_ASSET(2) char gFreezardSteamDL[] = dgFreezardSteamDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFreezardSteamDL[] = dgFreezardSteamDL;
+#else
+static const char gFreezardSteamDL[] __attribute__((aligned (2))) = dgFreezardSteamDL;
+#endif
+            
 #define dgFreezardIceTriangleDL "__OTR__objects/object_fz/gFreezardIceTriangleDL"
-static const ALIGN_ASSET(2) char gFreezardIceTriangleDL[] = dgFreezardIceTriangleDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFreezardIceTriangleDL[] = dgFreezardIceTriangleDL;
+#else
+static const char gFreezardIceTriangleDL[] __attribute__((aligned (2))) = dgFreezardIceTriangleDL;
+#endif
+            
 #define dgFreezardIceRockDL "__OTR__objects/object_fz/gFreezardIceRockDL"
-static const ALIGN_ASSET(2) char gFreezardIceRockDL[] = dgFreezardIceRockDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFreezardIceRockDL[] = dgFreezardIceRockDL;
+#else
+static const char gFreezardIceRockDL[] __attribute__((aligned (2))) = dgFreezardIceRockDL;
+#endif
+            
 #define dgFreezardSteamTex "__OTR__objects/object_fz/gFreezardSteamTex"
-static const ALIGN_ASSET(2) char gFreezardSteamTex[] = dgFreezardSteamTex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gFreezardSteamTex[] = dgFreezardSteamTex;
+#else
+static const char gFreezardSteamTex[] __attribute__((aligned (2))) = dgFreezardSteamTex;
+#endif
+            
+

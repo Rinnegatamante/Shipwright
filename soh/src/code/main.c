@@ -68,6 +68,7 @@ int main(int argc, char** argv)
 #ifdef __vita__
 int main(int argc, char **argv)
 {
+	//sceSysmoduleLoadModule(SCE_SYSMODULE_RAZOR_CAPTURE);
 	scePowerSetArmClockFrequency(444);
 	scePowerSetBusClockFrequency(222);
 	scePowerSetGpuClockFrequency(222);

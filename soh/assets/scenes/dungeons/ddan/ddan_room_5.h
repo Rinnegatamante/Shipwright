@@ -1,27 +1,58 @@
 #pragma once
+#define dddan_room_5DL_001D90 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5DL_001D90"
+#ifdef _WIN32
+static const __declspec(align(2)) char ddan_room_5DL_001D90[] = dddan_room_5DL_001D90;
+#else
+static const char ddan_room_5DL_001D90[] __attribute__((aligned (2))) = dddan_room_5DL_001D90;
+#endif
+            
+#define dddan_room_5Tex_0042D8 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5Tex_0042D8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ddan_room_5Tex_0042D8[] = dddan_room_5Tex_0042D8;
+#else
+static const char ddan_room_5Tex_0042D8[] __attribute__((aligned (2))) = dddan_room_5Tex_0042D8;
+#endif
+            
+#define dddan_room_5Tex_004AD8 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5Tex_004AD8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ddan_room_5Tex_004AD8[] = dddan_room_5Tex_004AD8;
+#else
+static const char ddan_room_5Tex_004AD8[] __attribute__((aligned (2))) = dddan_room_5Tex_004AD8;
+#endif
+            
+#define dddan_room_5Tex_0032D8 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5Tex_0032D8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ddan_room_5Tex_0032D8[] = dddan_room_5Tex_0032D8;
+#else
+static const char ddan_room_5Tex_0032D8[] __attribute__((aligned (2))) = dddan_room_5Tex_0032D8;
+#endif
+            
+#define dddan_room_5Tex_004ED8 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5Tex_004ED8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ddan_room_5Tex_004ED8[] = dddan_room_5Tex_004ED8;
+#else
+static const char ddan_room_5Tex_004ED8[] __attribute__((aligned (2))) = dddan_room_5Tex_004ED8;
+#endif
+            
+#define dddan_room_5Tex_0046D8 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5Tex_0046D8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ddan_room_5Tex_0046D8[] = dddan_room_5Tex_0046D8;
+#else
+static const char ddan_room_5Tex_0046D8[] __attribute__((aligned (2))) = dddan_room_5Tex_0046D8;
+#endif
+            
+#define dddan_room_5Tex_003AD8 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5Tex_003AD8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ddan_room_5Tex_003AD8[] = dddan_room_5Tex_003AD8;
+#else
+static const char ddan_room_5Tex_003AD8[] __attribute__((aligned (2))) = dddan_room_5Tex_003AD8;
+#endif
+            
+#define dddan_room_5Tex_0056D8 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5Tex_0056D8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ddan_room_5Tex_0056D8[] = dddan_room_5Tex_0056D8;
+#else
+static const char ddan_room_5Tex_0056D8[] __attribute__((aligned (2))) = dddan_room_5Tex_0056D8;
+#endif
+            
 
-#include "align_asset_macro.h"
-
-#define dddan_room_5DL_001D70 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5DL_001D70"
-static const ALIGN_ASSET(2) char ddan_room_5DL_001D70[] = dddan_room_5DL_001D70;
-
-#define dddan_room_5Tex_0042B8 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5Tex_0042B8"
-static const ALIGN_ASSET(2) char ddan_room_5Tex_0042B8[] = dddan_room_5Tex_0042B8;
-
-#define dddan_room_5Tex_004AB8 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5Tex_004AB8"
-static const ALIGN_ASSET(2) char ddan_room_5Tex_004AB8[] = dddan_room_5Tex_004AB8;
-
-#define dddan_room_5Tex_0032B8 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5Tex_0032B8"
-static const ALIGN_ASSET(2) char ddan_room_5Tex_0032B8[] = dddan_room_5Tex_0032B8;
-
-#define dddan_room_5Tex_004EB8 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5Tex_004EB8"
-static const ALIGN_ASSET(2) char ddan_room_5Tex_004EB8[] = dddan_room_5Tex_004EB8;
-
-#define dddan_room_5Tex_0046B8 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5Tex_0046B8"
-static const ALIGN_ASSET(2) char ddan_room_5Tex_0046B8[] = dddan_room_5Tex_0046B8;
-
-#define dddan_room_5Tex_003AB8 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5Tex_003AB8"
-static const ALIGN_ASSET(2) char ddan_room_5Tex_003AB8[] = dddan_room_5Tex_003AB8;
-
-#define dddan_room_5Tex_0056B8 "__OTR__scenes/nonmq/ddan_scene/ddan_room_5Tex_0056B8"
-static const ALIGN_ASSET(2) char ddan_room_5Tex_0056B8[] = dddan_room_5Tex_0056B8;

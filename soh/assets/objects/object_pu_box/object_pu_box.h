@@ -1,30 +1,65 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgBlockSmallDL "__OTR__objects/object_pu_box/gBlockSmallDL"
-static const ALIGN_ASSET(2) char gBlockSmallDL[] = dgBlockSmallDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBlockSmallDL[] = dgBlockSmallDL;
+#else
+static const char gBlockSmallDL[] __attribute__((aligned (2))) = dgBlockSmallDL;
+#endif
+            
 #define dgBlockSmallCol "__OTR__objects/object_pu_box/gBlockSmallCol"
-static const ALIGN_ASSET(2) char gBlockSmallCol[] = dgBlockSmallCol;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBlockSmallCol[] = dgBlockSmallCol;
+#else
+static const char gBlockSmallCol[] __attribute__((aligned (2))) = dgBlockSmallCol;
+#endif
+            
 #define dgBlockMediumDL "__OTR__objects/object_pu_box/gBlockMediumDL"
-static const ALIGN_ASSET(2) char gBlockMediumDL[] = dgBlockMediumDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBlockMediumDL[] = dgBlockMediumDL;
+#else
+static const char gBlockMediumDL[] __attribute__((aligned (2))) = dgBlockMediumDL;
+#endif
+            
 #define dgBlockMediumCol "__OTR__objects/object_pu_box/gBlockMediumCol"
-static const ALIGN_ASSET(2) char gBlockMediumCol[] = dgBlockMediumCol;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBlockMediumCol[] = dgBlockMediumCol;
+#else
+static const char gBlockMediumCol[] __attribute__((aligned (2))) = dgBlockMediumCol;
+#endif
+            
 #define dgBlockTallDL "__OTR__objects/object_pu_box/gBlockTallDL"
-static const ALIGN_ASSET(2) char gBlockTallDL[] = dgBlockTallDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBlockTallDL[] = dgBlockTallDL;
+#else
+static const char gBlockTallDL[] __attribute__((aligned (2))) = dgBlockTallDL;
+#endif
+            
 #define dgBlockTallCol "__OTR__objects/object_pu_box/gBlockTallCol"
-static const ALIGN_ASSET(2) char gBlockTallCol[] = dgBlockTallCol;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBlockTallCol[] = dgBlockTallCol;
+#else
+static const char gBlockTallCol[] __attribute__((aligned (2))) = dgBlockTallCol;
+#endif
+            
 #define dgBlockTallestDL "__OTR__objects/object_pu_box/gBlockTallestDL"
-static const ALIGN_ASSET(2) char gBlockTallestDL[] = dgBlockTallestDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBlockTallestDL[] = dgBlockTallestDL;
+#else
+static const char gBlockTallestDL[] __attribute__((aligned (2))) = dgBlockTallestDL;
+#endif
+            
 #define dgBlockTallestCol "__OTR__objects/object_pu_box/gBlockTallestCol"
-static const ALIGN_ASSET(2) char gBlockTallestCol[] = dgBlockTallestCol;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBlockTallestCol[] = dgBlockTallestCol;
+#else
+static const char gBlockTallestCol[] __attribute__((aligned (2))) = dgBlockTallestCol;
+#endif
+            
 #define dgBlockTex "__OTR__objects/object_pu_box/gBlockTex"
-static const ALIGN_ASSET(2) char gBlockTex[] = dgBlockTex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gBlockTex[] = dgBlockTex;
+#else
+static const char gBlockTex[] __attribute__((aligned (2))) = dgBlockTex;
+#endif
+            
+

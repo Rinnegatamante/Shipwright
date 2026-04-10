@@ -1,63 +1,142 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgForestTrialSageCs "__OTR__scenes/nonmq/ganontika_scene/gForestTrialSageCs"
-static const ALIGN_ASSET(2) char gForestTrialSageCs[] = dgForestTrialSageCs;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gForestTrialSageCs[] = dgForestTrialSageCs;
+#else
+static const char gForestTrialSageCs[] __attribute__((aligned (2))) = dgForestTrialSageCs;
+#endif
+            
 #define dgWaterTrialSageCs "__OTR__scenes/nonmq/ganontika_scene/gWaterTrialSageCs"
-static const ALIGN_ASSET(2) char gWaterTrialSageCs[] = dgWaterTrialSageCs;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gWaterTrialSageCs[] = dgWaterTrialSageCs;
+#else
+static const char gWaterTrialSageCs[] __attribute__((aligned (2))) = dgWaterTrialSageCs;
+#endif
+            
 #define dgShadowTrialSageCs "__OTR__scenes/nonmq/ganontika_scene/gShadowTrialSageCs"
-static const ALIGN_ASSET(2) char gShadowTrialSageCs[] = dgShadowTrialSageCs;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gShadowTrialSageCs[] = dgShadowTrialSageCs;
+#else
+static const char gShadowTrialSageCs[] __attribute__((aligned (2))) = dgShadowTrialSageCs;
+#endif
+            
 #define dgFireTrialSageCs "__OTR__scenes/nonmq/ganontika_scene/gFireTrialSageCs"
-static const ALIGN_ASSET(2) char gFireTrialSageCs[] = dgFireTrialSageCs;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFireTrialSageCs[] = dgFireTrialSageCs;
+#else
+static const char gFireTrialSageCs[] __attribute__((aligned (2))) = dgFireTrialSageCs;
+#endif
+            
 #define dgLightTrialSageCs "__OTR__scenes/nonmq/ganontika_scene/gLightTrialSageCs"
-static const ALIGN_ASSET(2) char gLightTrialSageCs[] = dgLightTrialSageCs;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gLightTrialSageCs[] = dgLightTrialSageCs;
+#else
+static const char gLightTrialSageCs[] __attribute__((aligned (2))) = dgLightTrialSageCs;
+#endif
+            
 #define dgSpiritTrialSageCs "__OTR__scenes/nonmq/ganontika_scene/gSpiritTrialSageCs"
-static const ALIGN_ASSET(2) char gSpiritTrialSageCs[] = dgSpiritTrialSageCs;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSpiritTrialSageCs[] = dgSpiritTrialSageCs;
+#else
+static const char gSpiritTrialSageCs[] __attribute__((aligned (2))) = dgSpiritTrialSageCs;
+#endif
+            
 #define dgTowerBarrierCs "__OTR__scenes/nonmq/ganontika_scene/gTowerBarrierCs"
-static const ALIGN_ASSET(2) char gTowerBarrierCs[] = dgTowerBarrierCs;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gTowerBarrierCs[] = dgTowerBarrierCs;
+#else
+static const char gTowerBarrierCs[] __attribute__((aligned (2))) = dgTowerBarrierCs;
+#endif
+            
 #define dgLightBarrierCs "__OTR__scenes/nonmq/ganontika_scene/gLightBarrierCs"
-static const ALIGN_ASSET(2) char gLightBarrierCs[] = dgLightBarrierCs;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gLightBarrierCs[] = dgLightBarrierCs;
+#else
+static const char gLightBarrierCs[] __attribute__((aligned (2))) = dgLightBarrierCs;
+#endif
+            
 #define dgFireBarrierCs "__OTR__scenes/nonmq/ganontika_scene/gFireBarrierCs"
-static const ALIGN_ASSET(2) char gFireBarrierCs[] = dgFireBarrierCs;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gFireBarrierCs[] = dgFireBarrierCs;
+#else
+static const char gFireBarrierCs[] __attribute__((aligned (2))) = dgFireBarrierCs;
+#endif
+            
 #define dgForestBarrierCs "__OTR__scenes/nonmq/ganontika_scene/gForestBarrierCs"
-static const ALIGN_ASSET(2) char gForestBarrierCs[] = dgForestBarrierCs;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gForestBarrierCs[] = dgForestBarrierCs;
+#else
+static const char gForestBarrierCs[] __attribute__((aligned (2))) = dgForestBarrierCs;
+#endif
+            
 #define dgSpiritBarrierCs "__OTR__scenes/nonmq/ganontika_scene/gSpiritBarrierCs"
-static const ALIGN_ASSET(2) char gSpiritBarrierCs[] = dgSpiritBarrierCs;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gSpiritBarrierCs[] = dgSpiritBarrierCs;
+#else
+static const char gSpiritBarrierCs[] __attribute__((aligned (2))) = dgSpiritBarrierCs;
+#endif
+            
 #define dgWaterBarrierCs "__OTR__scenes/nonmq/ganontika_scene/gWaterBarrierCs"
-static const ALIGN_ASSET(2) char gWaterBarrierCs[] = dgWaterBarrierCs;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gWaterBarrierCs[] = dgWaterBarrierCs;
+#else
+static const char gWaterBarrierCs[] __attribute__((aligned (2))) = dgWaterBarrierCs;
+#endif
+            
 #define dgShadowBarrierCs "__OTR__scenes/nonmq/ganontika_scene/gShadowBarrierCs"
-static const ALIGN_ASSET(2) char gShadowBarrierCs[] = dgShadowBarrierCs;
+#ifdef _WIN32
+static const __declspec(align(2)) char gShadowBarrierCs[] = dgShadowBarrierCs;
+#else
+static const char gShadowBarrierCs[] __attribute__((aligned (2))) = dgShadowBarrierCs;
+#endif
+            
+#define dganontika_sceneCollisionHeader_019E9C "__OTR__scenes/nonmq/ganontika_scene/ganontika_sceneCollisionHeader_019E9C"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_sceneCollisionHeader_019E9C[] = dganontika_sceneCollisionHeader_019E9C;
+#else
+static const char ganontika_sceneCollisionHeader_019E9C[] __attribute__((aligned (2))) = dganontika_sceneCollisionHeader_019E9C;
+#endif
+            
+#define dganontika_sceneTex_01F770 "__OTR__scenes/nonmq/ganontika_scene/ganontika_sceneTex_01F770"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_sceneTex_01F770[] = dganontika_sceneTex_01F770;
+#else
+static const char ganontika_sceneTex_01F770[] __attribute__((aligned (2))) = dganontika_sceneTex_01F770;
+#endif
+            
+#define dganontika_sceneTLUT_01F370 "__OTR__scenes/nonmq/ganontika_scene/ganontika_sceneTLUT_01F370"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_sceneTLUT_01F370[] = dganontika_sceneTLUT_01F370;
+#else
+static const char ganontika_sceneTLUT_01F370[] __attribute__((aligned (2))) = dganontika_sceneTLUT_01F370;
+#endif
+            
+#define dganontika_sceneTex_020370 "__OTR__scenes/nonmq/ganontika_scene/ganontika_sceneTex_020370"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_sceneTex_020370[] = dganontika_sceneTex_020370;
+#else
+static const char ganontika_sceneTex_020370[] __attribute__((aligned (2))) = dganontika_sceneTex_020370;
+#endif
+            
+#define dganontika_sceneTex_020B70 "__OTR__scenes/nonmq/ganontika_scene/ganontika_sceneTex_020B70"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_sceneTex_020B70[] = dganontika_sceneTex_020B70;
+#else
+static const char ganontika_sceneTex_020B70[] __attribute__((aligned (2))) = dganontika_sceneTex_020B70;
+#endif
+            
+#define dganontika_sceneTex_01F570 "__OTR__scenes/nonmq/ganontika_scene/ganontika_sceneTex_01F570"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_sceneTex_01F570[] = dganontika_sceneTex_01F570;
+#else
+static const char ganontika_sceneTex_01F570[] __attribute__((aligned (2))) = dganontika_sceneTex_01F570;
+#endif
+            
+#define dganontika_sceneTex_01FF70 "__OTR__scenes/nonmq/ganontika_scene/ganontika_sceneTex_01FF70"
+#ifdef _WIN32
+static const __declspec(align(2)) char ganontika_sceneTex_01FF70[] = dganontika_sceneTex_01FF70;
+#else
+static const char ganontika_sceneTex_01FF70[] __attribute__((aligned (2))) = dganontika_sceneTex_01FF70;
+#endif
+            
 
-#define dganontika_sceneCollisionHeader_019EAC "__OTR__scenes/nonmq/ganontika_scene/ganontika_sceneCollisionHeader_019EAC"
-static const ALIGN_ASSET(2) char ganontika_sceneCollisionHeader_019EAC[] = dganontika_sceneCollisionHeader_019EAC;
-
-#define dganontika_sceneTex_01F780 "__OTR__scenes/nonmq/ganontika_scene/ganontika_sceneTex_01F780"
-static const ALIGN_ASSET(2) char ganontika_sceneTex_01F780[] = dganontika_sceneTex_01F780;
-
-#define dganontika_sceneTLUT_01F380 "__OTR__scenes/nonmq/ganontika_scene/ganontika_sceneTLUT_01F380"
-static const ALIGN_ASSET(2) char ganontika_sceneTLUT_01F380[] = dganontika_sceneTLUT_01F380;
-
-#define dganontika_sceneTex_020380 "__OTR__scenes/nonmq/ganontika_scene/ganontika_sceneTex_020380"
-static const ALIGN_ASSET(2) char ganontika_sceneTex_020380[] = dganontika_sceneTex_020380;
-
-#define dganontika_sceneTex_020B80 "__OTR__scenes/nonmq/ganontika_scene/ganontika_sceneTex_020B80"
-static const ALIGN_ASSET(2) char ganontika_sceneTex_020B80[] = dganontika_sceneTex_020B80;
-
-#define dganontika_sceneTex_01F580 "__OTR__scenes/nonmq/ganontika_scene/ganontika_sceneTex_01F580"
-static const ALIGN_ASSET(2) char ganontika_sceneTex_01F580[] = dganontika_sceneTex_01F580;
-
-#define dganontika_sceneTex_01FF80 "__OTR__scenes/nonmq/ganontika_scene/ganontika_sceneTex_01FF80"
-static const ALIGN_ASSET(2) char ganontika_sceneTex_01FF80[] = dganontika_sceneTex_01FF80;

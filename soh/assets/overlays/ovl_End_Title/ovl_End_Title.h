@@ -1,30 +1,65 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dsTheLegendOfZeldaTex "__OTR__overlays/ovl_End_Title/sTheLegendOfZeldaTex"
-static const ALIGN_ASSET(2) char sTheLegendOfZeldaTex[] = dsTheLegendOfZeldaTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char sTheLegendOfZeldaTex[] = dsTheLegendOfZeldaTex;
+#else
+static const char sTheLegendOfZeldaTex[] __attribute__((aligned (2))) = dsTheLegendOfZeldaTex;
+#endif
+            
 #define dsOcarinaOfTimeTex "__OTR__overlays/ovl_End_Title/sOcarinaOfTimeTex"
-static const ALIGN_ASSET(2) char sOcarinaOfTimeTex[] = dsOcarinaOfTimeTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char sOcarinaOfTimeTex[] = dsOcarinaOfTimeTex;
+#else
+static const char sOcarinaOfTimeTex[] __attribute__((aligned (2))) = dsOcarinaOfTimeTex;
+#endif
+            
 #define dsTheEndTex "__OTR__overlays/ovl_End_Title/sTheEndTex"
-static const ALIGN_ASSET(2) char sTheEndTex[] = dsTheEndTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char sTheEndTex[] = dsTheEndTex;
+#else
+static const char sTheEndTex[] __attribute__((aligned (2))) = dsTheEndTex;
+#endif
+            
 #define dsNintendoLeftTex "__OTR__overlays/ovl_End_Title/sNintendoLeftTex"
-static const ALIGN_ASSET(2) char sNintendoLeftTex[] = dsNintendoLeftTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char sNintendoLeftTex[] = dsNintendoLeftTex;
+#else
+static const char sNintendoLeftTex[] __attribute__((aligned (2))) = dsNintendoLeftTex;
+#endif
+            
 #define dsNintendoRightTex "__OTR__overlays/ovl_End_Title/sNintendoRightTex"
-static const ALIGN_ASSET(2) char sNintendoRightTex[] = dsNintendoRightTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char sNintendoRightTex[] = dsNintendoRightTex;
+#else
+static const char sNintendoRightTex[] __attribute__((aligned (2))) = dsNintendoRightTex;
+#endif
+            
 #define dsPresentedByTex "__OTR__overlays/ovl_End_Title/sPresentedByTex"
-static const ALIGN_ASSET(2) char sPresentedByTex[] = dsPresentedByTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char sPresentedByTex[] = dsPresentedByTex;
+#else
+static const char sPresentedByTex[] __attribute__((aligned (2))) = dsPresentedByTex;
+#endif
+            
 #define dsTriforceVtx "__OTR__overlays/ovl_End_Title/sTriforceVtx"
-static const ALIGN_ASSET(2) char sTriforceVtx[] = dsTriforceVtx;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char sTriforceVtx[] = dsTriforceVtx;
+#else
+static const char sTriforceVtx[] __attribute__((aligned (2))) = dsTriforceVtx;
+#endif
+            
 #define dsTriforceDL "__OTR__overlays/ovl_End_Title/sTriforceDL"
-static const ALIGN_ASSET(2) char sTriforceDL[] = dsTriforceDL;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char sTriforceDL[] = dsTriforceDL;
+#else
+static const char sTriforceDL[] __attribute__((aligned (2))) = dsTriforceDL;
+#endif
+            
 #define dsPresentedByNintendoDL "__OTR__overlays/ovl_End_Title/sPresentedByNintendoDL"
-static const ALIGN_ASSET(2) char sPresentedByNintendoDL[] = dsPresentedByNintendoDL;
+#ifdef _WIN32
+static const __declspec(align(2)) char sPresentedByNintendoDL[] = dsPresentedByNintendoDL;
+#else
+static const char sPresentedByNintendoDL[] __attribute__((aligned (2))) = dsPresentedByNintendoDL;
+#endif
+            
+

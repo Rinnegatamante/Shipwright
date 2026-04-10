@@ -1,69 +1,156 @@
 #pragma once
+#define dMIZUsin_room_17DL_0033C8 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_0033C8"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_0033C8[] = dMIZUsin_room_17DL_0033C8;
+#else
+static const char MIZUsin_room_17DL_0033C8[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_0033C8;
+#endif
+            
+#define dMIZUsin_room_17DL_004138 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_004138"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_004138[] = dMIZUsin_room_17DL_004138;
+#else
+static const char MIZUsin_room_17DL_004138[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_004138;
+#endif
+            
+#define dMIZUsin_room_17DL_000F80 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_000F80"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_000F80[] = dMIZUsin_room_17DL_000F80;
+#else
+static const char MIZUsin_room_17DL_000F80[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_000F80;
+#endif
+            
+#define dMIZUsin_room_17Tex_006A18 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17Tex_006A18"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17Tex_006A18[] = dMIZUsin_room_17Tex_006A18;
+#else
+static const char MIZUsin_room_17Tex_006A18[] __attribute__((aligned (2))) = dMIZUsin_room_17Tex_006A18;
+#endif
+            
+#define dMIZUsin_room_17Tex_007A18 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17Tex_007A18"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17Tex_007A18[] = dMIZUsin_room_17Tex_007A18;
+#else
+static const char MIZUsin_room_17Tex_007A18[] __attribute__((aligned (2))) = dMIZUsin_room_17Tex_007A18;
+#endif
+            
+#define dMIZUsin_room_17Tex_007218 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17Tex_007218"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17Tex_007218[] = dMIZUsin_room_17Tex_007218;
+#else
+static const char MIZUsin_room_17Tex_007218[] __attribute__((aligned (2))) = dMIZUsin_room_17Tex_007218;
+#endif
+            
+#define dMIZUsin_room_17Tex_008218 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17Tex_008218"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17Tex_008218[] = dMIZUsin_room_17Tex_008218;
+#else
+static const char MIZUsin_room_17Tex_008218[] __attribute__((aligned (2))) = dMIZUsin_room_17Tex_008218;
+#endif
+            
+#define dMIZUsin_room_17DL_005898 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_005898"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_005898[] = dMIZUsin_room_17DL_005898;
+#else
+static const char MIZUsin_room_17DL_005898[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_005898;
+#endif
+            
+#define dMIZUsin_room_17DL_005658 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_005658"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_005658[] = dMIZUsin_room_17DL_005658;
+#else
+static const char MIZUsin_room_17DL_005658[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_005658;
+#endif
+            
+#define dMIZUsin_room_17Tex_005A18 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17Tex_005A18"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17Tex_005A18[] = dMIZUsin_room_17Tex_005A18;
+#else
+static const char MIZUsin_room_17Tex_005A18[] __attribute__((aligned (2))) = dMIZUsin_room_17Tex_005A18;
+#endif
+            
+#define dMIZUsin_room_17DL_001650 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_001650"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_001650[] = dMIZUsin_room_17DL_001650;
+#else
+static const char MIZUsin_room_17DL_001650[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_001650;
+#endif
+            
+#define dMIZUsin_room_17Tex_006218 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17Tex_006218"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17Tex_006218[] = dMIZUsin_room_17Tex_006218;
+#else
+static const char MIZUsin_room_17Tex_006218[] __attribute__((aligned (2))) = dMIZUsin_room_17Tex_006218;
+#endif
+            
+#define dMIZUsin_room_17DL_001880 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_001880"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_001880[] = dMIZUsin_room_17DL_001880;
+#else
+static const char MIZUsin_room_17DL_001880[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_001880;
+#endif
+            
+#define dMIZUsin_room_17DL_003A70 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_003A70"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_003A70[] = dMIZUsin_room_17DL_003A70;
+#else
+static const char MIZUsin_room_17DL_003A70[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_003A70;
+#endif
+            
+#define dMIZUsin_room_17DL_002BE0 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_002BE0"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_002BE0[] = dMIZUsin_room_17DL_002BE0;
+#else
+static const char MIZUsin_room_17DL_002BE0[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_002BE0;
+#endif
+            
+#define dMIZUsin_room_17DL_003830 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_003830"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_003830[] = dMIZUsin_room_17DL_003830;
+#else
+static const char MIZUsin_room_17DL_003830[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_003830;
+#endif
+            
+#define dMIZUsin_room_17DL_002568 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_002568"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_002568[] = dMIZUsin_room_17DL_002568;
+#else
+static const char MIZUsin_room_17DL_002568[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_002568;
+#endif
+            
+#define dMIZUsin_room_17DL_005088 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_005088"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_005088[] = dMIZUsin_room_17DL_005088;
+#else
+static const char MIZUsin_room_17DL_005088[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_005088;
+#endif
+            
+#define dMIZUsin_room_17DL_002880 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_002880"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_002880[] = dMIZUsin_room_17DL_002880;
+#else
+static const char MIZUsin_room_17DL_002880[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_002880;
+#endif
+            
+#define dMIZUsin_room_17DL_005450 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_005450"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_005450[] = dMIZUsin_room_17DL_005450;
+#else
+static const char MIZUsin_room_17DL_005450[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_005450;
+#endif
+            
+#define dMIZUsin_room_17DL_002028 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_002028"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_002028[] = dMIZUsin_room_17DL_002028;
+#else
+static const char MIZUsin_room_17DL_002028[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_002028;
+#endif
+            
+#define dMIZUsin_room_17DL_004AA0 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_004AA0"
+#ifdef _WIN32
+static const __declspec(align(2)) char MIZUsin_room_17DL_004AA0[] = dMIZUsin_room_17DL_004AA0;
+#else
+static const char MIZUsin_room_17DL_004AA0[] __attribute__((aligned (2))) = dMIZUsin_room_17DL_004AA0;
+#endif
+            
 
-#include "align_asset_macro.h"
-
-#define dMIZUsin_room_17DL_003458 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_003458"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_003458[] = dMIZUsin_room_17DL_003458;
-
-#define dMIZUsin_room_17DL_0041C8 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_0041C8"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_0041C8[] = dMIZUsin_room_17DL_0041C8;
-
-#define dMIZUsin_room_17DL_001010 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_001010"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_001010[] = dMIZUsin_room_17DL_001010;
-
-#define dMIZUsin_room_17Tex_006AA8 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17Tex_006AA8"
-static const ALIGN_ASSET(2) char MIZUsin_room_17Tex_006AA8[] = dMIZUsin_room_17Tex_006AA8;
-
-#define dMIZUsin_room_17Tex_007AA8 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17Tex_007AA8"
-static const ALIGN_ASSET(2) char MIZUsin_room_17Tex_007AA8[] = dMIZUsin_room_17Tex_007AA8;
-
-#define dMIZUsin_room_17Tex_0072A8 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17Tex_0072A8"
-static const ALIGN_ASSET(2) char MIZUsin_room_17Tex_0072A8[] = dMIZUsin_room_17Tex_0072A8;
-
-#define dMIZUsin_room_17Tex_0082A8 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17Tex_0082A8"
-static const ALIGN_ASSET(2) char MIZUsin_room_17Tex_0082A8[] = dMIZUsin_room_17Tex_0082A8;
-
-#define dMIZUsin_room_17DL_005928 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_005928"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_005928[] = dMIZUsin_room_17DL_005928;
-
-#define dMIZUsin_room_17DL_0056E8 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_0056E8"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_0056E8[] = dMIZUsin_room_17DL_0056E8;
-
-#define dMIZUsin_room_17Tex_005AA8 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17Tex_005AA8"
-static const ALIGN_ASSET(2) char MIZUsin_room_17Tex_005AA8[] = dMIZUsin_room_17Tex_005AA8;
-
-#define dMIZUsin_room_17DL_0016E0 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_0016E0"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_0016E0[] = dMIZUsin_room_17DL_0016E0;
-
-#define dMIZUsin_room_17Tex_0062A8 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17Tex_0062A8"
-static const ALIGN_ASSET(2) char MIZUsin_room_17Tex_0062A8[] = dMIZUsin_room_17Tex_0062A8;
-
-#define dMIZUsin_room_17DL_001910 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_001910"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_001910[] = dMIZUsin_room_17DL_001910;
-
-#define dMIZUsin_room_17DL_003B00 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_003B00"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_003B00[] = dMIZUsin_room_17DL_003B00;
-
-#define dMIZUsin_room_17DL_002C70 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_002C70"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_002C70[] = dMIZUsin_room_17DL_002C70;
-
-#define dMIZUsin_room_17DL_0038C0 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_0038C0"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_0038C0[] = dMIZUsin_room_17DL_0038C0;
-
-#define dMIZUsin_room_17DL_0025F8 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_0025F8"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_0025F8[] = dMIZUsin_room_17DL_0025F8;
-
-#define dMIZUsin_room_17DL_005118 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_005118"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_005118[] = dMIZUsin_room_17DL_005118;
-
-#define dMIZUsin_room_17DL_002910 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_002910"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_002910[] = dMIZUsin_room_17DL_002910;
-
-#define dMIZUsin_room_17DL_0054E0 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_0054E0"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_0054E0[] = dMIZUsin_room_17DL_0054E0;
-
-#define dMIZUsin_room_17DL_0020B8 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_0020B8"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_0020B8[] = dMIZUsin_room_17DL_0020B8;
-
-#define dMIZUsin_room_17DL_004B30 "__OTR__scenes/nonmq/MIZUsin_scene/MIZUsin_room_17DL_004B30"
-static const ALIGN_ASSET(2) char MIZUsin_room_17DL_004B30[] = dMIZUsin_room_17DL_004B30;

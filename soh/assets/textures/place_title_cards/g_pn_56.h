@@ -1,12 +1,23 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgBombchuShopTitleCardENGTex "__OTR__textures/g_pn_56/gBombchuShopTitleCardENGTex"
-static const ALIGN_ASSET(2) char gBombchuShopTitleCardENGTex[] = dgBombchuShopTitleCardENGTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBombchuShopTitleCardENGTex[] = dgBombchuShopTitleCardENGTex;
+#else
+static const char gBombchuShopTitleCardENGTex[] __attribute__((aligned (2))) = dgBombchuShopTitleCardENGTex;
+#endif
+            
 #define dgBombchuShopTitleCardGERTex "__OTR__textures/g_pn_56/gBombchuShopTitleCardGERTex"
-static const ALIGN_ASSET(2) char gBombchuShopTitleCardGERTex[] = dgBombchuShopTitleCardGERTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gBombchuShopTitleCardGERTex[] = dgBombchuShopTitleCardGERTex;
+#else
+static const char gBombchuShopTitleCardGERTex[] __attribute__((aligned (2))) = dgBombchuShopTitleCardGERTex;
+#endif
+            
 #define dgBombchuShopTitleCardFRATex "__OTR__textures/g_pn_56/gBombchuShopTitleCardFRATex"
-static const ALIGN_ASSET(2) char gBombchuShopTitleCardFRATex[] = dgBombchuShopTitleCardFRATex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gBombchuShopTitleCardFRATex[] = dgBombchuShopTitleCardFRATex;
+#else
+static const char gBombchuShopTitleCardFRATex[] __attribute__((aligned (2))) = dgBombchuShopTitleCardFRATex;
+#endif
+            
+

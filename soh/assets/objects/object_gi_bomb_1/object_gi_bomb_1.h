@@ -1,6 +1,9 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgGiBombDL "__OTR__objects/object_gi_bomb_1/gGiBombDL"
-static const ALIGN_ASSET(2) char gGiBombDL[] = dgGiBombDL;
+#ifdef _WIN32
+static const __declspec(align(2)) char gGiBombDL[] = dgGiBombDL;
+#else
+static const char gGiBombDL[] __attribute__((aligned (2))) = dgGiBombDL;
+#endif
+            
+

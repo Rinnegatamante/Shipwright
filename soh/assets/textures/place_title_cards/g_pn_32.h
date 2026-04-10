@@ -1,12 +1,23 @@
 #pragma once
-
-#include "align_asset_macro.h"
-
 #define dgLakeHyliaTitleCardENGTex "__OTR__textures/g_pn_32/gLakeHyliaTitleCardENGTex"
-static const ALIGN_ASSET(2) char gLakeHyliaTitleCardENGTex[] = dgLakeHyliaTitleCardENGTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gLakeHyliaTitleCardENGTex[] = dgLakeHyliaTitleCardENGTex;
+#else
+static const char gLakeHyliaTitleCardENGTex[] __attribute__((aligned (2))) = dgLakeHyliaTitleCardENGTex;
+#endif
+            
 #define dgLakeHyliaTitleCardGERTex "__OTR__textures/g_pn_32/gLakeHyliaTitleCardGERTex"
-static const ALIGN_ASSET(2) char gLakeHyliaTitleCardGERTex[] = dgLakeHyliaTitleCardGERTex;
-
+#ifdef _WIN32
+static const __declspec(align(2)) char gLakeHyliaTitleCardGERTex[] = dgLakeHyliaTitleCardGERTex;
+#else
+static const char gLakeHyliaTitleCardGERTex[] __attribute__((aligned (2))) = dgLakeHyliaTitleCardGERTex;
+#endif
+            
 #define dgLakeHyliaTitleCardFRATex "__OTR__textures/g_pn_32/gLakeHyliaTitleCardFRATex"
-static const ALIGN_ASSET(2) char gLakeHyliaTitleCardFRATex[] = dgLakeHyliaTitleCardFRATex;
+#ifdef _WIN32
+static const __declspec(align(2)) char gLakeHyliaTitleCardFRATex[] = dgLakeHyliaTitleCardFRATex;
+#else
+static const char gLakeHyliaTitleCardFRATex[] __attribute__((aligned (2))) = dgLakeHyliaTitleCardFRATex;
+#endif
+            
+

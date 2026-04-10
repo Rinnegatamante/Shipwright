@@ -1,9 +1,16 @@
 #pragma once
+#define dydan_room_8DL_0006D0 "__OTR__scenes/nonmq/ydan_scene/ydan_room_8DL_0006D0"
+#ifdef _WIN32
+static const __declspec(align(2)) char ydan_room_8DL_0006D0[] = dydan_room_8DL_0006D0;
+#else
+static const char ydan_room_8DL_0006D0[] __attribute__((aligned (2))) = dydan_room_8DL_0006D0;
+#endif
+            
+#define dydan_room_8Tex_0008F8 "__OTR__scenes/nonmq/ydan_scene/ydan_room_8Tex_0008F8"
+#ifdef _WIN32
+static const __declspec(align(2)) char ydan_room_8Tex_0008F8[] = dydan_room_8Tex_0008F8;
+#else
+static const char ydan_room_8Tex_0008F8[] __attribute__((aligned (2))) = dydan_room_8Tex_0008F8;
+#endif
+            
 
-#include "align_asset_macro.h"
-
-#define dydan_room_8DL_000760 "__OTR__scenes/nonmq/ydan_scene/ydan_room_8DL_000760"
-static const ALIGN_ASSET(2) char ydan_room_8DL_000760[] = dydan_room_8DL_000760;
-
-#define dydan_room_8Tex_000988 "__OTR__scenes/nonmq/ydan_scene/ydan_room_8Tex_000988"
-static const ALIGN_ASSET(2) char ydan_room_8Tex_000988[] = dydan_room_8Tex_000988;

@@ -1,63 +1,142 @@
 #pragma once
+#define dmen_room_1DL_001DC8 "__OTR__scenes/nonmq/men_scene/men_room_1DL_001DC8"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1DL_001DC8[] = dmen_room_1DL_001DC8;
+#else
+static const char men_room_1DL_001DC8[] __attribute__((aligned (2))) = dmen_room_1DL_001DC8;
+#endif
+            
+#define dmen_room_1Tex_008A90 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_008A90"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1Tex_008A90[] = dmen_room_1Tex_008A90;
+#else
+static const char men_room_1Tex_008A90[] __attribute__((aligned (2))) = dmen_room_1Tex_008A90;
+#endif
+            
+#define dmen_room_1Tex_005A90 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_005A90"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1Tex_005A90[] = dmen_room_1Tex_005A90;
+#else
+static const char men_room_1Tex_005A90[] __attribute__((aligned (2))) = dmen_room_1Tex_005A90;
+#endif
+            
+#define dmen_room_1DL_0023C8 "__OTR__scenes/nonmq/men_scene/men_room_1DL_0023C8"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1DL_0023C8[] = dmen_room_1DL_0023C8;
+#else
+static const char men_room_1DL_0023C8[] __attribute__((aligned (2))) = dmen_room_1DL_0023C8;
+#endif
+            
+#define dmen_room_1Tex_004A90 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_004A90"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1Tex_004A90[] = dmen_room_1Tex_004A90;
+#else
+static const char men_room_1Tex_004A90[] __attribute__((aligned (2))) = dmen_room_1Tex_004A90;
+#endif
+            
+#define dmen_room_1Tex_005290 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_005290"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1Tex_005290[] = dmen_room_1Tex_005290;
+#else
+static const char men_room_1Tex_005290[] __attribute__((aligned (2))) = dmen_room_1Tex_005290;
+#endif
+            
+#define dmen_room_1DL_002BF0 "__OTR__scenes/nonmq/men_scene/men_room_1DL_002BF0"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1DL_002BF0[] = dmen_room_1DL_002BF0;
+#else
+static const char men_room_1DL_002BF0[] __attribute__((aligned (2))) = dmen_room_1DL_002BF0;
+#endif
+            
+#define dmen_room_1Tex_006290 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_006290"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1Tex_006290[] = dmen_room_1Tex_006290;
+#else
+static const char men_room_1Tex_006290[] __attribute__((aligned (2))) = dmen_room_1Tex_006290;
+#endif
+            
+#define dmen_room_1DL_002FE8 "__OTR__scenes/nonmq/men_scene/men_room_1DL_002FE8"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1DL_002FE8[] = dmen_room_1DL_002FE8;
+#else
+static const char men_room_1DL_002FE8[] __attribute__((aligned (2))) = dmen_room_1DL_002FE8;
+#endif
+            
+#define dmen_room_1DL_003548 "__OTR__scenes/nonmq/men_scene/men_room_1DL_003548"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1DL_003548[] = dmen_room_1DL_003548;
+#else
+static const char men_room_1DL_003548[] __attribute__((aligned (2))) = dmen_room_1DL_003548;
+#endif
+            
+#define dmen_room_1DL_0037D0 "__OTR__scenes/nonmq/men_scene/men_room_1DL_0037D0"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1DL_0037D0[] = dmen_room_1DL_0037D0;
+#else
+static const char men_room_1DL_0037D0[] __attribute__((aligned (2))) = dmen_room_1DL_0037D0;
+#endif
+            
+#define dmen_room_1DL_003CA8 "__OTR__scenes/nonmq/men_scene/men_room_1DL_003CA8"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1DL_003CA8[] = dmen_room_1DL_003CA8;
+#else
+static const char men_room_1DL_003CA8[] __attribute__((aligned (2))) = dmen_room_1DL_003CA8;
+#endif
+            
+#define dmen_room_1DL_003F60 "__OTR__scenes/nonmq/men_scene/men_room_1DL_003F60"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1DL_003F60[] = dmen_room_1DL_003F60;
+#else
+static const char men_room_1DL_003F60[] __attribute__((aligned (2))) = dmen_room_1DL_003F60;
+#endif
+            
+#define dmen_room_1Tex_004290 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_004290"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1Tex_004290[] = dmen_room_1Tex_004290;
+#else
+static const char men_room_1Tex_004290[] __attribute__((aligned (2))) = dmen_room_1Tex_004290;
+#endif
+            
+#define dmen_room_1DL_004170 "__OTR__scenes/nonmq/men_scene/men_room_1DL_004170"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1DL_004170[] = dmen_room_1DL_004170;
+#else
+static const char men_room_1DL_004170[] __attribute__((aligned (2))) = dmen_room_1DL_004170;
+#endif
+            
+#define dmen_room_1Tex_006A90 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_006A90"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1Tex_006A90[] = dmen_room_1Tex_006A90;
+#else
+static const char men_room_1Tex_006A90[] __attribute__((aligned (2))) = dmen_room_1Tex_006A90;
+#endif
+            
+#define dmen_room_1DL_001AD0 "__OTR__scenes/nonmq/men_scene/men_room_1DL_001AD0"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1DL_001AD0[] = dmen_room_1DL_001AD0;
+#else
+static const char men_room_1DL_001AD0[] __attribute__((aligned (2))) = dmen_room_1DL_001AD0;
+#endif
+            
+#define dmen_room_1Tex_007A90 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_007A90"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1Tex_007A90[] = dmen_room_1Tex_007A90;
+#else
+static const char men_room_1Tex_007A90[] __attribute__((aligned (2))) = dmen_room_1Tex_007A90;
+#endif
+            
+#define dmen_room_1DL_000B90 "__OTR__scenes/nonmq/men_scene/men_room_1DL_000B90"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1DL_000B90[] = dmen_room_1DL_000B90;
+#else
+static const char men_room_1DL_000B90[] __attribute__((aligned (2))) = dmen_room_1DL_000B90;
+#endif
+            
+#define dmen_room_1Tex_007290 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_007290"
+#ifdef _WIN32
+static const __declspec(align(2)) char men_room_1Tex_007290[] = dmen_room_1Tex_007290;
+#else
+static const char men_room_1Tex_007290[] __attribute__((aligned (2))) = dmen_room_1Tex_007290;
+#endif
+            
 
-#include "align_asset_macro.h"
-
-#define dmen_room_1DL_001DA8 "__OTR__scenes/nonmq/men_scene/men_room_1DL_001DA8"
-static const ALIGN_ASSET(2) char men_room_1DL_001DA8[] = dmen_room_1DL_001DA8;
-
-#define dmen_room_1Tex_008A70 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_008A70"
-static const ALIGN_ASSET(2) char men_room_1Tex_008A70[] = dmen_room_1Tex_008A70;
-
-#define dmen_room_1Tex_005A70 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_005A70"
-static const ALIGN_ASSET(2) char men_room_1Tex_005A70[] = dmen_room_1Tex_005A70;
-
-#define dmen_room_1DL_0023A8 "__OTR__scenes/nonmq/men_scene/men_room_1DL_0023A8"
-static const ALIGN_ASSET(2) char men_room_1DL_0023A8[] = dmen_room_1DL_0023A8;
-
-#define dmen_room_1Tex_004A70 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_004A70"
-static const ALIGN_ASSET(2) char men_room_1Tex_004A70[] = dmen_room_1Tex_004A70;
-
-#define dmen_room_1Tex_005270 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_005270"
-static const ALIGN_ASSET(2) char men_room_1Tex_005270[] = dmen_room_1Tex_005270;
-
-#define dmen_room_1DL_002BD0 "__OTR__scenes/nonmq/men_scene/men_room_1DL_002BD0"
-static const ALIGN_ASSET(2) char men_room_1DL_002BD0[] = dmen_room_1DL_002BD0;
-
-#define dmen_room_1Tex_006270 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_006270"
-static const ALIGN_ASSET(2) char men_room_1Tex_006270[] = dmen_room_1Tex_006270;
-
-#define dmen_room_1DL_002FC8 "__OTR__scenes/nonmq/men_scene/men_room_1DL_002FC8"
-static const ALIGN_ASSET(2) char men_room_1DL_002FC8[] = dmen_room_1DL_002FC8;
-
-#define dmen_room_1DL_003528 "__OTR__scenes/nonmq/men_scene/men_room_1DL_003528"
-static const ALIGN_ASSET(2) char men_room_1DL_003528[] = dmen_room_1DL_003528;
-
-#define dmen_room_1DL_0037B0 "__OTR__scenes/nonmq/men_scene/men_room_1DL_0037B0"
-static const ALIGN_ASSET(2) char men_room_1DL_0037B0[] = dmen_room_1DL_0037B0;
-
-#define dmen_room_1DL_003C88 "__OTR__scenes/nonmq/men_scene/men_room_1DL_003C88"
-static const ALIGN_ASSET(2) char men_room_1DL_003C88[] = dmen_room_1DL_003C88;
-
-#define dmen_room_1DL_003F40 "__OTR__scenes/nonmq/men_scene/men_room_1DL_003F40"
-static const ALIGN_ASSET(2) char men_room_1DL_003F40[] = dmen_room_1DL_003F40;
-
-#define dmen_room_1Tex_004270 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_004270"
-static const ALIGN_ASSET(2) char men_room_1Tex_004270[] = dmen_room_1Tex_004270;
-
-#define dmen_room_1DL_004150 "__OTR__scenes/nonmq/men_scene/men_room_1DL_004150"
-static const ALIGN_ASSET(2) char men_room_1DL_004150[] = dmen_room_1DL_004150;
-
-#define dmen_room_1Tex_006A70 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_006A70"
-static const ALIGN_ASSET(2) char men_room_1Tex_006A70[] = dmen_room_1Tex_006A70;
-
-#define dmen_room_1DL_001AB0 "__OTR__scenes/nonmq/men_scene/men_room_1DL_001AB0"
-static const ALIGN_ASSET(2) char men_room_1DL_001AB0[] = dmen_room_1DL_001AB0;
-
-#define dmen_room_1Tex_007A70 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_007A70"
-static const ALIGN_ASSET(2) char men_room_1Tex_007A70[] = dmen_room_1Tex_007A70;
-
-#define dmen_room_1DL_000B70 "__OTR__scenes/nonmq/men_scene/men_room_1DL_000B70"
-static const ALIGN_ASSET(2) char men_room_1DL_000B70[] = dmen_room_1DL_000B70;
-
-#define dmen_room_1Tex_007270 "__OTR__scenes/nonmq/men_scene/men_room_1Tex_007270"
-static const ALIGN_ASSET(2) char men_room_1Tex_007270[] = dmen_room_1Tex_007270;
