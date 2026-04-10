@@ -265,7 +265,7 @@ static char* GetPathWithCurrentDir(char* filePath) {
 }
 
 static void gfx_flush(void) {
-    if (buf_vbo_len > 0) {
+    if (buf_vbo_num_tris > 0) {
 #ifdef __vita__
 		gfx_rapi->draw_triangles(buf_vbo, buf_vbo_start, buf_vbo_len, buf_vbo_num_tris);
 		buf_vbo_start = buf_vbo_len;
