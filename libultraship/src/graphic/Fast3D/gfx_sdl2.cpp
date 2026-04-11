@@ -259,6 +259,7 @@ void vglSetParamBufferSize(uint32_t size);
 void vglUseTripleBuffering(GLboolean usage);
 void vglSetVertexPoolSize(uint32_t size);
 void vglSwapBuffers(GLboolean);
+void vglSetDisplayBufferCount(int count);
 };
 #endif
 
@@ -273,6 +274,7 @@ static void gfx_sdl_init(const char* game_name, const char* gfx_api_name, bool s
 	printf("Initing vitaGL...\n");
 	vglSetParamBufferSize(8 * 1024 * 1024);
 	vglUseTripleBuffering(GL_TRUE);
+	vglSetDisplayBufferCount(3);
 	vglInitWithCustomThreshold(0, 960, 544, 4 * 1024 * 1024, 0, 0, 0, SCE_GXM_MULTISAMPLE_4X);
 #endif
     SDL_Init(SDL_INIT_VIDEO);
