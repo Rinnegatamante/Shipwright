@@ -206,7 +206,7 @@ namespace {
     struct InterpolateCtx {
         float step;
         float w;
-        unordered_map<Mtx*, MtxF> mtx_replacements;
+        robin_hood::unordered_map<Mtx*, MtxF> mtx_replacements;
         MtxF tmp_mtxf, tmp_mtxf2;
         Vec3f tmp_vec3f;
         Vec3s tmp_vec3s;
@@ -438,7 +438,7 @@ namespace {
 
 } // anonymous namespace
 
-unordered_map<Mtx*, MtxF> FrameInterpolation_Interpolate(float step) {
+robin_hood::unordered_map<Mtx*, MtxF> FrameInterpolation_Interpolate(float step) {
     InterpolateCtx ctx;
     ctx.step = step;
     ctx.w = 1.0f - step;

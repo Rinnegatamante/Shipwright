@@ -8,7 +8,7 @@
 #include "Resource.h"
 #include "ResourceLoader.h"
 #include "Archive.h"
-#include "thread-pool/BS_thread_pool.hpp"
+#include "robin_hood.h"
 
 namespace Ship {
 class Window;
@@ -56,7 +56,7 @@ class ResourceMgr {
 
   private:
     std::shared_ptr<Window> mContext;
-    std::unordered_map<uint64_t, std::shared_ptr<Resource>> mResourceCache;
+    robin_hood::unordered_map<uint64_t, std::shared_ptr<Resource>> mResourceCache;
     std::shared_ptr<ResourceLoader> mResourceLoader;
     std::shared_ptr<Archive> mArchive;
 };

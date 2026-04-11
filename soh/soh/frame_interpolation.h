@@ -5,8 +5,9 @@
 #ifdef __cplusplus
 
 #include <unordered_map>
+#include "robin_hood.h"
 
-std::unordered_map<Mtx*, MtxF> FrameInterpolation_Interpolate(float step);
+robin_hood::unordered_map<Mtx*, MtxF> FrameInterpolation_Interpolate(float step);
 
 extern "C" {
 

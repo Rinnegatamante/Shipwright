@@ -749,7 +749,7 @@ extern "C" void Graph_StartFrame() {
 //#ifdef __vita__
 //void RunCommands(Gfx* Commands) {
 //#else
-void RunCommands(Gfx* Commands, const std::vector<std::unordered_map<Mtx*, MtxF>>& mtx_replacements) {
+void RunCommands(Gfx* Commands, const std::vector<robin_hood::unordered_map<Mtx*, MtxF>>& mtx_replacements) {
 //#endif
 //#ifndef __vita__    
 	for (const auto& m : mtx_replacements)
@@ -773,7 +773,7 @@ extern "C" void Graph_ProcessGfxCommands(Gfx* commands) {
 
     audio.cv_to_thread.notify_one();
 //#ifndef __vita__
-    std::vector<std::unordered_map<Mtx*, MtxF>> mtx_replacements;
+    std::vector<robin_hood::unordered_map<Mtx*, MtxF>> mtx_replacements;
 //#endif
     int target_fps = OTRGlobals::Instance->GetInterpolationFPS();
     static int last_fps = 0;

@@ -12,6 +12,7 @@
 
 #include "libultraship/libultra/gbi.h"
 #include "libultraship/libultra/types.h"
+#include "robin_hood.h"
 
 // TODO figure out why changing these to 640x480 makes the game only render in a quarter of the window
 #define SCREEN_WIDTH 320
@@ -93,7 +94,7 @@ void gfx_start_frame(void);
 //#ifdef __vita__
 //void gfx_run(Gfx* commands);
 //#else
-void gfx_run(Gfx* commands, const std::unordered_map<Mtx*, MtxF>& mtx_replacements);
+void gfx_run(Gfx* commands, const robin_hood::unordered_map<Mtx*, MtxF>& mtx_replacements);
 //#endif
 void gfx_end_frame(void);
 void gfx_set_target_fps(int);

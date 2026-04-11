@@ -214,7 +214,7 @@ static bool has_drawn_imgui_menu;
 
 static bool dropped_frame;
 
-static const std::unordered_map<Mtx*, MtxF>* current_mtx_replacements;
+static const robin_hood::unordered_map<Mtx*, MtxF>* current_mtx_replacements;
 
 #ifdef __vita__
 static float *buf_vbo = nullptr;
@@ -3004,7 +3004,7 @@ void gfx_start_frame(void) {
 //#ifdef __vita__
 //void gfx_run(Gfx* commands) {
 //#else
-void gfx_run(Gfx* commands, const std::unordered_map<Mtx*, MtxF>& mtx_replacements) {
+void gfx_run(Gfx* commands, const robin_hood::unordered_map<Mtx*, MtxF>& mtx_replacements) {
 //#endif
     gfx_sp_reset();
 
