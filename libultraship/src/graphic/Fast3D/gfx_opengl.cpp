@@ -52,6 +52,9 @@
 #include "gfx_pc.h"
 #include <core/bridge/consolevariablebridge.h>
 
+#define GL_CG_VERTEX_SHADER_EXT 0x890E
+#define GL_CG_FRAGMENT_SHADER_EXT 0x890F
+
 using namespace std;
 
 struct ShaderProgram {
@@ -789,11 +792,11 @@ static struct ShaderProgram* gfx_opengl_create_and_load_new_shader(uint64_t shad
     const GLchar* sources[2] = { vs_buf, fs_buf };
     const GLint lengths[2] = { (GLint)vs_len, (GLint)fs_len };
     GLint success;
-
-    GLuint vertex_shader = glCreateShader(GL_VERTEX_SHADER);
 #ifdef __vita__
+    GLuint vertex_shader = glCreateShader(GL_CG_VERTEX_SHADER_EXT);
     glShaderSource(vertex_shader, 1, &sources[0], NULL);
 #else
+    GLuint vertex_shader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertex_shader, 1, &sources[0], &lengths[0]);
 #endif
     glCompileShader(vertex_shader);
@@ -811,10 +814,11 @@ static struct ShaderProgram* gfx_opengl_create_and_load_new_shader(uint64_t shad
         abort();
     }
 
-    GLuint fragment_shader = glCreateShader(GL_FRAGMENT_SHADER);
 #ifdef __vita__
+    GLuint fragment_shader = glCreateShader(GL_CG_FRAGMENT_SHADER_EXT);
     glShaderSource(fragment_shader, 1, &sources[1], NULL);
 #else
+    GLuint fragment_shader = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(fragment_shader, 1, &sources[1], &lengths[1]);
 #endif
     glCompileShader(fragment_shader);

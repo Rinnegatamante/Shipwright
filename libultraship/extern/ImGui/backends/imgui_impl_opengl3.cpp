@@ -90,6 +90,9 @@
 //  ES 3.0    300       "#version 300 es"   = WebGL 2.0
 //----------------------------------------
 
+#define GL_CG_VERTEX_SHADER_EXT                         0x890E
+#define GL_CG_FRAGMENT_SHADER_EXT                       0x890F
+
 #if defined(_MSC_VER) && !defined(_CRT_SECURE_NO_WARNINGS)
 #define _CRT_SECURE_NO_WARNINGS
 #endif
@@ -889,13 +892,13 @@ bool    ImGui_ImplOpenGL3_CreateDeviceObjects()
 
     // Create shaders
     const GLchar* vertex_shader_with_version[2] = { bd->GlslVersionString, vertex_shader };
-    GLuint vert_handle = glCreateShader(GL_VERTEX_SHADER);
+    GLuint vert_handle = glCreateShader(GL_CG_VERTEX_SHADER_EXT);
     glShaderSource(vert_handle, 2, vertex_shader_with_version, nullptr);
     glCompileShader(vert_handle);
     CheckShader(vert_handle, "vertex shader");
 
     const GLchar* fragment_shader_with_version[2] = { bd->GlslVersionString, fragment_shader };
-    GLuint frag_handle = glCreateShader(GL_FRAGMENT_SHADER);
+    GLuint frag_handle = glCreateShader(GL_CG_FRAGMENT_SHADER_EXT);
     glShaderSource(frag_handle, 2, fragment_shader_with_version, nullptr);
     glCompileShader(frag_handle);
     CheckShader(frag_handle, "fragment shader");
