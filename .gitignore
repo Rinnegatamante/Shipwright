@@ -451,3 +451,6 @@ _deps
 */extract_assets_cmake*
 /build*
 build.c
+
+!libultraship/src/debug/
+!libultraship/src/log/
