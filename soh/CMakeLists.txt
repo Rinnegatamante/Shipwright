@@ -564,8 +564,11 @@ if (CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang|AppleClang")
             >
         )
     elseif (CMAKE_SYSTEM_NAME STREQUAL "PSVita")
+        set_target_properties(${PROJECT_NAME} PROPERTIES C_STANDARD 17 C_STANDARD_REQUIRED YES)
         target_compile_options(${PROJECT_NAME} PRIVATE
             -Wall -Wextra -Wno-error
+            $<$<COMPILE_LANGUAGE:C>:-Wno-error=int-conversion>
+            $<$<COMPILE_LANGUAGE:C>:-Wno-error=return-mismatch>
             -Wno-return-type
             -Wno-unused-parameter
             -Wno-unused-function

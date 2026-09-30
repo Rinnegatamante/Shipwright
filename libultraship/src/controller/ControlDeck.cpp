@@ -112,7 +112,7 @@ void ControlDeck::LoadControllerSettings() {
         for (size_t dev = 0; dev < mPhysicalDevices.size(); dev++) {
             std::string guid = mPhysicalDevices[dev]->GetGuid();
 #ifdef __vita__
-            if (guid != val.value()) {
+            if (nlohmann::json(guid) != val.value()) {
                 continue;
             }
 #endif
